@@ -19,9 +19,9 @@
 /*-------------------[Buttons]----------------------*/
 
 .btn {
-	padding: 8px;
+	padding: 6px 8px;
 	margin: 2px;
-	font-size: 20px;
+	font-size: 18px;
 	border: none;
 	border-radius: 3px;
 	box-shadow: 0px 2px 0.7px rgba(0, 0, 0, 0.4);
@@ -170,6 +170,114 @@ input[type="search"]::-webkit-search-cancel-button {
 	cursor: pointer;
 }
 
-/*---------------------------[Date]----------------------------*/
+/*-----------------------------[Date]------------------------------*/
 
 /*-------------------------[Color picker]--------------------------*/
+
+/*-----------------------------[Kbd]-------------------------------*/
+kbd {
+	padding: 10px;
+	background-color: #2a2a2a;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 5px;
+	box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.9);
+}
+
+/*----------------------------[Quotes]-----------------------------*/
+blockquote {
+	min-width: 500px;
+	padding: 20px;
+	font-style: italic;
+	background-color: #d1d1d1;
+	border-left: 5px solid rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+/*------------------------------[Code]-----------------------------*/
+code {
+	padding: 5px;
+	color: #ff4444;
+	background-color: #ffbaba;
+	font-weight: bold;
+	border-radius: 2px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/*---------------------------[Containers]---------------------------*/
+div.container { padding: 30px 50px; }
+
+div.landleg {
+	padding: 30px 50px;
+	background-color: #c6c6c6;
+	border-bottom: 2px solid #b7b7b7;
+}
+
+div.landleg * { margin: 10px auto; }
+
+/*-------------------------------[hr]-------------------------------*/
+hr {
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+}
+
+hr.fade {
+	border: none;
+	height: 1px;
+	background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.3), transparent);
+}
+
+/*-----------------------------[Card]-------------------------------*/
+div.card {
+	margin: 5px;
+	padding: 30px;;
+	border: 1px solid #c3c3c3;
+	border-radius: 3px;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+div.card-header { margin-bottom: 20px; }
+
+div.card-primary {
+	background-color: var(--primaryColor);
+	color: white;
+}
+
+div.card-secondary {
+	background-color: var(--secondaryColor);
+	color: white;
+}
+
+div.card-success {
+	background-color: var(--successColor);
+	color: white;
+}
+
+div.card-info {
+	background-color: var(--infoColor);
+	color: white;
+}
+
+div.card-warning {
+	background-color: var(--warningColor);
+	color: white;
+}
+
+div.card-danger {
+	background-color: var(--dangerColor);
+	color: white;
+}
+
+div.card-disabled {
+	background-color: var(--disableColor);
+	color: white;
+	cursor: not-allowed;
+}
+
+/*---------------------------[Paragraph]-----------------------------*/
+p.indent::first-letter{
+	font-size: 1.5em;
+	font-weight: bold;
+}
