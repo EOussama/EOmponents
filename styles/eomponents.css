@@ -606,3 +606,91 @@ li.list-item {
 li.list-item:not(:first-child) {
 	border-top: none;
 }
+
+/*--------------------------------[Navbar]--------------------------------*/
+nav.navbar {
+	position: sticky;
+	width: 100%;
+	min-height: 50px;
+	padding: 0px 40px;
+	box-sizing: border-box;
+	overflow: hidden;
+	background-color: var(--lightColor);
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+ul.navitems { list-style-type: none; }
+
+li.navitem {
+	float: left;
+	padding: 11.3px;
+	transition-property: background-color;
+	transition-duration: .5s;
+}
+
+ul.navitems a {
+	color: var(--darkColor);
+	font-weight: bold;
+}
+
+li.navitem:hover { background-color: #c7c7c7; }
+
+li.navitem:active { background-color: #bcbcbc; }
+
+nav.navbar.dark {
+	background-color: var(--darkColor);
+	color: var(--lightColor);
+}
+
+nav.navbar.dark ul.navitems a { color: var(--lightColor); }
+nav.navbar.dark ul.navitems a li.navitem:hover { background-color: rgba(46, 59, 69, 0.85); }
+
+nav.navbar.primary {
+	background-color: var(--primaryColor);
+	color: var(--lightColor);
+}
+
+nav.navbar.primary ul.navitems a { color: white; }
+nav.navbar.primary ul.navitems a li.navitem:hover { background-color: rgba(70, 156, 230, 0.88); }
+
+nav.navbar.secondary {
+	background-color: var(--secondaryColor);
+	color: var(--lightColor);
+}
+
+nav.navbar.secondary ul.navitems a { color: white; }
+nav.navbar.secondary ul.navitems a li.navitem:hover { background-color: #959595; }
+
+nav.navbar.success {
+	background-color: var(--successColor);
+	color: var(--lightColor);
+}
+
+nav.navbar.success ul.navitems a { color: white; }
+nav.navbar.success ul.navitems a li.navitem:hover { background-color: #69ce69; }
+
+nav.navbar.info {
+	background-color: var(--infoColor);
+	color: var(--lightColor);
+}
+
+nav.navbar.info ul.navitems a { color: white; }
+nav.navbar.info ul.navitems a li.navitem:hover { background-color: #64d4f5; }
+
+nav.navbar.warning {
+	background-color: var(--warningColor);
+	color: var(--lightColor);
+}
+
+nav.navbar.warning ul.navitems a { color: white; }
+nav.navbar.warning ul.navitems a li.navitem:hover { background-color: rgb(255, 175, 62); }
+
+nav.navbar.danger {
+	background-color: var(--dangerColor);
+	color: var(--lightColor);
+}
+
+nav.navbar.danger ul.navitems a { color: white; }
+nav.navbar.danger ul.navitems a li.navitem:hover { background-color: #db3d35; }
+
+nav.navbar.fixed { position: fixed; }
