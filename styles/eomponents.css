@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@font-face {
+	font-family: 'Roboto';
+	src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url("../fonts/Roboto/Roboto-bold.ttf");
+	font-weight: bold;
+}
+
 
 :root {
 	--lightColor: rgb(221, 221, 221);
@@ -115,6 +125,8 @@
 	width: 300px;
 	margin: 5px;
 	padding: 8px 14px;
+	font-size: 16px;
+	font-weight: bold;
 	border: 0.5px solid darkgray;
 	border-left: 6px solid darkgray;
 	border-radius: 2px;
@@ -155,14 +167,6 @@
 .textbox:disabled {
 	cursor: not-allowed;
 	border-left-color: var(--disableColor);
-}
-
-input[type="text"]::before {
-	content: 'T';
-	position: relative;
-	top: 50px;
-	left: 50px;
-	font-size: 50px;
 }
 
 input[type="number"]::-webkit-inner-spin-button {
@@ -261,13 +265,23 @@ code {
 /*---------------------------[Containers]---------------------------*/
 div.container { padding: 30px 50px; }
 
-div.landleg {
+div.landleg, header.landleg {
 	padding: 30px 50px;
 	background-color: #c6c6c6;
 	border-bottom: 2px solid #b7b7b7;
 }
 
-div.landleg * { margin: 10px auto; }
+div.flex {
+	display: flex;
+	flex-direction: row;
+	align-content: stretch;
+}
+
+div.flex div {
+	flex: 1;
+}
+
+div.landleg *, header.landleg * { margin: 10px auto; }
 
 /*-------------------------------[hr]-------------------------------*/
 hr {
@@ -295,6 +309,11 @@ div.fold {
 div.fold-header {
 	font-size: 1.5em;
 	margin-bottom: 20px;
+}
+
+div.fold-light {
+	background-color: var(--lightColor);
+	color: var(--darkColor);
 }
 
 div.fold-dark {
@@ -609,7 +628,7 @@ li.list-item:not(:first-child) {
 
 /*--------------------------------[Navbar]--------------------------------*/
 nav.navbar {
-	position: sticky;
+	position: relative;
 	width: 100%;
 	min-height: 50px;
 	padding: 0px 40px;
@@ -693,4 +712,9 @@ nav.navbar.danger {
 nav.navbar.danger ul.navitems a { color: white; }
 nav.navbar.danger ul.navitems a li.navitem:hover { background-color: #db3d35; }
 
-nav.navbar.fixed { position: fixed; }
+nav.navbar.fixed {
+	position: fixed;
+	top: 0px;
+}
+
+nav.navbar.fixed + * { margin: 50px 0px; }
