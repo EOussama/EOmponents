@@ -618,10 +618,50 @@ select.combobox.xm {
 	font-size: 12px;
 }
 
+/*--------------------------[File Browse]--------------------------*/
+input[type="file"].file-browse::-webkit-file-upload-button {
+	padding: 6px 8px;
+	margin: 2px;
+	font-size: 16px;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0px 2px 0.7px rgba(0, 0, 0, 0.3);
+	font-weight: bold;
+	color: var(--darkColor);
+	cursor: pointer;
+	transition-property: background-color, transform;
+	transition-duration: .5s, .05s;
+}
+
+input[type="file"].file-browse {
+	border-radius: 3px;
+	background-color: var(--lightColorLighten);
+	transition-property: background-color;
+	transition-duration: 0.5s;
+}
+
+input[type="file"].file-browse:hover { background-color: var(--lightColor); }
+input[type="file"].file-browse::-webkit-file-upload-button:hover { background-color: var(--lightColorDarken); }
+
 /*---------------------------[Checkbox]----------------------------*/
 label.checkbox input { display: none; }
 
 label.checkbox input:checked + div.inner { background-color: var(--lightColorStrong); }
+label.checkbox input:checked + div.inner::before { display: block; }
+
+label.checkbox div.inner::before {
+	content: "\2714";
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-55%, -50%);
+	font-size: 12px;
+	font-weight: bold;
+	color: var(--lightColorLighten);
+	animation-name: checkBoxChecked;
+	animation-duration: 0.3s;
+}
 
 label.checkbox div.inner {
 	position: relative;
@@ -634,12 +674,17 @@ label.checkbox div.inner {
 	cursor: pointer;
 	transition-property: background-color;
 	transition-duration: .5s;
-
 }
 
 label.checkbox input:disabled + div.inner {
 	background-color: var(--disabledColor);
 	cursor: not-allowed;
+}
+
+@keyframes checkBoxChecked {
+	0% { font-size: 4px; }
+	75% { font-size: 14px; }
+	100% { font-size: 12px; }
 }
 
 label.checkbox.dark input:checked + div.inner { background-color: var(--darkColorLighten); }
@@ -1711,13 +1756,9 @@ nav.navbar.fixed {
 nav.navbar.fixed + header { margin-top: 50px; }
 
 /*-------------------------[Forms]--------------------------*/
-form.from-group {
-	width: 100%;
-}
+form.from-group { width: 100%; }
 
-form.form-group input.form-control, form.form-group select.form-control, form.form-group textarea.form-control {
-	width: 100%;
-}
+form.form-group input.form-control, form.form-group select.form-control, form.form-group textarea.form-control, form.form-group button.form-control { width: 100%; }
 
 /*--------------------------[Text]--------------------------*/
 .text-bold { font-weight: bold; }
