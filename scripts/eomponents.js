@@ -42,4 +42,19 @@ window.addEventListener('load', () => {
 			}
 		});
 	});
+
+	window.addEventListener('click', (e) => {
+		if(!(e.target.classList.contains('btn') && e.target.parentNode.classList.contains('btn-piano') && e.target.parentNode.parentNode.classList.contains('dropdown'))){
+			__dropdowns.forEach((__dropdown) => {
+				let
+					__trigger = __dropdown.querySelector('.btn'),
+					__dropable = __dropdown.querySelector('div.btn-piano');
+		
+				if(__dropable.style.display === 'inline' && e.target.parentNode !== __dropdown) {
+					__dropable.style.display = 'none';
+					__trigger.classList.remove('dropped');
+				}
+			});
+		}
+	});
 });

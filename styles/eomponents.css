@@ -1112,10 +1112,13 @@ div.landleg, header.landleg {
 	position: relative;
 	display: flex;
 	flex-direction: row;
-	align-content: center;
 }
 
-.flex > * { flex: 1; }
+.flex.flex-center { justify-content: center; }
+.flex.flex-space-between { justify-content: space-between; }
+.flex.flex-space-around { justify-content: space-around; }
+
+.flex.flex-unify > * { flex: 1; }
 
 .flex .flex-section-1 { flex: 1; }
 .flex .flex-section-2 { flex: 2; }
@@ -2829,6 +2832,7 @@ div.dropdown > .btn.dropped::after { transform: rotateX(0deg); }
 div.dropdown .btn-piano {
 	position: absolute;
 	display: inline;
+	z-index: 90;
 
 	animation-name: fadeDropDown;
 	animation-duration: 0.3s;
