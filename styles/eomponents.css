@@ -124,6 +124,7 @@ h1, h2, h3, h4, h5, h6 { margin-bottom: 15px; }
 .btn {
 	position: relative;
 	padding: 6px 8px;
+	margin: 3px 1px;
 
 	border: none;
 	border-radius: 3px;
@@ -136,6 +137,12 @@ h1, h2, h3, h4, h5, h6 { margin-bottom: 15px; }
 
 	overflow: hidden;
 	cursor: pointer;
+	
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
 
 	transition-property: background-color, top;
 	transition-duration: .5s, .05s;
@@ -441,7 +448,11 @@ h1, h2, h3, h4, h5, h6 { margin-bottom: 15px; }
 .btn.invert:disabled:hover { background-color: #b9b9b9; }
 
 /*--[Piano]--*/
-div.btn-piano { display: inline-block; }
+div.btn-piano {
+	display: inline-block;
+
+	margin: 2px 3px;
+}
 
 div.btn-piano.vertical div.buttons {
 	display: flex;
@@ -455,12 +466,12 @@ div.btn-piano div.buttons .btn {
 	border-radius: 0px;
 }
 
-div.btn-piano .btn:first-child {
+div.btn-piano div.buttons .btn:first-child {
 	border-top-left-radius: 3px;
 	border-bottom-left-radius: 3px;
 }
 
-div.btn-piano .btn:last-child {
+div.btn-piano div.buttons .btn:last-child {
 	border-top-right-radius: 3px;
 	border-bottom-right-radius: 3px;
 }
