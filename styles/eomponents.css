@@ -137,7 +137,7 @@ h1, h2, h3, h4, h5, h6 { margin-bottom: 15px; }
 
 	overflow: hidden;
 	cursor: pointer;
-	
+
 	user-select: none;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -1408,13 +1408,17 @@ div.fold .fold-footer {
 }
 
 div.fold .fold-thumbnail {
+	display: flex;
+
 	width: 100%;
-	overflow-y: auto;
+	max-height: 600px;
+
+	overflow: hidden;
 }
 
 div.fold .fold-thumbnail > img {
 	width: 100%;
-	height: 250px;
+	height: 100%;
 }
 /* #endregion */
 
