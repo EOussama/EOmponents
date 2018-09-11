@@ -1,23 +1,22 @@
-div.card {
-    position: relative;
-
-    width: 300px;
-    height: 250px;
-
-    border: 1.5px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.3);
+main {
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
-div.card > span {
-    position: absolute;
+main > div {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 100px;
+    box-sizing: border-box;
+    background-image: url(https://previews.123rf.com/images/pzaxe/pzaxe1309/pzaxe130900085/22386825-vector-seamless-geometric-simple-pattern-gray-abstract-background-for-design.jpg);
+}
 
-    top: 50%;
-    left: 50%;
-
-    font-size: 50px;
-    font-weight: bold;
-    color: rgba(172, 172, 172, 0.589);
-
-    user-select: none;
-    transform: translate(-50%, -50%);
+div.box {
+    width: 120px;
+    height: 120px;
+    border: 1px solid rgba(100, 100, 100);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    border-radius: 3px;
 }
