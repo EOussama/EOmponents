@@ -4,15 +4,6 @@ main {
     overflow-x: hidden;
 }
 
-main > div {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 100px;
-    box-sizing: border-box;
-    background-image: url(https://previews.123rf.com/images/pzaxe/pzaxe1309/pzaxe130900085/22386825-vector-seamless-geometric-simple-pattern-gray-abstract-background-for-design.jpg);
-}
-
 div.box {
     width: 120px;
     height: 120px;

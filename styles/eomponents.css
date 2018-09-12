@@ -1,4 +1,14 @@
-/* #region Fonts */
+/*
+
+	@name:			EOmponents
+	@author:		Eoussama
+	@verison:		1.0.0
+	@description:	A light responsive CSS library.
+	@repository:	https://github.com/Eoussama/Eomponents
+
+*/
+
+/* #region 	Fonts */
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
@@ -6,7 +16,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100");
 /* #endregion */
 
-/* #region Colors */
+/* #region Globals */
 :root {
 	--color-light-weak: rgba(255, 255, 255, .65);
 	--color-light-light: rgb(255, 255, 255);
@@ -80,16 +90,87 @@
 	--color-brown-dark: #744121;
 	--color-brown-strong: #341c0c;
 }
-/* #endregion */
 
 * {
-	padding: 0px;
-	margin: 0px;
-
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	line-height: 1.7rem;
+	margin: 0;
+	padding: 0;
+}
+/* #endregion */
+
+/* #region Layout*/
+/* 
+	Device = Desktops
+	Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+	.container {
+		padding: 25px 150px;
+	}
 }
 
-.container {
-	padding: 50px;
+/* 
+	Device = Laptops, Desktops
+	Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+	.container {
+		padding: 25px 120px;
+	}
 }
+
+/* 
+	Device = Tablets, Ipads (portrait)
+	Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+	.container {
+		padding: 25px 100px;
+	}
+}
+
+/* 
+	Device = Tablets, Ipads (landscape)
+	Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	.container {
+		padding: 25px 115px;
+	}
+}
+
+/* 
+	Device = Low Resolution Tablets, Mobiles (Landscape)
+	Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+	.container {
+		padding: 25px 50px;
+	}
+}
+
+/* 
+	Device = Most of the Smartphones Mobiles (Portrait)
+	Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+	.container {
+		padding: 20px 30px;
+	}
+}
+
+/* 
+	Device = Even smaller devices
+	Screen = B/w 320px to 479px
+*/
+@media (max-width: 319px) {
+	.container {
+		padding: 15px 20px;
+	}
+}
+/* #endregion */
+
+/* #region Text */
+
+/* #endregion */
