@@ -151,15 +151,17 @@ html, body {
 
 /* Column alignment*/
 .col.col-left {
-	align-self: flex-start;
+	justify-self: left;
+	margin-right: auto;
 }
 
 .col.col-center {
-	align-self: center;
+	justify-self: center;
 }
 
 .col.col-right {
-	align-self: flex-end;
+	justify-self: flex-end;
+	margin-left: auto;
 }
 
 .col.col-top {
