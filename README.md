@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="150" src="src/assets/img/logo.svg" />
+    <img width="150" src="src/docs/assets/img/logo.svg" />
     <h1 align="center">EOmponents</h1>
 </p>
 
