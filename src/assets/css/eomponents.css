@@ -16,11 +16,12 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100");
 
 * {
-	color: var(--color-dark);
+	color: inherit;
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 p {
+	color: var(--color-dark);
 	line-height: 1.7rem;
 }
 
@@ -748,13 +749,13 @@ table.table td {
 	padding: 10px;
 }
 
-table.table td.active, table.table tr.active {
+table.table th.active, table.table td.active, table.table tr.active {
 	background-color: var(--color-light-dark) !important;
 	font-weight: bold;
 }
 
 table.table.border {
-	border: 1px solid var(--color-light);
+	border: 1px solid var(--color-dark-weak);
 	border-radius: 1px;
 	box-shadow: 0px 1px 1px var(--color-light);
 }
@@ -763,4 +764,111 @@ table.table.stripped tr:nth-child(even):not(:first-child) {
 	background-color: var(--color-light);
 }
 
+table.table.light {
+	color: var(--color-dark);
+	background-color: var(--color-light);
+}
+
+table.table.gray {
+	color: var(--color-light);
+	background-color: var(--color-gray);
+}
+
+table.table.dark {
+	color: var(--color-light-weak);
+	background-color: var(--color-dark);
+}
+
+table.table.blue {
+	color: var(--color-light);
+	background-color: var(--color-blue);
+}
+
+table.table.aqua {
+	color: var(--color-light);
+	background-color: var(--color-aqua);
+}
+
+table.table.green {
+	color: var(--color-light);
+	background-color: var(--color-green);
+}
+
+table.table.yellow {
+	color: var(--color-light);
+	background-color: var(--color-yellow);
+}
+
+table.table.orange {
+	color: var(--color-light);
+	background-color: var(--color-orange);
+}
+
+table.table.red {
+	color: var(--color-light);
+	background-color: var(--color-red);
+}
+
+table.table.pink {
+	color: var(--color-light);
+	background-color: var(--color-pink);
+}
+
+table.table.violet {
+	color: var(--color-light);
+	background-color: var(--color-violet);
+}
+
+table.table.brown {
+	color: var(--color-light);
+	background-color: var(--color-brown);
+}
+
+table.table.light tr:not(:last-child) {
+	border-bottom: 1px solid var(--color-light-dark);
+}
+
+table.table.gray tr:not(:last-child) {
+	border-bottom: 1px solid var(--color-gray-dark);
+}
+
+table.table.dark tr:not(:last-child) {
+	border-bottom: 1px solid var(--color-dark-dark);
+}
+
+table.table.blue tr:not(:last-child) {
+	border-bottom: 1px solid var(--color-blue-dark);
+}
+
+table.table.aqua tr:not(:last-child) {
+	border-bottom: 1px solid var(--color-aqua-dark);
+}
+
+table.table.green tr:not(:last-child) {
+	border-bottom: 1px solid var(--color-green-dark);
+}
+
+table.table.yellow tr:not(:last-child) {
+	border-bottom: 1px solid var(--color-yellow-dark);
+}
+
+table.table.orange tr:not(:last-child) {
+	border-bottom: 1px solid var(--color-orange-dark);
+}
+
+table.table.red tr:not(:last-child) {
+	border-bottom: 1px solid var(--color-red-dark);
+}
+
+table.table.pink tr:not(:last-child) {
+	border-bottom: 1px solid var(--color-pink-dark);
+}
+
+table.table.violet tr:not(:last-child) {
+	border-bottom: 1px solid var(--color-violet-dark);
+}
+
+table.table.brown tr:not(:last-child) {
+	border-bottom: 1px solid var(--color-brown-dark);
+}
 /* #endregion */
