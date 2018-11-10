@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/EOussama/EOmponents/issues"
   },
-  "homepage": "https://github.com/EOussama/EOmponents#readme"
+  "homepage": "https://github.com/EOussama/EOmponents#readme",
+  "devDependencies": {
+    "less": "^3.8.1"
+  }
 }
