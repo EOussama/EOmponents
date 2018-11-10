@@ -1,4 +1,3 @@
-index.html
-/images/thumbs/
-/scripts/main.js
-/styles/main.css
+*.html
+/js/main.js
+/css/main.css
