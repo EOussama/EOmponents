@@ -1,7 +1,7 @@
 {
   "name": "eomponents",
   "version": "1.0.0",
-  "description": "A responsive CSS stylesheet focusing on flat design.",
+  "description": "A flat and responsive CSS stylesheet.",
   "main": "src/less/main.less",
   "scripts": {
     "build": "echo \"Error: no test specified\" && exit 1"
