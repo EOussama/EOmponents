@@ -4,7 +4,7 @@
 </p>
 
 ## Description
-A minimalistic responsive CSS library focusing on flat-ish design.
+A responsive CSS stylesheet focusing on flat design.
 
 ## Credits
 The logo used was created by [aripadrian](https://dribbble.com/aripadrian) under the [Attribution 3.0 Unported (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/) license. _No changes wzere made_.
