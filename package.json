@@ -4,7 +4,8 @@
   "description": "A flat and responsive CSS stylesheet.",
   "main": "src/less/main.less",
   "scripts": {
-    "build": "node ./node_modules/less/bin/lessc ./src/less/eomponents.less ./src/dist/css/eomponents.css"
+    "build": "node ./node_modules/less/bin/lessc ./src/less/eomponents.less ./src/dist/css/eomponents.css",
+    "w-build": "node ./node_modules/less-watch-compiler/dist/less-watch-compiler.js ./src/less ./src/dist/css eomponents.less"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/EOussama/EOmponents#readme",
   "devDependencies": {
-    "less": "^3.8.1"
+    "less": "^3.8.1",
+    "less-watch-compiler": "^1.13.0"
   }
 }
