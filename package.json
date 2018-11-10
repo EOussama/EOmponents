@@ -4,7 +4,7 @@
   "description": "A flat and responsive CSS stylesheet.",
   "main": "src/less/main.less",
   "scripts": {
-    "build": "echo \"Error: no test specified\" && exit 1"
+    "build": "node ./node_modules/less/bin/lessc .src/less/eomponents.less ./src/dist/css/eomponents.css"
   },
   "repository": {
     "type": "git",
