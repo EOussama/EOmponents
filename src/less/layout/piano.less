@@ -1,0 +1,49 @@
+div.piano {
+    display: inline-block;
+    margin: 2px 3px;
+    
+    & div.btns {
+        display: flex;
+        flex-direction: row;
+
+        & .btn {
+            border-radius: 0px;
+            margin: 0;
+
+            &:first-child {
+                border-bottom-left-radius: 3px;
+                border-top-left-radius: 3px;
+            }
+
+            &:last-child {
+	            border-bottom-right-radius: 3px;
+                border-top-right-radius: 3px;
+            }
+        }
+    }
+
+    &.vertical {
+        & div.btns {
+            flex-direction: column;
+
+            & .btn {
+                border-radius: 0px;
+                margin: 0;
+    
+                &:first-child {
+                    border-bottom-left-radius: 3px;
+                    border-top-left-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                    border-top-right-radius: 3px;
+                }
+    
+                &:last-child {
+                    border-bottom-left-radius: 3px;
+                    border-top-left-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                    border-top-right-radius: 3px;
+                }
+            }
+        }
+    }
+}

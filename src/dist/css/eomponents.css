@@ -1777,3 +1777,42 @@ body {
   padding: 20px;
 }
 /* #endregion */
+div.piano {
+  display: inline-block;
+  margin: 2px 3px;
+}
+div.piano div.btns {
+  display: flex;
+  flex-direction: row;
+}
+div.piano div.btns .btn {
+  border-radius: 0px;
+  margin: 0;
+}
+div.piano div.btns .btn:first-child {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+div.piano div.btns .btn:last-child {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+div.piano.vertical div.btns {
+  flex-direction: column;
+}
+div.piano.vertical div.btns .btn {
+  border-radius: 0px;
+  margin: 0;
+}
+div.piano.vertical div.btns .btn:first-child {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+div.piano.vertical div.btns .btn:last-child {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
