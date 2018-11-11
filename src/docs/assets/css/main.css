@@ -7,27 +7,22 @@
 /* #region card */
 
 div.card {
-    position: relative;
-
-    width: 300px;
-    height: 250px;
-
     border: 1.5px solid rgba(0, 0, 0, 0.3);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.3);
+    height: 250px;
+    position: relative;
+    width: 300px;
 }
 
 div.card > span {
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-
+    color: rgba(172, 172, 172, 0.589);
     font-size: 50px;
     font-weight: bold;
-    color: rgba(172, 172, 172, 0.589);
-
-    user-select: none;
+    left: 50%;
+    position: absolute;
+    top: 50%;
     transform: translate(-50%, -50%);
+    user-select: none;
 }
 
 /* #endregion */
