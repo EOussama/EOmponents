@@ -1,0 +1,13 @@
+hr {
+    color: @colors[dark];
+    background-color: currentColor;
+    border: 0;
+    border-radius: 3px;
+    height: 2px;
+
+    #color.adapt-colors(color);
+
+    &.fade {
+        background: linear-gradient(to left, transparent, currentColor, transparent);
+    }
+}

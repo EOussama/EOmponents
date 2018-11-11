@@ -1,0 +1,358 @@
+#column() {
+	.fill-column() {
+		align-self: auto;
+		flex: 1;
+		justify-self: auto;
+		width: 100%;
+	}
+
+	/* #region gapping */
+	
+	// Add spacing between all direct children for large screens.
+	.large-gapping() {
+		&-gap-1 > .col:not(:first-of-type) {
+			margin-left: 1rem;
+		}
+
+		&-gap-2 > .col:not(:first-of-type) {
+			margin-left: 2rem;
+		}
+
+		&-gap-3 > .col:not(:first-of-type) {
+			margin-left: 3rem;
+		}
+
+		&-gap-4 > .col:not(:first-of-type) {
+			margin-left: 4rem;
+		}
+
+		&-gap-5 > .col:not(:first-of-type) {
+			margin-left: 5rem;
+		}
+
+		&-gap-6 > .col:not(:first-of-type) {
+			margin-left: 6rem;
+		}
+	}
+
+	// Add spacing between all direct children for small screens.
+	.small-gapping() {
+		&-gap-1 > .col {
+			margin-left: 0rem !important;
+
+			&:not(:first-of-type) {
+				margin-top: 1rem;
+			}
+		}
+
+		&-gap-2 > .col {
+			margin-left: 0rem !important;
+
+			&:not(:first-of-type) {
+				margin-top: 2rem;
+			}
+		}
+
+		&-gap-3 > .col {
+			margin-left: 0rem !important;
+
+			&:not(:first-of-type) {
+				margin-top: 3rem;
+			}
+		}
+
+		&-gap-4 > .col {
+			margin-left: 0rem !important;
+
+			&:not(:first-of-type) {
+				margin-top: 4rem;
+			}
+		}
+
+		&-gap-5 > .col {
+			margin-left: 0rem !important;
+
+			&:not(:first-of-type) {
+				margin-top: 5rem;
+			}
+		}
+
+		&-gap-6 > .col {
+			margin-left: 0rem !important;
+
+			&:not(:first-of-type) {
+				margin-top: 6rem;
+			}
+		}
+	}
+
+	// Add spacing between all direct children for row display.
+	.rows-gapping() {
+		&.cols-gap-1 {
+			.col {
+				margin-left: 0;
+
+				&:not(:first-of-type) {
+					margin-top: 1rem;
+				}
+			}
+		}
+		
+		&.cols-gap-2 {
+			.col {
+				margin-left: 0;
+				
+				&:not(:first-of-type) {
+					margin-top: 2rem;
+				}
+			}
+		}
+		
+		&.cols-gap-3 {
+			.col {
+				margin-left: 0;
+				
+				&:not(:first-of-type) {
+					margin-top: 3rem;
+				}
+			}
+		}
+		
+		&.cols-gap-4 {
+			.col {
+				margin-left: 0;
+				
+				&:not(:first-of-type) {
+					margin-top: 4rem;
+				}
+			}
+		}
+		
+		&.cols-gap-5 {
+			.col {
+				margin-left: 0;
+				
+				&:not(:first-of-type) {
+					margin-top: 5rem;
+				}
+			}
+		}
+		
+		&.cols-gap-6 {
+			.col {
+				margin-left: 0;
+				
+				&:not(:first-of-type) {
+					margin-top: 6rem;
+				}
+			}
+		}
+	}
+
+	/* #endregion */
+}
+
+.cols {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+	width: 100%;
+
+    @media @desktop {
+		#column.large-gapping();
+    }
+
+    @media @laptop {
+		#column.large-gapping();
+	}
+	
+	@media @tablet-land {
+		#column.large-gapping();
+    }
+
+    @media @tablet-port {
+		flex-direction: column;
+
+		& > .col {
+			#column.fill-column();
+		}
+
+		#column.small-gapping();
+    }    
+
+    @media @mobile-land {
+		flex-direction: column;
+
+		& > .col {
+			#column.fill-column();
+		}
+		
+		#column.small-gapping();
+    }
+
+    @media @mobile-port {
+		flex-direction: column;
+
+		& > .col {
+			#column.fill-column();
+		}
+
+		#column.small-gapping();
+    }
+
+    @media @small-devices {
+		flex-direction: column;
+
+		& > .col {
+			#column.fill-column();
+		}
+
+		#column.small-gapping();
+    }
+
+    /* #region alignment */
+
+	// Align all direct children to the left.
+    &-right {
+        justify-content: flex-end;
+    }
+
+	// Align all direct children to the center.
+    &-center {
+        justify-content: center;
+    }
+
+	// Align all direct children to the left.
+    &-left {
+        justify-content: flex-start;
+    }
+
+	// Align all direct children to the top.
+    &-top {
+        align-items: flex-start;
+    }
+	
+	// Align all direct children to the middle.
+    &-middle {
+        align-items: center;
+    }
+	
+	// Align all direct children to the bottom.
+    &-bottom {
+        align-items: flex-end;
+    }
+
+    /* #endregion */
+
+    /* #region sizing */
+
+	// Make all direct column children the same size.
+    &-unify {
+        justify-content: stretch;
+
+        .col {
+            flex: 1;
+        }
+    }
+
+	// Have children wrap when needed.
+    &-auto {
+        flex-wrap: wrap;
+    }
+
+    /* #endregion */
+
+    /* #region rows */
+
+    &-rows {
+        flex-direction: column;
+
+		&.cols-unify > .col {
+            #column.fill-column();
+		}
+
+		#column.rows-gapping();
+
+		/* #region alignment */
+
+		// Align all direct children to the right.
+        &.cols-right {
+            align-items: flex-end;
+        }
+		
+		// Align all direct children to the center.
+        &.cols-center {
+            align-items: center;
+        }
+		
+		// Align all direct children to the left.
+        &.cols-left {
+            align-items: flex-start;
+        }
+
+		/* #endregion */
+    }
+
+    /* #endregion */
+
+	/* #region column */
+
+	.col {
+		/* #region alignment */
+
+		&-right {
+			justify-self: flex-end;
+			margin-left: auto;
+		}
+		
+		&-center, &-middle {
+			align-self: center;
+		}
+		
+		&-left {
+			justify-self: left;
+			margin-right: auto;
+		}
+		
+		&-top {
+			align-self: flex-start;
+		}
+		
+		&-bottom {
+			align-self: flex-end;
+		}
+	
+		/* #endregion */	
+	
+		/* #region sizing */
+		&-1 {
+			flex: 1 !important;
+		}
+	
+		&-2 {
+			flex: 2 !important;
+		}
+	
+		&-3 {
+			flex: 3 !important;
+		}
+	
+		&-4 {
+			flex: 4 !important;
+		}
+	
+		&-5 {
+			flex: 5 !important;
+		}
+	
+		&-6 {
+			flex: 6 !important;
+		}
+	
+		/* #endregion */
+	}
+
+	/* #endregion */
+}

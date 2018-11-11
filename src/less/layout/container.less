@@ -1,0 +1,53 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+/* #region container */
+// Tides up an element by adding some padding.
+
+.container {
+    box-sizing: border-box;
+    padding: 25px 150px;
+    
+    @media @desktop {
+        padding: 25px 150px;
+    }
+
+    @media @laptop {
+        padding: 25px 120px;
+    }
+
+    @media @tablet-port {
+        padding: 25px 100px;
+    }
+
+    @media @tablet-land {
+        padding: 25px 115px;
+    }
+
+    @media @mobile-land {
+        padding: 25px 50px;
+    }
+
+    @media @mobile-port {
+        padding: 20px 30px;
+    }
+
+    @media @small-devices {
+        padding: 15px 20px;
+    }
+}
+
+/* #endregion */
+
+/* #region content */
+// Adds some padding to an element to offset
+// the content from the border.
+
+.content {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* #endregion */

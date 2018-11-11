@@ -1,0 +1,85 @@
+.adapt-colors() {
+    each(@colors, {
+        &.@{key} {
+            & td, & th {
+                #color.set-comp-color(@value);
+            }
+            
+            background-color: @value;
+        }
+
+        &.@{key} tr:not(:last-child) {
+            border-bottom: 1px solid darken(@value, 3%);
+        }
+
+        &.@{key} th {
+            background-color: darken(@value, 8%);
+        }
+
+        &.@{key} th, &.@{key} td, &.@{key} tr {
+            &.active {
+                background-color: darken(@value, 5%) !important;
+                font-weight: bold;
+            }
+        }
+
+        &.@{key}.border {
+            border: 1px solid @value;
+            border-radius: 1px;
+            box-shadow: 0px 1px 1px @value;
+        }
+
+        &.@{key}.strips tr:nth-child(odd):not(:first-child) {
+            background-color: lighten(@value, 2%);
+        }
+    });
+}
+
+table {
+    color: @colors[dark];
+    border-spacing: 0;
+    margin: 5px 0px;
+    
+    &.table {
+        box-sizing: border-box;
+        text-align: center;
+        width: 100%;
+
+        .adapt-colors();
+
+        & tr:not(:last-child) {
+            border-bottom: 1px solid @colors[light];
+        }
+
+        & th {
+            background-color: @colors[light];
+            padding: 15px 0px;
+        }
+
+        & td {
+            margin: 0;
+            padding: 10px;
+        }
+
+        & th, & td, & tr {
+            &.active {
+                background-color: darken(@colors[light], 10%) !important;
+                font-weight: bold;
+            }
+        }
+
+        &.sep {
+            border-collapse: collapse;
+        }
+
+        &.border {
+            border: 1px solid @colors[light];
+            border-radius: 1px;
+            box-shadow: 0px 1px 1px @colors[light];
+        }
+
+        &.strips tr:nth-child(odd):not(:first-child) {
+            background-color: lighten(@colors[light], 2%);
+        }
+    }
+}

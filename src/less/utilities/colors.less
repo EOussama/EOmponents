@@ -1,14 +1,66 @@
+#color() {
+    /* #region adapt-colors */
+    // Sets the color of a property to all supported colors.
+    
+    // @property: the targeted property.
+    .adapt-colors(@property) {
+        each(@colors, {
+            &.@{key} {
+                @{property}: @value;
+            }
+        });
+    }
+
+    // @property: the targeted property.
+    // @extra: extra values.
+    .adapt-colors(@property, @extra) {
+        each(@colors, {
+            &.@{key} {
+                @{property}: @extra @value;
+            }
+        });
+    }
+
+    // @property: the targeted property.
+    // @per: the darkening percentage.
+    // @extra: extra values.
+    .adapt-colors-darken(@property, @per, @extra) {
+        each(@colors, {
+            &.@{key} {
+                @{property}: @extra darken(@value, @per);
+            }
+        });
+    }
+
+    /* #endregion */
+
+    /* #region set-comp-color */
+    // Sets the compatible color.
+
+    // @color: the targeted color.
+    .set-comp-color(@color) when (lightness(@color) < 50%) {
+        color: darken(@colors[light], 25%);
+    }
+    
+    // @color: the targeted color.
+    .set-comp-color(@color) when (lightness(@color) >= 50%), (@color = #f8b806), (@color = #904d24), (@color = #773aac) {
+        color: darken(@color, 30%);
+    }
+
+    /* #endregion */
+}
+
 @colors: {
-    color-light: #f5f5f5;
-    color-dark: #1f2931;
-    color-gray: #808080;
-    color-blue: #428bca;
-    color-aqua: #5bc0de;
-    color-green: #5cb85c;
-    color-yellow: #f8b806;;
-    color-orange: #ff5100;
-    color-red: #e73232;
-    color-pink: #f25bc3;
-    color-violet: #773aac;
-    color-brown: #904d24;
+    light: #f5f5f5;
+    dark: #1f2931;
+    gray: #808080;
+    blue: #428bca;
+    aqua: #5bc0de;
+    green: #5cb85c;
+    yellow: #f8b806;
+    orange: #ff5100;
+    red: #e73232;
+    pink: #f25bc3;
+    violet: #773aac;
+    brown: #904d24;
 };
