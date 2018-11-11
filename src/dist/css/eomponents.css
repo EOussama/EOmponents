@@ -7,3 +7,430 @@
 	@repository:	https://github.com/Eoussama/Eomponents
 
 */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(https://fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1MmgVxIIzc.ttf) format('truetype');
+}
+* {
+  color: #1f2931;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+p {
+  line-height: 1.7rem;
+}
+/* #region screen sizes */
+/* 
+    Device = Even smaller devices
+    Screen = B/w 319px to 479px
+*/
+/* 
+    Device = Most of the Smartphones Mobiles (Portrait)
+    Screen = B/w 320px to 480px
+*/
+/* 
+    Device = Low Resolution Tablets, Mobiles (Landscape)
+    Screen = B/w 481px to 767px
+*/
+/* 
+    Device = Tablets, Ipads (portrait)
+    Screen = B/w 768px to 1024px
+*/
+/* 
+    Device = Tablets, Ipads (landscape)
+    Screen = B/w 768px to 1024px
+*/
+/* 
+	Device = Laptops, Desktops
+	Screen = B/w 1025px to 1280px
+*/
+/* 
+    Device = Desktops
+    Screen = 1281px to higher resolution desktops
+*/
+/* #endregion */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+/* #region container */
+.container {
+  box-sizing: border-box;
+  padding: 25px 150px;
+}
+@media screen and (min-width: 1281px) {
+  .container {
+    padding: 25px 150px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    padding: 25px 120px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 25px 100px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .container {
+    padding: 25px 115px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .container {
+    padding: 25px 50px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .container {
+    padding: 20px 30px;
+  }
+}
+@media screen and (max-width: 319px) {
+  .container {
+    padding: 15px 20px;
+  }
+}
+/* #endregion */
+/* #region content */
+.content {
+  box-sizing: border-box;
+  padding: 20px;
+}
+/* #endregion */
+/* #region columns */
+.cols {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  /* #region alignment */
+  /* #endregion */
+  /* #region sizing */
+  /* #endregion */
+  /* #region rows */
+  /* #endregion */
+}
+@media screen and (min-width: 1281px) {
+  .cols-gap-1 > .col {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .cols-gap-2 > .col {
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  .cols-gap-3 > .col {
+    margin-left: 3rem;
+    margin-top: 3rem;
+  }
+  .cols-gap-4 > .col {
+    margin-left: 4rem;
+    margin-top: 4rem;
+  }
+  .cols-gap-5 > .col {
+    margin-left: 5rem;
+    margin-top: 5rem;
+  }
+  .cols-gap-6 > .col {
+    margin-left: 6rem;
+    margin-top: 6rem;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .cols .cols.cols-gap-1 > .col {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .cols .cols.cols-gap-2 > .col {
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  .cols .cols.cols-gap-3 > .col {
+    margin-left: 3rem;
+    margin-top: 3rem;
+  }
+  .cols .cols.cols-gap-4 > .col {
+    margin-left: 4rem;
+    margin-top: 4rem;
+  }
+  .cols .cols.cols-gap-5 > .col {
+    margin-left: 5rem;
+    margin-top: 5rem;
+  }
+  .cols .cols.cols-gap-6 > .col {
+    margin-left: 6rem;
+    margin-top: 6rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .cols .cols.cols-gap-1 > .col {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .cols .cols.cols-gap-2 > .col {
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  .cols .cols.cols-gap-3 > .col {
+    margin-left: 3rem;
+    margin-top: 3rem;
+  }
+  .cols .cols.cols-gap-4 > .col {
+    margin-left: 4rem;
+    margin-top: 4rem;
+  }
+  .cols .cols.cols-gap-5 > .col {
+    margin-left: 5rem;
+    margin-top: 5rem;
+  }
+  .cols .cols.cols-gap-6 > .col {
+    margin-left: 6rem;
+    margin-top: 6rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .cols .cols.cols-gap-1 > .col {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .cols .cols.cols-gap-2 > .col {
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  .cols .cols.cols-gap-3 > .col {
+    margin-left: 3rem;
+    margin-top: 3rem;
+  }
+  .cols .cols.cols-gap-4 > .col {
+    margin-left: 4rem;
+    margin-top: 4rem;
+  }
+  .cols .cols.cols-gap-5 > .col {
+    margin-left: 5rem;
+    margin-top: 5rem;
+  }
+  .cols .cols.cols-gap-6 > .col {
+    margin-left: 6rem;
+    margin-top: 6rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .cols {
+    flex-direction: column;
+  }
+  .cols .cols > .col {
+    align-self: auto;
+    flex: 1;
+    justify-self: auto;
+    width: 100%;
+  }
+  .cols .cols.cols-gap-1 > .col {
+    margin-top: 1rem;
+  }
+  .cols .cols.cols-gap-2 > .col {
+    margin-top: 2rem;
+  }
+  .cols .cols.cols-gap-3 > .col {
+    margin-top: 3rem;
+  }
+  .cols .cols.cols-gap-4 > .col {
+    margin-top: 4rem;
+  }
+  .cols .cols.cols-gap-5 > .col {
+    margin-top: 5rem;
+  }
+  .cols .cols.cols-gap-6 > .col {
+    margin-top: 6rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .cols {
+    flex-direction: column;
+  }
+  .cols .cols > .col {
+    align-self: auto;
+    flex: 1;
+    justify-self: auto;
+    width: 100%;
+  }
+  .cols .cols.cols-gap-1 > .col {
+    margin-top: 1rem;
+  }
+  .cols .cols.cols-gap-2 > .col {
+    margin-top: 2rem;
+  }
+  .cols .cols.cols-gap-3 > .col {
+    margin-top: 3rem;
+  }
+  .cols .cols.cols-gap-4 > .col {
+    margin-top: 4rem;
+  }
+  .cols .cols.cols-gap-5 > .col {
+    margin-top: 5rem;
+  }
+  .cols .cols.cols-gap-6 > .col {
+    margin-top: 6rem;
+  }
+}
+@media screen and (max-width: 319px) {
+  .cols {
+    flex-direction: column;
+  }
+  .cols .cols > .col {
+    align-self: auto;
+    flex: 1;
+    justify-self: auto;
+    width: 100%;
+  }
+  .cols .cols.cols-gap-1 > .col {
+    margin-top: 1rem;
+  }
+  .cols .cols.cols-gap-2 > .col {
+    margin-top: 2rem;
+  }
+  .cols .cols.cols-gap-3 > .col {
+    margin-top: 3rem;
+  }
+  .cols .cols.cols-gap-4 > .col {
+    margin-top: 4rem;
+  }
+  .cols .cols.cols-gap-5 > .col {
+    margin-top: 5rem;
+  }
+  .cols .cols.cols-gap-6 > .col {
+    margin-top: 6rem;
+  }
+}
+.cols-right {
+  justify-content: flex-end;
+}
+.cols-center {
+  justify-content: center;
+}
+.cols-left {
+  justify-content: flex-start;
+}
+.cols-top {
+  align-items: flex-start;
+}
+.cols-middle {
+  align-items: center;
+}
+.cols-bottom {
+  align-items: flex-end;
+}
+.cols-unify {
+  justify-content: stretch;
+}
+.cols-unify .col {
+  flex: 1;
+}
+.cols-auto {
+  flex-wrap: wrap;
+}
+.cols-rows {
+  flex-direction: column;
+  /* #region gaping */
+  /* #endregion */
+}
+.cols-rows.cols-right {
+  align-items: flex-end;
+}
+.cols-rows.cols-center {
+  align-items: center;
+}
+.cols-rows.cols-left {
+  align-items: flex-start;
+}
+.cols-rows.cols-unify > .col {
+  align-self: auto;
+  flex: 1;
+  justify-self: auto;
+  width: 100%;
+}
+.cols-rows.cols-gap-1 > .col {
+  margin-top: 1rem;
+  margin-left: 0;
+}
+.cols-rows.cols-gap-2 > .col {
+  margin-top: 2rem;
+  margin-left: 0;
+}
+.cols-rows.cols-gap-3 > .col {
+  margin-top: 3rem;
+  margin-left: 0;
+}
+.cols-rows.cols-gap-4 > .col {
+  margin-top: 4rem;
+  margin-left: 0;
+}
+.cols-rows.cols-gap-5 > .col {
+  margin-top: 5rem;
+  margin-left: 0;
+}
+.cols-rows.cols-gap-6 > .col {
+  margin-top: 6rem;
+  margin-left: 0;
+}
+.col {
+  /* #region alignment */
+  /* #endregion */
+  /* #region sizing */
+  /* #endregion */
+}
+.col-right {
+  justify-self: flex-end;
+  margin-left: auto;
+}
+.col-center,
+.col-middle {
+  align-self: center;
+}
+.col-left {
+  justify-self: left;
+  margin-right: auto;
+}
+.col-top {
+  align-self: flex-start;
+}
+.col-bottom {
+  align-self: flex-end;
+}
+.col-1 {
+  flex: 1 !important;
+}
+.col-2 {
+  flex: 2 !important;
+}
+.col-3 {
+  flex: 3 !important;
+}
+.col-4 {
+  flex: 4 !important;
+}
+.col-5 {
+  flex: 5 !important;
+}
+.col-6 {
+  flex: 6 !important;
+}
+/* #endregion */

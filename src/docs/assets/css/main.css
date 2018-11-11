@@ -1,0 +1,10 @@
+.box {
+    border: 1px solid black;
+    box-sizing: border-box;
+    max-width: 300px;
+}
+
+.outliner {
+    border: 1px solid black;
+    height: 500px;
+}
