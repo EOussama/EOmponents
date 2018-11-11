@@ -1303,7 +1303,7 @@ table.table.border {
   border-radius: 1px;
   box-shadow: 0px 1px 1px #f5f5f5;
 }
-table.table.strips tr:nth-child(odd):not(:first-child) {
+table.table.strips tr:nth-child(even):not(:first-child) {
   background-color: #fafafa;
 }
 /* #region screen sizes */
