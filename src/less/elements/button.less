@@ -1,0 +1,129 @@
+#button() {
+    // Adds button click effect.
+    .button-click() {
+        &:active {
+            box-shadow: @shadow[x] (@shadow[y] - 1.5) .5px darken($background-color, 15%);
+            top: 1.5px;
+        }
+    }
+    
+    // Adds all other color variants.
+    .adapt-colors() {
+        each(@colors, {
+            &.@{key} {
+                #color.set-comp-color(@value);
+                background-color: @value;
+                box-shadow: @shadow[x] @shadow[y] @shadow[b] darken($background-color, 20%);
+            
+                &:hover {
+                    background-color: lighten(@value, 5%);
+                    box-shadow: @shadow[x] @shadow[y] @shadow[b] darken($background-color, 15%);
+                }
+    
+                #button.button-click();
+    
+                &.invert {
+                    background-color: darken(@colors[light], 10%);
+                    box-shadow: @shadow[x] @shadow[y] @shadow[b] darken($background-color, 15%);
+                    color: @value;
+        
+                    &:hover {
+                        background-color: darken(@colors[light], 5%);
+                        box-shadow: @shadow[x] @shadow[y] @shadow[b] darken($background-color, 15%);
+                    }
+            
+                    #button.button-click();
+                }
+            }
+        });
+    }
+}
+
+// Default values for the button's shadow.
+@shadow: {
+    x: 0px;
+    y: 2.5px;
+    b: 0.7px;
+};
+
+button, input[type="button"], input[type="submit"], input[type="reset"], a {
+    &.btn {
+        background-color: darken(@colors[light], 10%);
+        border: none;
+        border-radius: 3px;
+        box-shadow: @shadow[x] @shadow[y] @shadow[b] darken($background-color, 20%);
+        box-sizing: border-box;
+        color: @colors[dark];
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        outline: none;
+        overflow: hidden;
+        text-decoration: none;
+        transition-duration: .5s, .05s, .05s;
+        transition-property: background-color, box-shadow, top;
+        padding: 8px 10px;
+        position: relative;
+        user-select: none;
+        
+        #button.adapt-colors();
+
+        &:hover {
+            background-color: darken(@colors[light], 5%);
+            box-shadow: @shadow[x] @shadow[y] @shadow[b] darken($background-color, 15%);
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &.disabled {
+            box-shadow: @shadow[x] @shadow[y] @shadow[b] @colors[gray];
+            background-color: lighten(@colors[gray], 40%);
+            color: lighten(@colors[gray], 20%);
+            cursor: not-allowed;
+
+            &:hover {
+                box-shadow: @shadow[x] @shadow[y] @shadow[b] @colors[gray];
+                background-color: lighten(@colors[gray], 40%);
+            }
+
+            &:active {
+                box-shadow: @shadow[x] @shadow[y] @shadow[b] @colors[gray];
+                top: 0;
+            }
+
+            &.invert {
+                box-shadow: @shadow[x] @shadow[y] @shadow[b] @colors[gray];
+                background-color: lighten(@colors[gray], 40%);
+                color: lighten(@colors[gray], 20%);
+
+                &:hover {
+                    box-shadow: @shadow[x] @shadow[y] @shadow[b] @colors[gray];
+                    background-color: lighten(@colors[gray], 40%);
+                }
+    
+                &:active {
+                    box-shadow: @shadow[x] @shadow[y] @shadow[b] @colors[gray];
+                    top: 0;
+                }
+            }
+        }
+
+        #button.button-click();
+
+        /* #region sizing */
+
+        &.large {
+            font-size: 18px;
+            padding: 10px 13px;
+        }
+
+        &.small {
+            font-size: 13px;
+            padding: 6px 8px;
+        }
+
+        /* #endregion */
+    }
+}

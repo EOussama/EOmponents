@@ -1,38 +1,40 @@
-.adapt-colors() {
-    each(@colors, {
-        &.@{key} {
-            & td, & th {
-                #color.set-comp-color(@value);
+#table() {
+    .adapt-colors() {
+        each(@colors, {
+            &.@{key} {
+                & td, & th {
+                    #color.set-comp-color(@value);
+                }
+                
+                background-color: @value;
             }
-            
-            background-color: @value;
-        }
-
-        &.@{key} tr:not(:last-child) {
-            border-bottom: 1px solid darken(@value, 3%);
-        }
-
-        &.@{key} th {
-            background-color: darken(@value, 8%);
-        }
-
-        &.@{key} th, &.@{key} td, &.@{key} tr {
-            &.active {
-                background-color: darken(@value, 5%) !important;
-                font-weight: bold;
+    
+            &.@{key} tr:not(:last-child) {
+                border-bottom: 1px solid darken(@value, 3%);
             }
-        }
-
-        &.@{key}.border {
-            border: 1px solid @value;
-            border-radius: 1px;
-            box-shadow: 0px 1px 1px @value;
-        }
-
-        &.@{key}.strips tr:nth-child(odd):not(:first-child) {
-            background-color: lighten(@value, 2%);
-        }
-    });
+    
+            &.@{key} th {
+                background-color: darken(@value, 8%);
+            }
+    
+            &.@{key} th, &.@{key} td, &.@{key} tr {
+                &.active {
+                    background-color: darken(@value, 5%) !important;
+                    font-weight: bold;
+                }
+            }
+    
+            &.@{key}.border {
+                border: 1px solid @value;
+                border-radius: 1px;
+                box-shadow: 0px 1px 1px @value;
+            }
+    
+            &.@{key}.strips tr:nth-child(odd):not(:first-child) {
+                background-color: lighten(@value, 2%);
+            }
+        });
+    }
 }
 
 table {
@@ -45,7 +47,7 @@ table {
         text-align: center;
         width: 100%;
 
-        .adapt-colors();
+        #table.adapt-colors();
 
         & tr:not(:last-child) {
             border-bottom: 1px solid @colors[light];
