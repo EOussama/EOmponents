@@ -1,0 +1,7 @@
+#depth() {
+    // Adds depth to an element.
+    // @depth: the depth in pixels you want to apply.
+    .add-depth(@depth) {
+        box-shadow: 0px @depth (@depth * 2) darken(@colors[light], 20%);
+    }
+}

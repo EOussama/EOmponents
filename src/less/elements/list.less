@@ -1,0 +1,180 @@
+#list() {
+    // Applies the correct back color.
+    // @color: the targeted color.
+    .apply-select-back-color(@color) {
+        background-color: lighten(@color, 25%);
+    }
+
+    // Applies the correct back color.
+    // @color: the targeted color.
+    .apply-select-back-color(@color) when (@color = #f5f5f5) {
+        background-color: darken(@color, 3%);
+    }
+
+    // Applies the correct back color.
+    // @color: the targeted color.
+    .apply-active-color(@color) {
+        background-color: lighten(@color, 25%);
+    }
+
+    // Applies the correct back color.
+    // @color: the targeted color.
+    .apply-active-color(@color) when (@color = #f5f5f5) {
+        background-color: @color;
+    }
+
+    // Applies the correct active color.
+    // @color: the targeted color.
+    .apply-active-color(@color) {
+        &.active {
+            background-color: lighten(@color, 20%);
+            border-left: 5px solid @color;
+
+            &:hover {
+                background-color: lighten(@color, 15%) !important;
+                border-left-color: darken(@color, 5%) !important;
+            }
+        }
+    }
+
+    // Applies the correct active color.
+    // @color: the targeted color.
+    .apply-active-color(@color) when (@color = #f5f5f5) {
+        &.active {
+            background-color: darken(@colors[light], 10%);
+            border-left: 5px solid darken(@colors[light], 20%);
+
+            &:hover {
+                background-color: darken(@colors[light], 15%) !important;
+                border-left-color: darken(@colors[light], 25%) !important;
+            }
+        }
+    }
+
+    // Applies the correct disabled color.
+    // @color: the targeted color.
+    .apply-disabled-color(@color) {
+        &.disabled {
+            background-color: lighten(@color, 35%);
+            color: lighten(@color, 25%);
+    
+            &:hover {
+                background-color: lighten(@color, 35%) !important;
+            }
+        }
+    }
+
+    // Applies the correct disabled color.
+    // @color: the targeted color.
+    .apply-disabled-color(@color) when (@color = #f5f5f5) {
+        &.disabled {
+            background-color: lighten(@colors[gray], 60%);
+            color: lighten(@colors[gray], 25%);
+    
+            &:hover {
+                background-color: lighten(@colors[gray], 60%) !important;
+            }
+        }
+    }
+
+    // Applies all other colors.
+    .adapt-colors(@depth) {
+        each(@colors, {
+            &.@{key} {
+                li {
+                    #color.set-comp-color(@value);
+
+                    &:not(:last-of-type) {
+                        border-bottom: 1px solid lighten(@value, 25%);
+                    }
+
+                    #list.apply-disabled-color(@value);
+                    #list.apply-active-color(@value);
+                }
+
+                &.select li:hover {
+                    #list.apply-select-back-color(@value);
+                }
+                
+                background-color: lighten(@value, 30%);
+            }
+        });
+    }
+}
+
+ul, ol {
+    &.list {
+        @defaut-depth: 1px;
+
+        border-radius: 2px;
+        color: @colors[dark];
+        margin: 5px 0px;
+
+        #depth.add-depth(@defaut-depth);
+        #list.adapt-colors(@defaut-depth);
+
+        li {
+            padding: 10px;
+
+            &:not(:last-of-type)
+            {
+                border-bottom: 1px solid @colors[light];
+            }
+
+            &.active {
+                background-color: lighten(@colors[gray], 30%);
+                border-left: 5px solid @colors[gray];
+
+                &:hover {
+                    background-color: lighten(@colors[gray], 25%) !important;
+                    border-left-color: darken(@colors[gray], 5%) !important;
+                }
+            }
+
+            &.disabled {
+                background-color: lighten(@colors[gray], 40%);
+                color: lighten(@colors[gray], 25%);
+                cursor: not-allowed !important;
+
+                &:hover {
+                    background-color: lighten(@colors[gray], 40%) !important;
+                }
+            }
+        }
+
+        &.select li {
+            cursor: pointer;
+            transition-duration: .3s;
+            transition-property: background-color, border-left-color;
+            
+            &:hover {
+                background-color: @colors[light];
+            }
+        }
+
+        &.disabled, &.disabled li {
+            background-color: lighten(@colors[gray], 40%);
+            color: lighten(@colors[gray], 25%);
+            cursor: not-allowed !important;
+
+            &.select li {
+                &:not(:last-of-type) {
+                    border-bottom-width: 0;
+                }
+                
+                &:hover {
+                    background-color: lighten(@colors[gray], 40%);
+                }
+            }
+        }
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+        padding: 10px 10px 10px 25px !important;
+    }
+}
