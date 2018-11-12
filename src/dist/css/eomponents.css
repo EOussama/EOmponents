@@ -958,6 +958,10 @@ kbd.violet {
 kbd.brown {
   box-shadow: 0px 2px 0.5px #6f3c1c;
 }
+mark {
+  background-color: #fdeab3;
+  padding: 2px 5px;
+}
 table {
   color: #1f2931;
   border-spacing: 0;
