@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+    transition-duration: .5s;
+    transition-property: color;
+
+    &:link {
+        color: darken(@colors[blue], 5%);
+    }
+
+    &:visited {
+        color: @colors[violet];
+    }
+
+    &:hover {
+        color: darken(@colors[aqua], 5%);
+    }
+
+    &:active {
+        color: darken(@colors[aqua], 20%);
+    }
+}

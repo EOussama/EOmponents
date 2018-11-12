@@ -32,6 +32,23 @@
 p {
   line-height: 1.7rem;
 }
+a {
+  text-decoration: none;
+  transition-duration: 0.5s;
+  transition-property: color;
+}
+a:link {
+  color: #357ebd;
+}
+a:visited {
+  color: #773aac;
+}
+a:hover {
+  color: #46b8da;
+}
+a:active {
+  color: #2390b0;
+}
 blockquote {
   color: #808080;
   font-style: italic;
