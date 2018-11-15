@@ -80,7 +80,7 @@ button, input[type="button"], input[type="submit"], input[type="reset"], a {
         &.disabled {
             box-shadow: @shadow[x] @shadow[y] @shadow[b] @colors[gray];
             background-color: lighten(@colors[gray], 40%);
-            color: lighten(@colors[gray], 20%);
+            color: @color-disabled;
             cursor: not-allowed;
 
             &:hover {

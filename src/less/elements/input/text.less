@@ -1,0 +1,205 @@
+#textbox() {
+    // Applies all supported colors.
+    .adapt-colors() {
+        each(@colors, {
+            &.@{key} {
+                input[type="text"] {
+                    #color.set-comp-color(@value);
+                }
+
+                border-color: lighten(@value, 10%);
+
+                &.focused {
+                    border-color: @value;
+                }
+
+                &.active {
+                    background-color: lighten(@value, 30%);
+            
+                    input[type="text"] {
+                        background-color: inherit;
+                    }
+
+                    label {
+                        color: darken(@value, 10%);
+                    }
+
+                    &.disabled  label {
+                        color: @color-disabled !important;
+                    }
+                }
+
+                &.alert::after {
+                    color: darken(@value, 10%);
+                }
+            }
+        });
+    }
+}
+
+div.textbox {
+    @default-color: darken(@colors[light], 10%);
+    @default-border-width-expand: 20px;
+
+    border: 1px solid @default-color;
+    border-radius: 3px 3px 10px 3px;
+    box-sizing: border-box;
+    color: @colors[dark];
+    display: inline-block;
+    margin: 5px 3px;
+    outline: none;
+    padding: 20px 10px 10px 10px;
+    position: relative;
+    border-left: 6px solid @default-color;
+    transition-duration: .5s;
+    transition-property: border-color, border-left-width;
+
+    #depth.add-depth(1px);
+    #textbox.adapt-colors();
+
+    input[type=text] {
+        border: none;
+        font-size: 16px;
+        outline: none;
+        width: 100%;
+    }
+
+    label {
+        color: darken(@default-color, 10%);
+        font-size: 16px;
+        left: 5px;
+        margin: 0 0 0 5px;
+        padding: 0;
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        transition-duration: .2s;
+        transition-property: font-size, top;
+    }
+
+    &.placeholder-off {
+        border-left-width: @default-border-width-expand;
+
+        label {
+            font-size: 10px;
+            top: 8px;
+        }
+    }
+
+    &.focused {
+        border-color: darken(@default-color, 10%);
+
+        &.alert::after {
+            color: @colors[light];
+        }
+    }
+
+    &.disabled {
+        background-color: lighten(@color-disabled, 20%) !important;
+        border-color: @color-disabled !important;
+        color: @color-disabled !important;
+        cursor: not-allowed !important;
+
+        input[type="text"] {
+            color: transparent;
+            cursor: not-allowed !important;
+            background-color: inherit !important;
+        }
+
+        label {
+            cursor: not-allowed !important;
+        }
+    }
+
+    &.active {
+        background-color: @colors[light];
+
+        input[type="text"] {
+            background-color: inherit;
+        }
+    }
+
+    &::after {
+        content: '\26A0';
+        color: lighten(@colors[gray], 20%);
+        font-size: 20px;
+        font-weight: bold;
+        left: 0;
+        position: absolute;
+        top: 50%;
+        opacity: 0;
+        transform: translateY(-50%);
+        transition-duration: .2s, .5s, .2s, .2s;
+        transition-property: color, left, opacity, width;
+        width: 0;
+    }
+
+    &.alert {
+        border-left-width: 30px;
+        position: relative;
+        
+        &::after {
+            left: -24px;
+            opacity: 1;
+            width: 10px;
+        }
+
+        &.disabled.alert::after {
+            color: lighten(@colors[gray], 10%) !important;
+        }
+    }
+
+    /* #region sizing */
+    
+    &.small {
+        padding: 10px 5px 5px 5px;
+
+        input[type=text] {
+            font-size: 12px;
+            padding-left: 5px;
+        }
+
+        label {
+            font-size: 12px;
+        }
+
+        &.placeholder-off {
+            label {
+                font-size: 10px;
+                top: 6px;
+            }
+        }
+    }
+
+    &.large {
+        padding: 30px 20px 20px 20px;
+
+        input[type=text] {
+            font-size: 20px;
+            margin-left: -10px;
+        }
+
+        label {
+            font-size: 18px;
+        }
+
+        &.placeholder-off {
+            label {
+                font-size: 12px;
+                top: 15px;
+            }
+        }
+    }
+
+    /* #endregion */
+}
+
+
+/*
+input[type="number"]:not(:disabled):hover::-webkit-inner-spin-button { opacity: .5; }
+
+input[type="search"]::-webkit-search-cancel-button {
+	font-size: 16px;
+
+	cursor: pointer;
+}*/
