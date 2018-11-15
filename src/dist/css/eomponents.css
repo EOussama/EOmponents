@@ -1529,7 +1529,7 @@ table.table.light.border {
   border-radius: 1px;
   box-shadow: 0px 1px 1px #f5f5f5;
 }
-table.table.light.strips tr:nth-child(odd):not(:first-child) {
+table.table.light.strips tr:nth-child(even):not(:first-child) {
   background-color: #fafafa;
 }
 table.table.dark {
@@ -1556,7 +1556,7 @@ table.table.dark.border {
   border-radius: 1px;
   box-shadow: 0px 1px 1px #1f2931;
 }
-table.table.dark.strips tr:nth-child(odd):not(:first-child) {
+table.table.dark.strips tr:nth-child(even):not(:first-child) {
   background-color: #232e37;
 }
 table.table.gray {
@@ -1583,7 +1583,7 @@ table.table.gray.border {
   border-radius: 1px;
   box-shadow: 0px 1px 1px #808080;
 }
-table.table.gray.strips tr:nth-child(odd):not(:first-child) {
+table.table.gray.strips tr:nth-child(even):not(:first-child) {
   background-color: #858585;
 }
 table.table.blue {
@@ -1610,7 +1610,7 @@ table.table.blue.border {
   border-radius: 1px;
   box-shadow: 0px 1px 1px #428bca;
 }
-table.table.blue.strips tr:nth-child(odd):not(:first-child) {
+table.table.blue.strips tr:nth-child(even):not(:first-child) {
   background-color: #4a90cc;
 }
 table.table.aqua {
@@ -1637,7 +1637,7 @@ table.table.aqua.border {
   border-radius: 1px;
   box-shadow: 0px 1px 1px #5bc0de;
 }
-table.table.aqua.strips tr:nth-child(odd):not(:first-child) {
+table.table.aqua.strips tr:nth-child(even):not(:first-child) {
   background-color: #63c3e0;
 }
 table.table.green {
@@ -1664,7 +1664,7 @@ table.table.green.border {
   border-radius: 1px;
   box-shadow: 0px 1px 1px #5cb85c;
 }
-table.table.green.strips tr:nth-child(odd):not(:first-child) {
+table.table.green.strips tr:nth-child(even):not(:first-child) {
   background-color: #63bb63;
 }
 table.table.yellow {
@@ -1692,7 +1692,7 @@ table.table.yellow.border {
   border-radius: 1px;
   box-shadow: 0px 1px 1px #f8b806;
 }
-table.table.yellow.strips tr:nth-child(odd):not(:first-child) {
+table.table.yellow.strips tr:nth-child(even):not(:first-child) {
   background-color: #f9bb0f;
 }
 table.table.orange {
@@ -1719,7 +1719,7 @@ table.table.orange.border {
   border-radius: 1px;
   box-shadow: 0px 1px 1px #ff5100;
 }
-table.table.orange.strips tr:nth-child(odd):not(:first-child) {
+table.table.orange.strips tr:nth-child(even):not(:first-child) {
   background-color: #ff580a;
 }
 table.table.red {
@@ -1746,7 +1746,7 @@ table.table.red.border {
   border-radius: 1px;
   box-shadow: 0px 1px 1px #e73232;
 }
-table.table.red.strips tr:nth-child(odd):not(:first-child) {
+table.table.red.strips tr:nth-child(even):not(:first-child) {
   background-color: #e83b3b;
 }
 table.table.pink {
@@ -1773,7 +1773,7 @@ table.table.pink.border {
   border-radius: 1px;
   box-shadow: 0px 1px 1px #f25bc3;
 }
-table.table.pink.strips tr:nth-child(odd):not(:first-child) {
+table.table.pink.strips tr:nth-child(even):not(:first-child) {
   background-color: #f364c6;
 }
 table.table.violet {
@@ -1801,7 +1801,7 @@ table.table.violet.border {
   border-radius: 1px;
   box-shadow: 0px 1px 1px #773aac;
 }
-table.table.violet.strips tr:nth-child(odd):not(:first-child) {
+table.table.violet.strips tr:nth-child(even):not(:first-child) {
   background-color: #7c3db4;
 }
 table.table.brown {
@@ -1829,7 +1829,7 @@ table.table.brown.border {
   border-radius: 1px;
   box-shadow: 0px 1px 1px #904d24;
 }
-table.table.brown.strips tr:nth-child(odd):not(:first-child) {
+table.table.brown.strips tr:nth-child(even):not(:first-child) {
   background-color: #985126;
 }
 table.table tr:not(:last-child) {

@@ -30,7 +30,7 @@
                 box-shadow: 0px 1px 1px @value;
             }
     
-            &.@{key}.strips tr:nth-child(odd):not(:first-child) {
+            &.@{key}.strips tr:nth-child(even):not(:first-child) {
                 background-color: lighten(@value, 2%);
             }
         });
