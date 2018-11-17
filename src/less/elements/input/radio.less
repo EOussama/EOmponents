@@ -43,6 +43,10 @@
 div.radio {
     @default-height: 25px;
     @default-width: 50px;
+    @default-small-height: 20px;
+    @default-small-width: 40px;
+    @default-large-height: 30px;
+    @default-large-width: 60px;
 
     border-radius: 2px;
     cursor: pointer;
@@ -79,7 +83,7 @@ div.radio {
 
         &::after {
             background-color: darken(@colors[light], 25%);
-            left: (@default-width/2);
+            left: (@default-width / 2);
         }
     }
 
@@ -90,4 +94,52 @@ div.radio {
             border-radius: 12px;
         }
     }
+
+    /* #region sizing */
+
+    &.small {
+        height: @default-small-height;
+        width: @default-small-width;
+
+        &::after {
+            height: @default-small-height - 4;
+            width: (@default-small-width - 4px) / 2;
+        }
+
+        &.checked::after {
+            left: (@default-small-width / 2);
+        }
+
+        &.round {
+            border-radius: @default-small-width / 2;
+
+            &::after {
+                border-radius: @default-small-width / 2;
+            }
+        }
+    }
+
+    &.large {
+        height: @default-large-height;
+        width: @default-large-width;
+
+        &::after {
+            height: @default-large-height - 4;
+            width: (@default-large-width - 4px) / 2;
+        }
+
+        &.checked::after {
+            left: (@default-large-width / 2);
+        }
+
+        &.round {
+            border-radius: @default-large-width / 2;
+
+            &::after {
+                border-radius: @default-large-width / 2;
+            }
+        }
+    }
+
+    /* #endregion */
 }
