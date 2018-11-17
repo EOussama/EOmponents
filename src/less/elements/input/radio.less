@@ -1,0 +1,93 @@
+#radio() {
+    // Sets the compelementary color in checked state.
+    .set-comp-color(@color) {
+        background-color: @value;
+    }
+
+    // Sets the compelementary color in checked state.
+    .set-comp-color(@color) when(@color = #f5f5f5) {
+        background-color: lighten(@colors[dark], 20%);
+    }
+
+    // Sets the compelementary color in normal state.
+    .set-comp-normal-color(@color) {
+        background-color: lighten(@value, 30%);
+    }
+
+    // Sets the compelementary color in normal state.
+    .set-comp-normal-color(@color) when(@color = #f5f5f5) {
+        background-color: lighten(@colors[dark], 40%);
+    }
+
+    // Applies all supported colors.
+    .adapt-colors() {
+        each(@colors, {
+            &.@{key} {
+                &::after {
+                    #radio.set-comp-normal-color(@value);
+                }
+
+                &.checked {
+                    background-color: lighten(@value, 35%);
+
+                    &::after {
+                        #radio.set-comp-color(@value);
+                    }
+                }
+            }
+        });
+    }
+}
+
+
+div.radio {
+    @default-height: 25px;
+    @default-width: 50px;
+
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    height: @default-height;
+    overflow: hidden;
+    position: relative;
+    transition-duration: .3s;
+    transition-property: background-color;
+    width: @default-width;
+
+    #depth.add-depth(1px);
+    #radio.adapt-colors();
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    &::after {
+        background-color: darken(@colors[light], 5%);
+        border-radius: 2px;
+        content: '';
+        left: 2px;
+        height: @default-height - 4;
+        position: absolute;
+        top: 2px;
+        transition-duration: .3s;
+        transition-property: left, background-color;
+        width: (@default-width - 4px) / 2;
+    }
+
+    &.checked {
+        background-color: @colors[light];
+
+        &::after {
+            background-color: darken(@colors[light], 25%);
+            left: (@default-width/2);
+        }
+    }
+
+    &.round {
+        border-radius: 12px;
+
+        &::after {
+            border-radius: 12px;
+        }
+    }
+}

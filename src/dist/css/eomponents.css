@@ -51,9 +51,6 @@ div.checkbox {
   /* #endregion */
 }
 div.checkbox.light {
-  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
-                    #color.set-comp-color(@value);
-                }*/
   background-color: #ffffff;
 }
 div.checkbox.light.checked {
@@ -64,9 +61,6 @@ div.checkbox.light.checked::after {
   color: #475d6f;
 }
 div.checkbox.dark {
-  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
-                    #color.set-comp-color(@value);
-                }*/
   background-color: #5a778f;
 }
 div.checkbox.dark.checked {
@@ -76,9 +70,6 @@ div.checkbox.dark.checked::after {
   color: #1f2931;
 }
 div.checkbox.gray {
-  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
-                    #color.set-comp-color(@value);
-                }*/
   background-color: #cdcdcd;
 }
 div.checkbox.gray.checked {
@@ -88,9 +79,6 @@ div.checkbox.gray.checked::after {
   color: #808080;
 }
 div.checkbox.blue {
-  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
-                    #color.set-comp-color(@value);
-                }*/
   background-color: #b9d4ec;
 }
 div.checkbox.blue.checked {
@@ -100,9 +88,6 @@ div.checkbox.blue.checked::after {
   color: #428bca;
 }
 div.checkbox.aqua {
-  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
-                    #color.set-comp-color(@value);
-                }*/
   background-color: #daf1f8;
 }
 div.checkbox.aqua.checked {
@@ -112,9 +97,6 @@ div.checkbox.aqua.checked::after {
   color: #5bc0de;
 }
 div.checkbox.green {
-  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
-                    #color.set-comp-color(@value);
-                }*/
   background-color: #c7e6c7;
 }
 div.checkbox.green.checked {
@@ -124,9 +106,6 @@ div.checkbox.green.checked::after {
   color: #5cb85c;
 }
 div.checkbox.yellow {
-  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
-                    #color.set-comp-color(@value);
-                }*/
   background-color: #fde39a;
 }
 div.checkbox.yellow.checked {
@@ -136,9 +115,6 @@ div.checkbox.yellow.checked::after {
   color: #f8b806;
 }
 div.checkbox.orange {
-  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
-                    #color.set-comp-color(@value);
-                }*/
   background-color: #ffb999;
 }
 div.checkbox.orange.checked {
@@ -148,9 +124,6 @@ div.checkbox.orange.checked::after {
   color: #ff5100;
 }
 div.checkbox.red {
-  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
-                    #color.set-comp-color(@value);
-                }*/
   background-color: #f7bbbb;
 }
 div.checkbox.red.checked {
@@ -160,9 +133,6 @@ div.checkbox.red.checked::after {
   color: #e73232;
 }
 div.checkbox.pink {
-  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
-                    #color.set-comp-color(@value);
-                }*/
   background-color: #fde9f7;
 }
 div.checkbox.pink.checked {
@@ -172,9 +142,6 @@ div.checkbox.pink.checked::after {
   color: #f25bc3;
 }
 div.checkbox.violet {
-  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
-                    #color.set-comp-color(@value);
-                }*/
   background-color: #c2a0df;
 }
 div.checkbox.violet.checked {
@@ -184,9 +151,6 @@ div.checkbox.violet.checked::after {
   color: #773aac;
 }
 div.checkbox.brown {
-  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
-                    #color.set-comp-color(@value);
-                }*/
   background-color: #dc9a71;
 }
 div.checkbox.brown.checked {
@@ -245,6 +209,156 @@ div.checkbox.large {
 }
 div.checkbox.large.checked::after {
   font-size: 16px;
+}
+div.radio {
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  overflow: hidden;
+  position: relative;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+  width: 50px;
+  box-shadow: 0px 1px 2px #c2c2c2;
+}
+div.radio.light::after {
+  background-color: #ffffff;
+  background-color: #7591a7;
+}
+div.radio.light.checked {
+  background-color: #ffffff;
+}
+div.radio.light.checked::after {
+  background-color: #f5f5f5;
+  background-color: #475d6f;
+}
+div.radio.dark::after {
+  background-color: #5a778f;
+}
+div.radio.dark.checked {
+  background-color: #65849e;
+}
+div.radio.dark.checked::after {
+  background-color: #1f2931;
+}
+div.radio.gray::after {
+  background-color: #cdcdcd;
+}
+div.radio.gray.checked {
+  background-color: #d9d9d9;
+}
+div.radio.gray.checked::after {
+  background-color: #808080;
+}
+div.radio.blue::after {
+  background-color: #b9d4ec;
+}
+div.radio.blue.checked {
+  background-color: #cde1f1;
+}
+div.radio.blue.checked::after {
+  background-color: #428bca;
+}
+div.radio.aqua::after {
+  background-color: #daf1f8;
+}
+div.radio.aqua.checked {
+  background-color: #f0f9fc;
+}
+div.radio.aqua.checked::after {
+  background-color: #5bc0de;
+}
+div.radio.green::after {
+  background-color: #c7e6c7;
+}
+div.radio.green.checked {
+  background-color: #d8eed8;
+}
+div.radio.green.checked::after {
+  background-color: #5cb85c;
+}
+div.radio.yellow::after {
+  background-color: #fde39a;
+}
+div.radio.yellow.checked {
+  background-color: #fdeab3;
+}
+div.radio.yellow.checked::after {
+  background-color: #f8b806;
+}
+div.radio.orange::after {
+  background-color: #ffb999;
+}
+div.radio.orange.checked {
+  background-color: #ffcbb3;
+}
+div.radio.orange.checked::after {
+  background-color: #ff5100;
+}
+div.radio.red::after {
+  background-color: #f7bbbb;
+}
+div.radio.red.checked {
+  background-color: #fad2d2;
+}
+div.radio.red.checked::after {
+  background-color: #e73232;
+}
+div.radio.pink::after {
+  background-color: #fde9f7;
+}
+div.radio.pink.checked {
+  background-color: #ffffff;
+}
+div.radio.pink.checked::after {
+  background-color: #f25bc3;
+}
+div.radio.violet::after {
+  background-color: #c2a0df;
+}
+div.radio.violet.checked {
+  background-color: #ceb3e5;
+}
+div.radio.violet.checked::after {
+  background-color: #773aac;
+}
+div.radio.brown::after {
+  background-color: #dc9a71;
+}
+div.radio.brown.checked {
+  background-color: #e1a886;
+}
+div.radio.brown.checked::after {
+  background-color: #904d24;
+}
+div.radio input[type="radio"] {
+  display: none;
+}
+div.radio::after {
+  background-color: #e8e8e8;
+  border-radius: 2px;
+  content: '';
+  left: 2px;
+  height: 21px;
+  position: absolute;
+  top: 2px;
+  transition-duration: 0.3s;
+  transition-property: left, background-color;
+  width: 23px;
+}
+div.radio.checked {
+  background-color: #f5f5f5;
+}
+div.radio.checked::after {
+  background-color: #b5b5b5;
+  left: 25px;
+}
+div.radio.round {
+  border-radius: 12px;
+}
+div.radio.round::after {
+  border-radius: 12px;
 }
 div.textbox {
   border: 1px solid #dcdcdc;

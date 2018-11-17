@@ -1,8 +1,10 @@
 #checkbox() {
+    // Sets the compelementary color.
     .set-comp-color(@color) {
         color: @value;
     }
 
+    // Sets the compelementary color.
     .set-comp-color(@color) when(@color = #f5f5f5) {
         color: lighten(@colors[dark], 20%);
     }
@@ -11,10 +13,6 @@
     .adapt-colors() {
         each(@colors, {
             &.@{key} {
-                /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
-                    #color.set-comp-color(@value);
-                }*/
-
                 background-color: lighten(@value, 30%);
 
                 &.checked {

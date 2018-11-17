@@ -22,12 +22,32 @@
 
 			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae velit illo explicabo debitis suscipit voluptatibus odio perspiciatis veniam provident harum! Unde officiis quod, aperiam sint consequatur repellat eligendi illum optio.</p>
             <hr>
-            
-            <div class="checkbox large red">
-                <input type="checkbox">
+            <div id="textbox" class="textbox">
+                <label for="a">Username</label>
+                <input id="a" value="something..." type="text">
             </div>
-            <br>
-            radio: <input type="radio" ><br>
+            <br><br>
+            <div id="checkbox" class="checkbox">
+                <input type="checkbox" checked=true>
+            </div>
+            <br><br>
+            <div id="radio" class="radio">
+                <input type="radio" checked>
+            </div>
+            <br><br>
+            <button id="sb" class="btn">Sumbit</button>
+            <script>
+                document.getElementById('sb').onclick = function() {
+                    var output = "";
+
+                    output += "\nTextbox: " + document.getElementById('textbox').value;
+                    output += "\nCheckbox: " + document.getElementById('checkbox').value;
+                    output += "\nRadioButton: " + document.getElementById('radio').value;
+
+                    console.log(output);
+                }
+            </script>
+            
             <hr>
             color: <input type="color" ><br>
             <hr>
