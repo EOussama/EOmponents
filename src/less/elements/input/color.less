@@ -1,0 +1,34 @@
+div.color-picker {
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    height: 50px;
+    position: relative;
+    transition-duration: .3s;
+    transition-property: background-color;
+    width: 80px;
+
+    #depth.add-depth(1px);
+
+    input[type="color"] {
+        display: none;
+    }
+
+    span.label {
+        text-transform: uppercase;
+        color: @colors[dark];
+        font-size: 12px;
+        font-weight: bold;
+        left: 50%;
+        opacity: .3;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition-duration: .3s;
+        transition-property: opacity;
+    }
+
+    &:hover  span.label {
+        opacity: 1;
+    }
+}

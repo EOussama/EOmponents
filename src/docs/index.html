@@ -35,6 +35,11 @@
                 <input type="radio" checked>
             </div>
             <br><br>
+            <div id="color" class="color-picker">
+                <span class="label"></span>
+                <input type="color">
+            </div>
+            <br><br>
             <button id="sb" class="btn">Sumbit</button>
             <script>
                 document.getElementById('sb').onclick = function() {
@@ -43,13 +48,11 @@
                     output += "\nTextbox: " + document.getElementById('textbox').value;
                     output += "\nCheckbox: " + document.getElementById('checkbox').value;
                     output += "\nRadioButton: " + document.getElementById('radio').value;
+                    output += "\nColor: " + document.getElementById('color').value;
 
                     console.log(output);
                 }
             </script>
-            
-            <hr>
-            color: <input type="color" ><br>
             <hr>
             date: <input type="date" ><br>
             datetime-local: <input type="datetime-local" ><br>

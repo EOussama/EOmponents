@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-	// Textboxes
+	// Textbox
 	(function () {
 		const textboxes = document.querySelectorAll('div.textbox');
 
@@ -52,7 +52,7 @@ window.addEventListener('load', () => {
 		});
 	})();
 
-	// Checkboxes
+	// Checkbox
 	(function () {
 		const checkboxes = document.querySelectorAll('div.checkbox');
 
@@ -107,6 +107,40 @@ window.addEventListener('load', () => {
 			} else {
 				radio.value = false;
 			}
+		});
+	})();
+
+	// Color picker
+	(function() {
+		const colorPickers = document.querySelectorAll('div.color-picker');
+
+		colorPickers.forEach(colorPicker => {
+			const
+				colorInput = colorPicker.querySelector('[type="color"]'),
+				label = colorPicker.querySelector('span.label');
+
+			colorInput.addEventListener('change', () => {
+				colorPicker.value = colorInput.value;
+				colorPicker.style.backgroundColor = colorPicker.value;
+				label.textContent = colorPicker.value;
+			});
+
+			colorPicker.addEventListener('click', (e) => {
+				colorInput.focus();
+  				colorInput.click();
+			});
+
+			colorPicker.addEventListener('mouseenter', () => {
+				colorPicker.style.backgroundColor = "#F5F5F5";
+			});
+
+			colorPicker.addEventListener('mouseleave', () => {
+				colorPicker.style.backgroundColor = colorPicker.value;
+			});
+
+			colorPicker.value = colorInput.value;
+			colorPicker.style.backgroundColor = colorPicker.value;
+			label.textContent = colorPicker.value;
 		});
 	})();
 });
