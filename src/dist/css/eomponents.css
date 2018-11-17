@@ -42,6 +42,7 @@ div.textbox {
   border-radius: 3px 3px 10px 3px;
   box-sizing: border-box;
   color: #1f2931;
+  cursor: text;
   display: inline-block;
   margin: 5px 3px;
   outline: none;
@@ -57,7 +58,12 @@ div.textbox {
 div.textbox.light {
   border-color: #ffffff;
 }
-div.textbox.light input[type="text"] {
+div.textbox.light input[type="text"],
+div.textbox.light input[type="password"],
+div.textbox.light input[type="email"],
+div.textbox.light input[type="search"],
+div.textbox.light input[type="url"],
+div.textbox.light input[type="tel"] {
   color: #a9a9a9;
 }
 div.textbox.light.focused {
@@ -66,7 +72,12 @@ div.textbox.light.focused {
 div.textbox.light.active {
   background-color: #ffffff;
 }
-div.textbox.light.active input[type="text"] {
+div.textbox.light.active input[type="text"],
+div.textbox.light.active input[type="password"],
+div.textbox.light.active input[type="email"],
+div.textbox.light.active input[type="search"],
+div.textbox.light.active input[type="url"],
+div.textbox.light.active input[type="tel"] {
   background-color: #ffffff;
 }
 div.textbox.light.active label {
@@ -81,7 +92,12 @@ div.textbox.light.alert::after {
 div.textbox.dark {
   border-color: #334350;
 }
-div.textbox.dark input[type="text"] {
+div.textbox.dark input[type="text"],
+div.textbox.dark input[type="password"],
+div.textbox.dark input[type="email"],
+div.textbox.dark input[type="search"],
+div.textbox.dark input[type="url"],
+div.textbox.dark input[type="tel"] {
   color: #b5b5b5;
 }
 div.textbox.dark.focused {
@@ -90,7 +106,12 @@ div.textbox.dark.focused {
 div.textbox.dark.active {
   background-color: #5a778f;
 }
-div.textbox.dark.active input[type="text"] {
+div.textbox.dark.active input[type="text"],
+div.textbox.dark.active input[type="password"],
+div.textbox.dark.active input[type="email"],
+div.textbox.dark.active input[type="search"],
+div.textbox.dark.active input[type="url"],
+div.textbox.dark.active input[type="tel"] {
   background-color: #5a778f;
 }
 div.textbox.dark.active label {
@@ -105,7 +126,12 @@ div.textbox.dark.alert::after {
 div.textbox.gray {
   border-color: #9a9a9a;
 }
-div.textbox.gray input[type="text"] {
+div.textbox.gray input[type="text"],
+div.textbox.gray input[type="password"],
+div.textbox.gray input[type="email"],
+div.textbox.gray input[type="search"],
+div.textbox.gray input[type="url"],
+div.textbox.gray input[type="tel"] {
   color: #343434;
 }
 div.textbox.gray.focused {
@@ -114,7 +140,12 @@ div.textbox.gray.focused {
 div.textbox.gray.active {
   background-color: #cdcdcd;
 }
-div.textbox.gray.active input[type="text"] {
+div.textbox.gray.active input[type="text"],
+div.textbox.gray.active input[type="password"],
+div.textbox.gray.active input[type="email"],
+div.textbox.gray.active input[type="search"],
+div.textbox.gray.active input[type="url"],
+div.textbox.gray.active input[type="tel"] {
   background-color: #cdcdcd;
 }
 div.textbox.gray.active label {
@@ -129,7 +160,12 @@ div.textbox.gray.alert::after {
 div.textbox.blue {
   border-color: #6aa3d5;
 }
-div.textbox.blue input[type="text"] {
+div.textbox.blue input[type="text"],
+div.textbox.blue input[type="password"],
+div.textbox.blue input[type="email"],
+div.textbox.blue input[type="search"],
+div.textbox.blue input[type="url"],
+div.textbox.blue input[type="tel"] {
   color: #193c5a;
 }
 div.textbox.blue.focused {
@@ -138,7 +174,12 @@ div.textbox.blue.focused {
 div.textbox.blue.active {
   background-color: #b9d4ec;
 }
-div.textbox.blue.active input[type="text"] {
+div.textbox.blue.active input[type="text"],
+div.textbox.blue.active input[type="password"],
+div.textbox.blue.active input[type="email"],
+div.textbox.blue.active input[type="search"],
+div.textbox.blue.active input[type="url"],
+div.textbox.blue.active input[type="tel"] {
   background-color: #b9d4ec;
 }
 div.textbox.blue.active label {
@@ -153,7 +194,12 @@ div.textbox.blue.alert::after {
 div.textbox.aqua {
   border-color: #85d0e7;
 }
-div.textbox.aqua input[type="text"] {
+div.textbox.aqua input[type="text"],
+div.textbox.aqua input[type="password"],
+div.textbox.aqua input[type="email"],
+div.textbox.aqua input[type="search"],
+div.textbox.aqua input[type="url"],
+div.textbox.aqua input[type="tel"] {
   color: #1b6d85;
 }
 div.textbox.aqua.focused {
@@ -162,7 +208,12 @@ div.textbox.aqua.focused {
 div.textbox.aqua.active {
   background-color: #daf1f8;
 }
-div.textbox.aqua.active input[type="text"] {
+div.textbox.aqua.active input[type="text"],
+div.textbox.aqua.active input[type="password"],
+div.textbox.aqua.active input[type="email"],
+div.textbox.aqua.active input[type="search"],
+div.textbox.aqua.active input[type="url"],
+div.textbox.aqua.active input[type="tel"] {
   background-color: #daf1f8;
 }
 div.textbox.aqua.active label {
@@ -177,7 +228,12 @@ div.textbox.aqua.alert::after {
 div.textbox.green {
   border-color: #80c780;
 }
-div.textbox.green input[type="text"] {
+div.textbox.green input[type="text"],
+div.textbox.green input[type="password"],
+div.textbox.green input[type="email"],
+div.textbox.green input[type="search"],
+div.textbox.green input[type="url"],
+div.textbox.green input[type="tel"] {
   color: #255625;
 }
 div.textbox.green.focused {
@@ -186,7 +242,12 @@ div.textbox.green.focused {
 div.textbox.green.active {
   background-color: #c7e6c7;
 }
-div.textbox.green.active input[type="text"] {
+div.textbox.green.active input[type="text"],
+div.textbox.green.active input[type="password"],
+div.textbox.green.active input[type="email"],
+div.textbox.green.active input[type="search"],
+div.textbox.green.active input[type="url"],
+div.textbox.green.active input[type="tel"] {
   background-color: #c7e6c7;
 }
 div.textbox.green.active label {
@@ -201,7 +262,12 @@ div.textbox.green.alert::after {
 div.textbox.yellow {
   border-color: #fac737;
 }
-div.textbox.yellow input[type="text"] {
+div.textbox.yellow input[type="text"],
+div.textbox.yellow input[type="password"],
+div.textbox.yellow input[type="email"],
+div.textbox.yellow input[type="search"],
+div.textbox.yellow input[type="url"],
+div.textbox.yellow input[type="tel"] {
   color: #b5b5b5;
   color: #634902;
 }
@@ -211,7 +277,12 @@ div.textbox.yellow.focused {
 div.textbox.yellow.active {
   background-color: #fde39a;
 }
-div.textbox.yellow.active input[type="text"] {
+div.textbox.yellow.active input[type="text"],
+div.textbox.yellow.active input[type="password"],
+div.textbox.yellow.active input[type="email"],
+div.textbox.yellow.active input[type="search"],
+div.textbox.yellow.active input[type="url"],
+div.textbox.yellow.active input[type="tel"] {
   background-color: #fde39a;
 }
 div.textbox.yellow.active label {
@@ -226,7 +297,12 @@ div.textbox.yellow.alert::after {
 div.textbox.orange {
   border-color: #ff7433;
 }
-div.textbox.orange input[type="text"] {
+div.textbox.orange input[type="text"],
+div.textbox.orange input[type="password"],
+div.textbox.orange input[type="email"],
+div.textbox.orange input[type="search"],
+div.textbox.orange input[type="url"],
+div.textbox.orange input[type="tel"] {
   color: #662000;
 }
 div.textbox.orange.focused {
@@ -235,7 +311,12 @@ div.textbox.orange.focused {
 div.textbox.orange.active {
   background-color: #ffb999;
 }
-div.textbox.orange.active input[type="text"] {
+div.textbox.orange.active input[type="text"],
+div.textbox.orange.active input[type="password"],
+div.textbox.orange.active input[type="email"],
+div.textbox.orange.active input[type="search"],
+div.textbox.orange.active input[type="url"],
+div.textbox.orange.active input[type="tel"] {
   background-color: #ffb999;
 }
 div.textbox.orange.active label {
@@ -250,7 +331,12 @@ div.textbox.orange.alert::after {
 div.textbox.red {
   border-color: #ec6060;
 }
-div.textbox.red input[type="text"] {
+div.textbox.red input[type="text"],
+div.textbox.red input[type="password"],
+div.textbox.red input[type="email"],
+div.textbox.red input[type="search"],
+div.textbox.red input[type="url"],
+div.textbox.red input[type="tel"] {
   color: #730d0d;
 }
 div.textbox.red.focused {
@@ -259,7 +345,12 @@ div.textbox.red.focused {
 div.textbox.red.active {
   background-color: #f7bbbb;
 }
-div.textbox.red.active input[type="text"] {
+div.textbox.red.active input[type="text"],
+div.textbox.red.active input[type="password"],
+div.textbox.red.active input[type="email"],
+div.textbox.red.active input[type="search"],
+div.textbox.red.active input[type="url"],
+div.textbox.red.active input[type="tel"] {
   background-color: #f7bbbb;
 }
 div.textbox.red.active label {
@@ -274,7 +365,12 @@ div.textbox.red.alert::after {
 div.textbox.pink {
   border-color: #f68ad4;
 }
-div.textbox.pink input[type="text"] {
+div.textbox.pink input[type="text"],
+div.textbox.pink input[type="password"],
+div.textbox.pink input[type="email"],
+div.textbox.pink input[type="search"],
+div.textbox.pink input[type="url"],
+div.textbox.pink input[type="tel"] {
   color: #a70d77;
 }
 div.textbox.pink.focused {
@@ -283,7 +379,12 @@ div.textbox.pink.focused {
 div.textbox.pink.active {
   background-color: #fde9f7;
 }
-div.textbox.pink.active input[type="text"] {
+div.textbox.pink.active input[type="text"],
+div.textbox.pink.active input[type="password"],
+div.textbox.pink.active input[type="email"],
+div.textbox.pink.active input[type="search"],
+div.textbox.pink.active input[type="url"],
+div.textbox.pink.active input[type="tel"] {
   background-color: #fde9f7;
 }
 div.textbox.pink.active label {
@@ -298,7 +399,12 @@ div.textbox.pink.alert::after {
 div.textbox.violet {
   border-color: #9054c5;
 }
-div.textbox.violet input[type="text"] {
+div.textbox.violet input[type="text"],
+div.textbox.violet input[type="password"],
+div.textbox.violet input[type="email"],
+div.textbox.violet input[type="search"],
+div.textbox.violet input[type="url"],
+div.textbox.violet input[type="tel"] {
   color: #b5b5b5;
   color: #28133a;
 }
@@ -308,7 +414,12 @@ div.textbox.violet.focused {
 div.textbox.violet.active {
   background-color: #c2a0df;
 }
-div.textbox.violet.active input[type="text"] {
+div.textbox.violet.active input[type="text"],
+div.textbox.violet.active input[type="password"],
+div.textbox.violet.active input[type="email"],
+div.textbox.violet.active input[type="search"],
+div.textbox.violet.active input[type="url"],
+div.textbox.violet.active input[type="tel"] {
   background-color: #c2a0df;
 }
 div.textbox.violet.active label {
@@ -323,7 +434,12 @@ div.textbox.violet.alert::after {
 div.textbox.brown {
   border-color: #b9632e;
 }
-div.textbox.brown input[type="text"] {
+div.textbox.brown input[type="text"],
+div.textbox.brown input[type="password"],
+div.textbox.brown input[type="email"],
+div.textbox.brown input[type="search"],
+div.textbox.brown input[type="url"],
+div.textbox.brown input[type="tel"] {
   color: #b5b5b5;
   color: #160c05;
 }
@@ -333,7 +449,12 @@ div.textbox.brown.focused {
 div.textbox.brown.active {
   background-color: #dc9a71;
 }
-div.textbox.brown.active input[type="text"] {
+div.textbox.brown.active input[type="text"],
+div.textbox.brown.active input[type="password"],
+div.textbox.brown.active input[type="email"],
+div.textbox.brown.active input[type="search"],
+div.textbox.brown.active input[type="url"],
+div.textbox.brown.active input[type="tel"] {
   background-color: #dc9a71;
 }
 div.textbox.brown.active label {
@@ -345,7 +466,12 @@ div.textbox.brown.active.disabled label {
 div.textbox.brown.alert::after {
   color: #67371a;
 }
-div.textbox input[type=text] {
+div.textbox input[type="text"],
+div.textbox input[type="password"],
+div.textbox input[type="email"],
+div.textbox input[type="search"],
+div.textbox input[type="url"],
+div.textbox input[type="tel"] {
   border: none;
   font-size: 16px;
   outline: none;
@@ -355,15 +481,19 @@ div.textbox input[type=text] {
 }
 div.textbox label {
   color: #c2c2c2;
+  cursor: text;
   font-size: 16px;
   left: 5px;
   margin: 0 0 0 5px;
+  overflow: hidden;
   padding: 0;
   position: absolute;
   transform: translateY(-50%);
   top: 50%;
   transition-duration: 0.2s;
   transition-property: font-size, top;
+  white-space: nowrap;
+  width: 90%;
 }
 div.textbox.placeholder-off {
   border-left-width: 20px;
@@ -384,7 +514,12 @@ div.textbox.disabled {
   color: #b3b3b3 !important;
   cursor: not-allowed !important;
 }
-div.textbox.disabled input[type="text"] {
+div.textbox.disabled input[type="text"],
+div.textbox.disabled input[type="password"],
+div.textbox.disabled input[type="email"],
+div.textbox.disabled input[type="search"],
+div.textbox.disabled input[type="url"],
+div.textbox.disabled input[type="tel"] {
   color: transparent;
   cursor: not-allowed !important;
   background-color: inherit !important;
@@ -395,7 +530,12 @@ div.textbox.disabled label {
 div.textbox.active {
   background-color: #f5f5f5;
 }
-div.textbox.active input[type="text"] {
+div.textbox.active input[type="text"],
+div.textbox.active input[type="password"],
+div.textbox.active input[type="email"],
+div.textbox.active input[type="search"],
+div.textbox.active input[type="url"],
+div.textbox.active input[type="tel"] {
   background-color: #f5f5f5;
 }
 div.textbox::after {

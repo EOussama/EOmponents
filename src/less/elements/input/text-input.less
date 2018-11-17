@@ -3,7 +3,7 @@
     .adapt-colors() {
         each(@colors, {
             &.@{key} {
-                input[type="text"] {
+                input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
                     #color.set-comp-color(@value);
                 }
 
@@ -16,7 +16,7 @@
                 &.active {
                     background-color: lighten(@value, 30%);
             
-                    input[type="text"] {
+                    input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
                         background-color: lighten(@value, 30%);
                     }
 
@@ -45,6 +45,7 @@ div.textbox {
     border-radius: 3px 3px 10px 3px;
     box-sizing: border-box;
     color: @colors[dark];
+    cursor: text;
     display: inline-block;
     margin: 5px 3px;
     outline: none;
@@ -57,7 +58,7 @@ div.textbox {
     #depth.add-depth(1px);
     #textbox.adapt-colors();
 
-    input[type=text] {
+    input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
         border: none;
         font-size: 16px;
         outline: none;
@@ -67,17 +68,20 @@ div.textbox {
     }
 
     label {
-        //background-color: transparent;
         color: darken(@default-color, 10%);
+        cursor: text;
         font-size: 16px;
         left: 5px;
         margin: 0 0 0 5px;
+        overflow: hidden;
         padding: 0;
         position: absolute;
         transform: translateY(-50%);
         top: 50%;
         transition-duration: .2s;
         transition-property: font-size, top;
+        white-space: nowrap;
+        width: 90%;
     }
 
     &.placeholder-off {
@@ -103,7 +107,7 @@ div.textbox {
         color: @color-disabled !important;
         cursor: not-allowed !important;
 
-        input[type="text"] {
+        input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
             color: transparent;
             cursor: not-allowed !important;
             background-color: inherit !important;
@@ -117,7 +121,7 @@ div.textbox {
     &.active {
         background-color: @colors[light];
 
-        input[type="text"] {
+        input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
             background-color: @colors[light];
         }
     }

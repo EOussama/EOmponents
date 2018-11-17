@@ -4,10 +4,24 @@ window.addEventListener('load', () => {
 		const textboxes = document.querySelectorAll('div.textbox');
 
 		textboxes.forEach(textbox => {
-			const input = textbox.querySelector('[type="text"]');
+			const
+				input = textbox.querySelector('[type="text"], [type="password"], [type="email"], [type="search"], [type="url"], [type="tel"]'),
+				label = textbox.getElementsByTagName('label')[0];
 			
-			// Resetting the placeholder of the input.
+			// Clear the default placeholder.
 			input.placeholder = '';
+
+			textbox.addEventListener('click', (e) => {
+				label.focus();
+			});
+
+			label.addEventListener('click', (e) => {
+				e.stopPropagation();
+			});
+
+			input.addEventListener('click', (e) => {
+				e.stopPropagation();
+			});
 
 			input.addEventListener('focus', () => {
 				if (!textbox.classList.contains('focused') && document.activeElement == input && !textbox.classList.contains('disabled'))
@@ -27,7 +41,7 @@ window.addEventListener('load', () => {
 
 			// Trigger the focus event.
 			if (input.value.length > 0)
-				input.dispatchEvent(new Event('focus'));
+				input.focus();
 		});
 	})();
 });
