@@ -17,7 +17,7 @@
                     background-color: lighten(@value, 30%);
             
                     input[type="text"] {
-                        background-color: inherit;
+                        background-color: lighten(@value, 30%);
                     }
 
                     label {
@@ -52,7 +52,7 @@ div.textbox {
     position: relative;
     border-left: 6px solid @default-color;
     transition-duration: .5s;
-    transition-property: border-color, border-left-width;
+    transition-property: background-color, border-color, border-left-width;
 
     #depth.add-depth(1px);
     #textbox.adapt-colors();
@@ -62,9 +62,12 @@ div.textbox {
         font-size: 16px;
         outline: none;
         width: 100%;
+        transition-duration: .5s;
+        transition-property: background-color;
     }
 
     label {
+        //background-color: transparent;
         color: darken(@default-color, 10%);
         font-size: 16px;
         left: 5px;
@@ -115,7 +118,7 @@ div.textbox {
         background-color: @colors[light];
 
         input[type="text"] {
-            background-color: inherit;
+            background-color: @colors[light];
         }
     }
 

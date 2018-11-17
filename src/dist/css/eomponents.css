@@ -49,7 +49,7 @@ div.textbox {
   position: relative;
   border-left: 6px solid #dcdcdc;
   transition-duration: 0.5s;
-  transition-property: border-color, border-left-width;
+  transition-property: background-color, border-color, border-left-width;
   box-shadow: 0px 1px 2px #c2c2c2;
   /* #region sizing */
   /* #endregion */
@@ -67,7 +67,7 @@ div.textbox.light.active {
   background-color: #ffffff;
 }
 div.textbox.light.active input[type="text"] {
-  background-color: inherit;
+  background-color: #ffffff;
 }
 div.textbox.light.active label {
   color: #dcdcdc;
@@ -91,7 +91,7 @@ div.textbox.dark.active {
   background-color: #5a778f;
 }
 div.textbox.dark.active input[type="text"] {
-  background-color: inherit;
+  background-color: #5a778f;
 }
 div.textbox.dark.active label {
   color: #0b0f12;
@@ -115,7 +115,7 @@ div.textbox.gray.active {
   background-color: #cdcdcd;
 }
 div.textbox.gray.active input[type="text"] {
-  background-color: inherit;
+  background-color: #cdcdcd;
 }
 div.textbox.gray.active label {
   color: #676767;
@@ -139,7 +139,7 @@ div.textbox.blue.active {
   background-color: #b9d4ec;
 }
 div.textbox.blue.active input[type="text"] {
-  background-color: inherit;
+  background-color: #b9d4ec;
 }
 div.textbox.blue.active label {
   color: #3071a9;
@@ -163,7 +163,7 @@ div.textbox.aqua.active {
   background-color: #daf1f8;
 }
 div.textbox.aqua.active input[type="text"] {
-  background-color: inherit;
+  background-color: #daf1f8;
 }
 div.textbox.aqua.active label {
   color: #31b0d5;
@@ -187,7 +187,7 @@ div.textbox.green.active {
   background-color: #c7e6c7;
 }
 div.textbox.green.active input[type="text"] {
-  background-color: inherit;
+  background-color: #c7e6c7;
 }
 div.textbox.green.active label {
   color: #449d44;
@@ -212,7 +212,7 @@ div.textbox.yellow.active {
   background-color: #fde39a;
 }
 div.textbox.yellow.active input[type="text"] {
-  background-color: inherit;
+  background-color: #fde39a;
 }
 div.textbox.yellow.active label {
   color: #c69305;
@@ -236,7 +236,7 @@ div.textbox.orange.active {
   background-color: #ffb999;
 }
 div.textbox.orange.active input[type="text"] {
-  background-color: inherit;
+  background-color: #ffb999;
 }
 div.textbox.orange.active label {
   color: #cc4100;
@@ -260,7 +260,7 @@ div.textbox.red.active {
   background-color: #f7bbbb;
 }
 div.textbox.red.active input[type="text"] {
-  background-color: inherit;
+  background-color: #f7bbbb;
 }
 div.textbox.red.active label {
   color: #ce1818;
@@ -284,7 +284,7 @@ div.textbox.pink.active {
   background-color: #fde9f7;
 }
 div.textbox.pink.active input[type="text"] {
-  background-color: inherit;
+  background-color: #fde9f7;
 }
 div.textbox.pink.active label {
   color: #ee2cb2;
@@ -309,7 +309,7 @@ div.textbox.violet.active {
   background-color: #c2a0df;
 }
 div.textbox.violet.active input[type="text"] {
-  background-color: inherit;
+  background-color: #c2a0df;
 }
 div.textbox.violet.active label {
   color: #5d2d86;
@@ -334,7 +334,7 @@ div.textbox.brown.active {
   background-color: #dc9a71;
 }
 div.textbox.brown.active input[type="text"] {
-  background-color: inherit;
+  background-color: #dc9a71;
 }
 div.textbox.brown.active label {
   color: #67371a;
@@ -350,6 +350,8 @@ div.textbox input[type=text] {
   font-size: 16px;
   outline: none;
   width: 100%;
+  transition-duration: 0.5s;
+  transition-property: background-color;
 }
 div.textbox label {
   color: #c2c2c2;
@@ -394,7 +396,7 @@ div.textbox.active {
   background-color: #f5f5f5;
 }
 div.textbox.active input[type="text"] {
-  background-color: inherit;
+  background-color: #f5f5f5;
 }
 div.textbox::after {
   content: '\26A0';
