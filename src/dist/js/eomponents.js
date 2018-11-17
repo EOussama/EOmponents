@@ -8,7 +8,6 @@ window.addEventListener('load', () => {
 				input = textbox.querySelector('[type="text"], [type="password"], [type="email"], [type="search"], [type="url"], [type="tel"]'),
 				label = textbox.getElementsByTagName('label')[0];
 			
-			// Clear the default placeholder.
 			input.placeholder = '';
 
 			textbox.addEventListener('click', (e) => {
@@ -42,6 +41,30 @@ window.addEventListener('load', () => {
 			// Trigger the focus event.
 			if (input.value.length > 0)
 				input.focus();
+		});
+	})();
+
+	// Checkboxes
+	(function () {
+		const checkboxes = document.querySelectorAll('div.checkbox');
+
+		checkboxes.forEach(checkbox => {
+			const checkboxInput = checkbox.children[0];
+			
+			checkbox.addEventListener('click', () => {
+				if (!checkboxInput['disabled'] && !checkbox.classList.contains('disabled')) {
+					if (checkboxInput.checked) {
+						checkbox.classList.remove('checked');
+						checkboxInput.checked = false;
+					} else {
+						checkbox.classList.add('checked');
+						checkboxInput.checked = true;
+					}
+				}
+			});
+
+			if (checkboxInput.checked)
+				checkbox.classList.add('checked');
 		});
 	})();
 });

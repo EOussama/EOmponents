@@ -37,6 +37,215 @@ p.indent::first-letter {
   font-weight: bold;
   padding-right: 2px;
 }
+div.checkbox {
+  background-color: #e8e8e8;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  height: 15px;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+  width: 15px;
+  box-shadow: 0px 1px 2px #c2c2c2;
+  /* #region sizing */
+  /* #endregion */
+}
+div.checkbox.light {
+  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
+                    #color.set-comp-color(@value);
+                }*/
+  background-color: #ffffff;
+}
+div.checkbox.light.checked {
+  background-color: #ffffff;
+}
+div.checkbox.light.checked::after {
+  color: #f5f5f5;
+  color: #475d6f;
+}
+div.checkbox.dark {
+  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
+                    #color.set-comp-color(@value);
+                }*/
+  background-color: #5a778f;
+}
+div.checkbox.dark.checked {
+  background-color: #5a778f;
+}
+div.checkbox.dark.checked::after {
+  color: #1f2931;
+}
+div.checkbox.gray {
+  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
+                    #color.set-comp-color(@value);
+                }*/
+  background-color: #cdcdcd;
+}
+div.checkbox.gray.checked {
+  background-color: #cdcdcd;
+}
+div.checkbox.gray.checked::after {
+  color: #808080;
+}
+div.checkbox.blue {
+  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
+                    #color.set-comp-color(@value);
+                }*/
+  background-color: #b9d4ec;
+}
+div.checkbox.blue.checked {
+  background-color: #b9d4ec;
+}
+div.checkbox.blue.checked::after {
+  color: #428bca;
+}
+div.checkbox.aqua {
+  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
+                    #color.set-comp-color(@value);
+                }*/
+  background-color: #daf1f8;
+}
+div.checkbox.aqua.checked {
+  background-color: #daf1f8;
+}
+div.checkbox.aqua.checked::after {
+  color: #5bc0de;
+}
+div.checkbox.green {
+  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
+                    #color.set-comp-color(@value);
+                }*/
+  background-color: #c7e6c7;
+}
+div.checkbox.green.checked {
+  background-color: #c7e6c7;
+}
+div.checkbox.green.checked::after {
+  color: #5cb85c;
+}
+div.checkbox.yellow {
+  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
+                    #color.set-comp-color(@value);
+                }*/
+  background-color: #fde39a;
+}
+div.checkbox.yellow.checked {
+  background-color: #fde39a;
+}
+div.checkbox.yellow.checked::after {
+  color: #f8b806;
+}
+div.checkbox.orange {
+  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
+                    #color.set-comp-color(@value);
+                }*/
+  background-color: #ffb999;
+}
+div.checkbox.orange.checked {
+  background-color: #ffb999;
+}
+div.checkbox.orange.checked::after {
+  color: #ff5100;
+}
+div.checkbox.red {
+  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
+                    #color.set-comp-color(@value);
+                }*/
+  background-color: #f7bbbb;
+}
+div.checkbox.red.checked {
+  background-color: #f7bbbb;
+}
+div.checkbox.red.checked::after {
+  color: #e73232;
+}
+div.checkbox.pink {
+  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
+                    #color.set-comp-color(@value);
+                }*/
+  background-color: #fde9f7;
+}
+div.checkbox.pink.checked {
+  background-color: #fde9f7;
+}
+div.checkbox.pink.checked::after {
+  color: #f25bc3;
+}
+div.checkbox.violet {
+  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
+                    #color.set-comp-color(@value);
+                }*/
+  background-color: #c2a0df;
+}
+div.checkbox.violet.checked {
+  background-color: #c2a0df;
+}
+div.checkbox.violet.checked::after {
+  color: #773aac;
+}
+div.checkbox.brown {
+  /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
+                    #color.set-comp-color(@value);
+                }*/
+  background-color: #dc9a71;
+}
+div.checkbox.brown.checked {
+  background-color: #dc9a71;
+}
+div.checkbox.brown.checked::after {
+  color: #904d24;
+}
+div.checkbox input[type="checkbox"] {
+  display: none;
+}
+div.checkbox.checked {
+  background-color: #cfcfcf;
+  position: relative;
+}
+div.checkbox.checked::after {
+  animation-duration: 0.3s;
+  animation-name: checkboxCheckedAnimation;
+  color: #1f2931;
+  content: "\2714";
+  font-size: 14px;
+  font-weight: bold;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes checkboxCheckedAnimation {
+  0% {
+    font-size: 4px;
+  }
+  70% {
+    font-size: 16px;
+  }
+  100% {
+    font-size: 14px;
+  }
+}
+div.checkbox.disabled {
+  background-color: #d9d9d9;
+  cursor: not-allowed;
+}
+div.checkbox.disabled.checked::after {
+  color: #b3b3b3;
+}
+div.checkbox.small {
+  height: 12px;
+  width: 12px;
+}
+div.checkbox.small.checked::after {
+  font-size: 12px;
+}
+div.checkbox.large {
+  height: 20px;
+  width: 20px;
+}
+div.checkbox.large.checked::after {
+  font-size: 16px;
+}
 div.textbox {
   border: 1px solid #dcdcdc;
   border-radius: 3px 3px 10px 3px;

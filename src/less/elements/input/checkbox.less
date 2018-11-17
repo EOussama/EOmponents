@@ -1,0 +1,103 @@
+#checkbox() {
+    .set-comp-color(@color) {
+        color: @value;
+    }
+
+    .set-comp-color(@color) when(@color = #f5f5f5) {
+        color: lighten(@colors[dark], 20%);
+    }
+
+    // Applies all supported colors.
+    .adapt-colors() {
+        each(@colors, {
+            &.@{key} {
+                /*input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
+                    #color.set-comp-color(@value);
+                }*/
+
+                background-color: lighten(@value, 30%);
+
+                &.checked {
+                    background-color: lighten(@value, 30%);
+
+                    &::after {
+                        #checkbox.set-comp-color(@value);
+                    }
+                }
+            }
+        });
+    }
+}
+
+div.checkbox {
+    background-color: darken(@colors[light], 5%);
+	border-radius: 3px;
+	cursor: pointer;
+    display: inline-block;
+	height: 15px;
+    transition-duration: .3s;
+	transition-property: background-color;
+	width: 15px;
+    
+    #depth.add-depth(1px);
+    #checkbox.adapt-colors();
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    &.checked {
+        background-color: darken(@colors[light], 15%);
+        position: relative;
+        
+        &::after {
+            animation-duration: .3s;
+            animation-name: checkboxCheckedAnimation;
+            color: @colors[dark];
+            content: "\2714";
+            font-size: 14px;
+            font-weight: bold;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes checkboxCheckedAnimation {
+            0% { font-size: 4px; }
+            70% { font-size: 16px; }
+            100% { font-size: 14px; }
+        }
+    }
+
+    &.disabled {
+        background-color: lighten(@color-disabled, 15%);
+        cursor: not-allowed;
+
+        &.checked::after {
+            color: @color-disabled;
+        }
+    }
+
+    /* #region sizing */
+
+    &.small {
+        height: 12px;
+        width: 12px;
+
+        &.checked::after {
+            font-size: 12px;
+        }
+    }
+
+    &.large {
+        height: 20px;
+        width: 20px;
+
+        &.checked::after {
+            font-size: 16px;
+        }
+    }
+
+    /* #endregion */
+}
