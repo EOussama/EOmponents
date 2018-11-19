@@ -1,0 +1,30 @@
+#spacing() {
+    // Generate multiple classes.
+    .generate(@i, @max, @property, @key) when (@i <= @max) {
+        .@{key}-@{i} {
+            @{property}: @i*10px !important;
+        }
+    
+        #spacing.generate(@i + 1, @max, @property, @key);
+    }
+}
+
+// #region margin
+
+#spacing.generate(1, 6, margin, m);
+#spacing.generate(1, 6, margin-top, mt);
+#spacing.generate(1, 6, margin-right, mr);
+#spacing.generate(1, 6, margin-bottom, mb);
+#spacing.generate(1, 6, margin-left, ml);
+
+// #endregion
+
+// #region padding
+
+#spacing.generate(1, 6, padding, p);
+#spacing.generate(1, 6, padding-top, pt);
+#spacing.generate(1, 6, padding-right, pr);
+#spacing.generate(1, 6, padding-bottom, pb);
+#spacing.generate(1, 6, padding-left, pl);
+
+// #endregion
