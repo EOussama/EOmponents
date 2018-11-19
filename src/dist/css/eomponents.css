@@ -877,6 +877,7 @@ div.textbox label {
   overflow: hidden;
   padding: 0;
   position: absolute;
+  user-select: none;
   transform: translateY(-50%);
   top: 50%;
   transition-duration: 0.2s;
