@@ -240,6 +240,105 @@ div.checkbox.large {
 div.checkbox.large.checked::after {
   font-size: 16px;
 }
+input[type="number"].number {
+  border: none;
+  border-radius: 2px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  width: 70px;
+  box-shadow: 0px 1px 2px #c2c2c2;
+}
+input[type="number"].number.light:not(:disabled) {
+  background-color: #ffffff;
+  color: #a9a9a9;
+}
+input[type="number"].number.dark:not(:disabled) {
+  background-color: #5a778f;
+  color: #b5b5b5;
+}
+input[type="number"].number.gray:not(:disabled) {
+  background-color: #cdcdcd;
+  color: #343434;
+}
+input[type="number"].number.blue:not(:disabled) {
+  background-color: #b9d4ec;
+  color: #193c5a;
+}
+input[type="number"].number.aqua:not(:disabled) {
+  background-color: #daf1f8;
+  color: #1b6d85;
+}
+input[type="number"].number.green:not(:disabled) {
+  background-color: #c7e6c7;
+  color: #255625;
+}
+input[type="number"].number.yellow:not(:disabled) {
+  background-color: #fde39a;
+  color: #b5b5b5;
+  color: #634902;
+}
+input[type="number"].number.orange:not(:disabled) {
+  background-color: #ffb999;
+  color: #662000;
+}
+input[type="number"].number.red:not(:disabled) {
+  background-color: #f7bbbb;
+  color: #730d0d;
+}
+input[type="number"].number.pink:not(:disabled) {
+  background-color: #fde9f7;
+  color: #a70d77;
+}
+input[type="number"].number.violet:not(:disabled) {
+  background-color: #c2a0df;
+  color: #b5b5b5;
+  color: #28133a;
+}
+input[type="number"].number.brown:not(:disabled) {
+  background-color: #dc9a71;
+  color: #b5b5b5;
+  color: #160c05;
+}
+input[type="number"].number:focus {
+  outline: 0;
+}
+input[type="number"].number:disabled {
+  color: #b3b3b3;
+  cursor: no-drop;
+}
+input[type="number"].number::-webkit-inner-spin-button {
+  height: 45px;
+  opacity: 0.3;
+  transition-duration: 0.3s;
+  transition-property: opacity;
+}
+input[type="number"].number:not(:disabled):hover::-webkit-inner-spin-button {
+  opacity: 0.6;
+}
+input[type="number"].number.small {
+  font-size: 14px;
+  height: 30px;
+  width: 50px;
+}
+input[type="number"].number.small::-webkit-inner-spin-button {
+  height: 30px;
+}
+input[type="number"].number.large {
+  font-size: 22px;
+  height: 50px;
+  width: 80px;
+}
+input[type="number"].number.large::-webkit-inner-spin-button {
+  height: 50px;
+}
+/*
+input[type="search"]::-webkit-search-cancel-button {
+	font-size: 16px;
+
+	cursor: pointer;
+}*/
 div.radio {
   border-radius: 2px;
   cursor: pointer;
@@ -982,14 +1081,6 @@ div.textbox.large.placeholder-off label {
   font-size: 12px;
   top: 15px;
 }
-/*
-input[type="number"]:not(:disabled):hover::-webkit-inner-spin-button { opacity: .5; }
-
-input[type="search"]::-webkit-search-cancel-button {
-	font-size: 16px;
-
-	cursor: pointer;
-}*/
 blockquote {
   color: #808080;
   font-style: italic;
