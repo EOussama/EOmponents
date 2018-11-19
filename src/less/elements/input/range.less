@@ -1,0 +1,59 @@
+#range() {
+    // Applies all supported colors.
+    .adapt-colors() {
+        each(@colors, {
+            &.@{key}:not(:disabled) {
+                &::-webkit-slider-runnable-track {
+                    background-color: lighten(@value, 40%);
+                }
+                
+                &::-webkit-slider-thumb {
+                    background-color: lighten(@value, 20%);
+            
+                    &:hover {
+                        background-color: lighten(@value, 10%); 
+                    }
+                }
+            }
+        });
+    }
+}
+
+input[type="range"].range {
+    -webkit-appearance: none;
+    cursor: pointer;
+    
+    #range.adapt-colors();
+
+    &:focus {
+        outline: none;
+    }
+
+    &::-webkit-slider-runnable-track {
+        background-color: @colors[light];
+        border: none;
+        border-radius: 2px;
+        height: 10px;
+
+        #depth.add-depth(1px);
+    }
+    
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        background-color: darken(@colors[light], 10%);
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        height: 25px;
+        margin-top: -8px;
+        transition-duration: .3s;
+        transition-property: background-color;
+        width: 16px;
+
+        #depth.add-depth(1px);
+
+        &:hover {
+            background-color: darken(@colors[light], 15%);
+        }
+    }
+}
