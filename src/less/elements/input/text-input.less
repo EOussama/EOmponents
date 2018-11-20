@@ -4,7 +4,7 @@
         each(@colors, {
             &.@{key} {
                 input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="url"], input[type="tel"] {
-                    #color.set-comp-color(@value);
+                    #colors.set-comp-color(@value);
                 }
 
                 border-color: lighten(@value, 10%);

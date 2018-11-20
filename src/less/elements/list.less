@@ -82,7 +82,7 @@
         each(@colors, {
             &.@{key} {
                 li {
-                    #color.set-comp-color(@value);
+                    #colors.set-comp-color(@value);
 
                     &:not(:last-of-type) {
                         border-bottom: 1px solid lighten(@value, 25%);

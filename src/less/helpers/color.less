@@ -1,0 +1,22 @@
+#color() {
+    // Generate multiple classes.
+    .generate(@property, @prefix) {
+        each(@colors, {
+            &.@{prefix}-@{key} {
+                @{property}: @value !important;
+            }
+        });
+    }
+}
+
+// #region forecolor
+
+#color.generate(color, txt);
+
+// #endregion
+
+// #region backcolor
+
+#color.generate(background-color, bg);
+
+// #endregion

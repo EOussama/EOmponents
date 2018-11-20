@@ -11,7 +11,7 @@
     .adapt-colors() {
         each(@colors, {
             &.@{key} {
-                #color.set-comp-color(@value);
+                #colors.set-comp-color(@value);
                 background-color: @value;
                 box-shadow: @shadow[x] @shadow[y] @shadow[b] darken($background-color, 20%);
             
