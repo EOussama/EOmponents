@@ -11,7 +11,11 @@
         }
     }
 
-input[type="date"].date {
+input[type="date"].date,
+input[type="datetime-local"].datetime-local,
+input[type="time"].time,
+input[type="month"].month,
+input[type="week"].week {
     border: none;
     border-radius: 2px;
     height: 40px;
@@ -81,4 +85,20 @@ input[type="date"].date {
     }
 
     // #endregion
+}
+
+input[type="time"].time {
+    padding: 0 10px;
+    &::-webkit-datetime-edit-text {
+        margin-right: 0;
+        visibility: visible !important;
+    }
+}
+
+input[type="week"].week {
+    &::-webkit-datetime-edit-text {
+        margin-right: 2px;
+        opacity: .3;
+        visibility: visible !important;
+    }
 }

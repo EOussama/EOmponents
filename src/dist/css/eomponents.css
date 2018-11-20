@@ -929,7 +929,11 @@ div.checkbox.large {
 div.checkbox.large.checked::after {
   font-size: 16px;
 }
-input[type="date"].date {
+input[type="date"].date,
+input[type="datetime-local"].datetime-local,
+input[type="time"].time,
+input[type="month"].month,
+input[type="week"].week {
   border: none;
   border-radius: 2px;
   height: 40px;
@@ -938,100 +942,208 @@ input[type="date"].date {
   text-align: center;
   box-shadow: 0px 1px 2px #c2c2c2;
 }
-input[type="date"].date.light:not(:disabled) {
+input[type="date"].date.light:not(:disabled),
+input[type="datetime-local"].datetime-local.light:not(:disabled),
+input[type="time"].time.light:not(:disabled),
+input[type="month"].month.light:not(:disabled),
+input[type="week"].week.light:not(:disabled) {
   background-color: #ffffff;
   color: #a9a9a9;
 }
-input[type="date"].date.dark:not(:disabled) {
+input[type="date"].date.dark:not(:disabled),
+input[type="datetime-local"].datetime-local.dark:not(:disabled),
+input[type="time"].time.dark:not(:disabled),
+input[type="month"].month.dark:not(:disabled),
+input[type="week"].week.dark:not(:disabled) {
   background-color: #5a778f;
   color: #b5b5b5;
 }
-input[type="date"].date.gray:not(:disabled) {
+input[type="date"].date.gray:not(:disabled),
+input[type="datetime-local"].datetime-local.gray:not(:disabled),
+input[type="time"].time.gray:not(:disabled),
+input[type="month"].month.gray:not(:disabled),
+input[type="week"].week.gray:not(:disabled) {
   background-color: #cdcdcd;
   color: #343434;
 }
-input[type="date"].date.blue:not(:disabled) {
+input[type="date"].date.blue:not(:disabled),
+input[type="datetime-local"].datetime-local.blue:not(:disabled),
+input[type="time"].time.blue:not(:disabled),
+input[type="month"].month.blue:not(:disabled),
+input[type="week"].week.blue:not(:disabled) {
   background-color: #b9d4ec;
   color: #193c5a;
 }
-input[type="date"].date.aqua:not(:disabled) {
+input[type="date"].date.aqua:not(:disabled),
+input[type="datetime-local"].datetime-local.aqua:not(:disabled),
+input[type="time"].time.aqua:not(:disabled),
+input[type="month"].month.aqua:not(:disabled),
+input[type="week"].week.aqua:not(:disabled) {
   background-color: #daf1f8;
   color: #1b6d85;
 }
-input[type="date"].date.green:not(:disabled) {
+input[type="date"].date.green:not(:disabled),
+input[type="datetime-local"].datetime-local.green:not(:disabled),
+input[type="time"].time.green:not(:disabled),
+input[type="month"].month.green:not(:disabled),
+input[type="week"].week.green:not(:disabled) {
   background-color: #c7e6c7;
   color: #255625;
 }
-input[type="date"].date.yellow:not(:disabled) {
+input[type="date"].date.yellow:not(:disabled),
+input[type="datetime-local"].datetime-local.yellow:not(:disabled),
+input[type="time"].time.yellow:not(:disabled),
+input[type="month"].month.yellow:not(:disabled),
+input[type="week"].week.yellow:not(:disabled) {
   background-color: #fde39a;
   color: #b5b5b5;
   color: #634902;
 }
-input[type="date"].date.orange:not(:disabled) {
+input[type="date"].date.orange:not(:disabled),
+input[type="datetime-local"].datetime-local.orange:not(:disabled),
+input[type="time"].time.orange:not(:disabled),
+input[type="month"].month.orange:not(:disabled),
+input[type="week"].week.orange:not(:disabled) {
   background-color: #ffb999;
   color: #662000;
 }
-input[type="date"].date.red:not(:disabled) {
+input[type="date"].date.red:not(:disabled),
+input[type="datetime-local"].datetime-local.red:not(:disabled),
+input[type="time"].time.red:not(:disabled),
+input[type="month"].month.red:not(:disabled),
+input[type="week"].week.red:not(:disabled) {
   background-color: #f7bbbb;
   color: #730d0d;
 }
-input[type="date"].date.pink:not(:disabled) {
+input[type="date"].date.pink:not(:disabled),
+input[type="datetime-local"].datetime-local.pink:not(:disabled),
+input[type="time"].time.pink:not(:disabled),
+input[type="month"].month.pink:not(:disabled),
+input[type="week"].week.pink:not(:disabled) {
   background-color: #fde9f7;
   color: #a70d77;
 }
-input[type="date"].date.violet:not(:disabled) {
+input[type="date"].date.violet:not(:disabled),
+input[type="datetime-local"].datetime-local.violet:not(:disabled),
+input[type="time"].time.violet:not(:disabled),
+input[type="month"].month.violet:not(:disabled),
+input[type="week"].week.violet:not(:disabled) {
   background-color: #c2a0df;
   color: #b5b5b5;
   color: #28133a;
 }
-input[type="date"].date.brown:not(:disabled) {
+input[type="date"].date.brown:not(:disabled),
+input[type="datetime-local"].datetime-local.brown:not(:disabled),
+input[type="time"].time.brown:not(:disabled),
+input[type="month"].month.brown:not(:disabled),
+input[type="week"].week.brown:not(:disabled) {
   background-color: #dc9a71;
   color: #b5b5b5;
   color: #160c05;
 }
-input[type="date"].date:focus {
+input[type="date"].date:focus,
+input[type="datetime-local"].datetime-local:focus,
+input[type="time"].time:focus,
+input[type="month"].month:focus,
+input[type="week"].week:focus {
   outline: 0;
 }
-input[type="date"].date:disabled {
+input[type="date"].date:disabled,
+input[type="datetime-local"].datetime-local:disabled,
+input[type="time"].time:disabled,
+input[type="month"].month:disabled,
+input[type="week"].week:disabled {
   color: #b3b3b3;
   cursor: no-drop;
 }
-input[type="date"].date::-webkit-inner-spin-button {
+input[type="date"].date::-webkit-inner-spin-button,
+input[type="datetime-local"].datetime-local::-webkit-inner-spin-button,
+input[type="time"].time::-webkit-inner-spin-button,
+input[type="month"].month::-webkit-inner-spin-button,
+input[type="week"].week::-webkit-inner-spin-button {
   cursor: pointer;
   height: 40px;
   opacity: 0.3;
   transition-duration: 0.3s;
   transition-property: opacity;
 }
-input[type="date"].date::-webkit-calendar-picker-indicator {
+input[type="date"].date::-webkit-calendar-picker-indicator,
+input[type="datetime-local"].datetime-local::-webkit-calendar-picker-indicator,
+input[type="time"].time::-webkit-calendar-picker-indicator,
+input[type="month"].month::-webkit-calendar-picker-indicator,
+input[type="week"].week::-webkit-calendar-picker-indicator {
   cursor: pointer;
   opacity: 0.3;
   padding: 14px 4px;
 }
 input[type="date"].date:not(:disabled):hover::-webkit-inner-spin-button,
-input[type="date"].date:not(:disabled):hover::-webkit-calendar-picker-indicator {
+input[type="datetime-local"].datetime-local:not(:disabled):hover::-webkit-inner-spin-button,
+input[type="time"].time:not(:disabled):hover::-webkit-inner-spin-button,
+input[type="month"].month:not(:disabled):hover::-webkit-inner-spin-button,
+input[type="week"].week:not(:disabled):hover::-webkit-inner-spin-button,
+input[type="date"].date:not(:disabled):hover::-webkit-calendar-picker-indicator,
+input[type="datetime-local"].datetime-local:not(:disabled):hover::-webkit-calendar-picker-indicator,
+input[type="time"].time:not(:disabled):hover::-webkit-calendar-picker-indicator,
+input[type="month"].month:not(:disabled):hover::-webkit-calendar-picker-indicator,
+input[type="week"].week:not(:disabled):hover::-webkit-calendar-picker-indicator {
   opacity: 0.6;
 }
-input[type="date"].date::-webkit-datetime-edit-text {
+input[type="date"].date::-webkit-datetime-edit-text,
+input[type="datetime-local"].datetime-local::-webkit-datetime-edit-text,
+input[type="time"].time::-webkit-datetime-edit-text,
+input[type="month"].month::-webkit-datetime-edit-text,
+input[type="week"].week::-webkit-datetime-edit-text {
   margin-right: 2px;
   visibility: hidden;
 }
-input[type="date"].date.small {
+input[type="date"].date.small,
+input[type="datetime-local"].datetime-local.small,
+input[type="time"].time.small,
+input[type="month"].month.small,
+input[type="week"].week.small {
   font-size: 14px;
   height: 30px;
 }
-input[type="date"].date.small::-webkit-inner-spin-button {
+input[type="date"].date.small::-webkit-inner-spin-button,
+input[type="datetime-local"].datetime-local.small::-webkit-inner-spin-button,
+input[type="time"].time.small::-webkit-inner-spin-button,
+input[type="month"].month.small::-webkit-inner-spin-button,
+input[type="week"].week.small::-webkit-inner-spin-button {
   height: 30px;
 }
-input[type="date"].date.large {
+input[type="date"].date.large,
+input[type="datetime-local"].datetime-local.large,
+input[type="time"].time.large,
+input[type="month"].month.large,
+input[type="week"].week.large {
   font-size: 22px;
   height: 50px;
 }
-input[type="date"].date.large::-webkit-inner-spin-button {
+input[type="date"].date.large::-webkit-inner-spin-button,
+input[type="datetime-local"].datetime-local.large::-webkit-inner-spin-button,
+input[type="time"].time.large::-webkit-inner-spin-button,
+input[type="month"].month.large::-webkit-inner-spin-button,
+input[type="week"].week.large::-webkit-inner-spin-button {
   height: 50px;
 }
-input[type="date"].date.large::-webkit-calendar-picker-indicator {
+input[type="date"].date.large::-webkit-calendar-picker-indicator,
+input[type="datetime-local"].datetime-local.large::-webkit-calendar-picker-indicator,
+input[type="time"].time.large::-webkit-calendar-picker-indicator,
+input[type="month"].month.large::-webkit-calendar-picker-indicator,
+input[type="week"].week.large::-webkit-calendar-picker-indicator {
   padding: 18px 4px;
+}
+input[type="time"].time {
+  padding: 0 10px;
+}
+input[type="time"].time::-webkit-datetime-edit-text {
+  margin-right: 0;
+  visibility: visible !important;
+}
+input[type="week"].week::-webkit-datetime-edit-text {
+  margin-right: 2px;
+  opacity: 0.3;
+  visibility: visible !important;
 }
 input[type="number"].number {
   border: none;

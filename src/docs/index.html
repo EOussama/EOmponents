@@ -24,53 +24,7 @@
             
             <hr>
 
-            <div id="textbox" class="textbox blue">
-                <label for="a">Username</label>
-                <input id="a" value="something..." type="text">
-            </div>
-            <br><br>
-            <div id="checkbox" class="checkbox blue">
-                <input type="checkbox" checked=true>
-            </div>
-            <br><br>
-            <div id="radio" class="radio round blue">
-                <input type="radio" checked>
-            </div>
-            <br><br>
-            <div id="color" class="color-picker">
-                <span class="label"></span>
-                <input type="color">
-            </div>
-            <br><br>
-            <input id="nemo" class="number" type="number" value="23" ><br>
-            <br><br>
-            <input id="rng" class="range red" type="range" style="width: 100%" ><br>
-            <br><br>
-            <input id="dd" class="date green" type="date" ><br>
-            <br><br>
-            <button id="sb" class="btn">Sumbit</button>
-            <script>
-                document.getElementById('sb').onclick = function() {
-                    var output = "";
-
-                    output += "\nTextbox: " + document.getElementById('textbox').value;
-                    output += "\nCheckbox: " + document.getElementById('checkbox').value;
-                    output += "\nRadioButton: " + document.getElementById('radio').value;
-                    output += "\nColor: " + document.getElementById('color').value;
-                    output += "\nNumber: " + document.getElementById('nemo').value;
-                    output += "\nRange: " + document.getElementById('rng').value;
-                    output += "\nDate: " + document.getElementById('dd').value;
-
-                    console.log(output);
-                }
-            </script>
-            <hr>
-            datetime-local: <input type="datetime-local" ><br>
-            time: <input type="time" ><br>
-            month: <input type="month" ><br>
-            week: <input type="week" ><br>
-            <hr>
-            file: <input type="file" >
+            file: <input type="file">
 		</main>
 		
        	<script type="text/javascript" src="../dist/js/eomponents.js"></script>
