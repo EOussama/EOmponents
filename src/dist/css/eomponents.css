@@ -210,6 +210,110 @@ div.checkbox.large {
 div.checkbox.large.checked::after {
   font-size: 16px;
 }
+input[type="date"].date {
+  border: none;
+  border-radius: 2px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0px 1px 2px #c2c2c2;
+}
+input[type="date"].date.light:not(:disabled) {
+  background-color: #ffffff;
+  color: #a9a9a9;
+}
+input[type="date"].date.dark:not(:disabled) {
+  background-color: #5a778f;
+  color: #b5b5b5;
+}
+input[type="date"].date.gray:not(:disabled) {
+  background-color: #cdcdcd;
+  color: #343434;
+}
+input[type="date"].date.blue:not(:disabled) {
+  background-color: #b9d4ec;
+  color: #193c5a;
+}
+input[type="date"].date.aqua:not(:disabled) {
+  background-color: #daf1f8;
+  color: #1b6d85;
+}
+input[type="date"].date.green:not(:disabled) {
+  background-color: #c7e6c7;
+  color: #255625;
+}
+input[type="date"].date.yellow:not(:disabled) {
+  background-color: #fde39a;
+  color: #b5b5b5;
+  color: #634902;
+}
+input[type="date"].date.orange:not(:disabled) {
+  background-color: #ffb999;
+  color: #662000;
+}
+input[type="date"].date.red:not(:disabled) {
+  background-color: #f7bbbb;
+  color: #730d0d;
+}
+input[type="date"].date.pink:not(:disabled) {
+  background-color: #fde9f7;
+  color: #a70d77;
+}
+input[type="date"].date.violet:not(:disabled) {
+  background-color: #c2a0df;
+  color: #b5b5b5;
+  color: #28133a;
+}
+input[type="date"].date.brown:not(:disabled) {
+  background-color: #dc9a71;
+  color: #b5b5b5;
+  color: #160c05;
+}
+input[type="date"].date:focus {
+  outline: 0;
+}
+input[type="date"].date:disabled {
+  color: #b3b3b3;
+  cursor: no-drop;
+}
+input[type="date"].date::-webkit-inner-spin-button {
+  cursor: pointer;
+  height: 40px;
+  opacity: 0.3;
+  transition-duration: 0.3s;
+  transition-property: opacity;
+}
+input[type="date"].date::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.3;
+  padding: 14px 4px;
+}
+input[type="date"].date:not(:disabled):hover::-webkit-inner-spin-button,
+input[type="date"].date:not(:disabled):hover::-webkit-calendar-picker-indicator {
+  opacity: 0.6;
+}
+input[type="date"].date::-webkit-datetime-edit-text {
+  margin-right: 2px;
+  visibility: hidden;
+}
+input[type="date"].date.small {
+  font-size: 14px;
+  height: 30px;
+}
+input[type="date"].date.small::-webkit-inner-spin-button {
+  height: 30px;
+}
+input[type="date"].date.large {
+  font-size: 22px;
+  height: 50px;
+}
+input[type="date"].date.large::-webkit-inner-spin-button {
+  height: 50px;
+}
+input[type="date"].date.large::-webkit-calendar-picker-indicator {
+  padding: 18px 4px;
+}
 input[type="number"].number {
   border: none;
   border-radius: 2px;

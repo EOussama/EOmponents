@@ -46,6 +46,8 @@
             <br><br>
             <input id="rng" class="range red" type="range" style="width: 100%" ><br>
             <br><br>
+            <input id="dd" class="date green" type="date" ><br>
+            <br><br>
             <button id="sb" class="btn">Sumbit</button>
             <script>
                 document.getElementById('sb').onclick = function() {
@@ -57,12 +59,12 @@
                     output += "\nColor: " + document.getElementById('color').value;
                     output += "\nNumber: " + document.getElementById('nemo').value;
                     output += "\nRange: " + document.getElementById('rng').value;
+                    output += "\nDate: " + document.getElementById('dd').value;
 
                     console.log(output);
                 }
             </script>
             <hr>
-            date: <input type="date" ><br>
             datetime-local: <input type="datetime-local" ><br>
             time: <input type="time" ><br>
             month: <input type="month" ><br>

@@ -1,0 +1,84 @@
+#date() {
+    // Applies all supported colors.
+        .adapt-colors() {
+            each(@colors, {
+                &.@{key}:not(:disabled) {
+                    background-color: lighten(@value, 30%);
+                    
+                    #colors.set-comp-color(@value);
+                }
+            });
+        }
+    }
+
+input[type="date"].date {
+    border: none;
+    border-radius: 2px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+    #depth.add-depth(1px);
+    #date.adapt-colors();
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:disabled {
+        color: @color-disabled;
+        cursor: no-drop;
+    }
+
+    &::-webkit-inner-spin-button {
+        cursor: pointer;
+        height: 40px;
+        opacity: .3;
+        transition-duration: .3s;
+        transition-property: opacity;
+    }
+
+    &::-webkit-calendar-picker-indicator {
+        cursor: pointer;
+        opacity: .3;
+        padding: 14px 4px;
+    }
+
+    &:not(:disabled):hover {
+        &::-webkit-inner-spin-button, &::-webkit-calendar-picker-indicator {
+            opacity: .6;
+        }
+    }
+
+    &::-webkit-datetime-edit-text {
+        margin-right: 2px;
+        visibility: hidden;
+    }
+
+    // #region sizing
+
+    &.small {
+        font-size: 14px;
+        height: 30px;
+
+        &::-webkit-inner-spin-button {
+            height: 30px;
+        }
+    }
+
+    &.large {
+        font-size: 22px;
+        height: 50px;
+
+        &::-webkit-inner-spin-button {
+            height: 50px;
+        }
+
+        &::-webkit-calendar-picker-indicator {
+            padding: 18px 4px;
+        }
+    }
+
+    // #endregion
+}
