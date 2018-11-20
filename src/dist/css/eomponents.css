@@ -279,6 +279,7 @@ input[type="number"].number:disabled {
   cursor: no-drop;
 }
 input[type="number"].number::-webkit-inner-spin-button {
+  cursor: pointer;
   height: 45px;
   opacity: 0.3;
   transition-duration: 0.3s;
