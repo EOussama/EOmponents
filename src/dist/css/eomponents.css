@@ -7,6 +7,725 @@
 	@repository:	https://github.com/Eoussama/Eomponents
 
 */
+button.btn,
+input[type="button"].btn,
+input[type="submit"].btn,
+input[type="reset"].btn,
+a.btn {
+  background-color: #dcdcdc;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 2.5px 0.7px #a9a9a9;
+  box-sizing: border-box;
+  color: #1f2931;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px;
+  outline: none;
+  overflow: hidden;
+  text-decoration: none;
+  transition-duration: 0.5s, 0.05s, 0.05s;
+  transition-property: background-color, box-shadow, top;
+  padding: 8px 10px;
+  position: relative;
+  user-select: none;
+  /* #region sizing */
+  /* #endregion */
+}
+button.btn.light,
+input[type="button"].btn.light,
+input[type="submit"].btn.light,
+input[type="reset"].btn.light,
+a.btn.light {
+  color: #a9a9a9;
+  background-color: #f5f5f5;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+button.btn.light:hover,
+input[type="button"].btn.light:hover,
+input[type="submit"].btn.light:hover,
+input[type="reset"].btn.light:hover,
+a.btn.light:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 2.5px 0.7px #d9d9d9;
+}
+button.btn.light:active,
+input[type="button"].btn.light:active,
+input[type="submit"].btn.light:active,
+input[type="reset"].btn.light:active,
+a.btn.light:active {
+  box-shadow: 0px 1px 0.5px #cfcfcf;
+  top: 1.5px;
+}
+button.btn.light.invert,
+input[type="button"].btn.light.invert,
+input[type="submit"].btn.light.invert,
+input[type="reset"].btn.light.invert,
+a.btn.light.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #f5f5f5;
+}
+button.btn.light.invert:hover,
+input[type="button"].btn.light.invert:hover,
+input[type="submit"].btn.light.invert:hover,
+input[type="reset"].btn.light.invert:hover,
+a.btn.light.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+button.btn.light.invert:active,
+input[type="button"].btn.light.invert:active,
+input[type="submit"].btn.light.invert:active,
+input[type="reset"].btn.light.invert:active,
+a.btn.light.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+button.btn.dark,
+input[type="button"].btn.dark,
+input[type="submit"].btn.dark,
+input[type="reset"].btn.dark,
+a.btn.dark {
+  color: #b5b5b5;
+  background-color: #1f2931;
+  box-shadow: 0px 2.5px 0.7px #000000;
+}
+button.btn.dark:hover,
+input[type="button"].btn.dark:hover,
+input[type="submit"].btn.dark:hover,
+input[type="reset"].btn.dark:hover,
+a.btn.dark:hover {
+  background-color: #293641;
+  box-shadow: 0px 2.5px 0.7px #0b0f12;
+}
+button.btn.dark:active,
+input[type="button"].btn.dark:active,
+input[type="submit"].btn.dark:active,
+input[type="reset"].btn.dark:active,
+a.btn.dark:active {
+  box-shadow: 0px 1px 0.5px #010202;
+  top: 1.5px;
+}
+button.btn.dark.invert,
+input[type="button"].btn.dark.invert,
+input[type="submit"].btn.dark.invert,
+input[type="reset"].btn.dark.invert,
+a.btn.dark.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #1f2931;
+}
+button.btn.dark.invert:hover,
+input[type="button"].btn.dark.invert:hover,
+input[type="submit"].btn.dark.invert:hover,
+input[type="reset"].btn.dark.invert:hover,
+a.btn.dark.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+button.btn.dark.invert:active,
+input[type="button"].btn.dark.invert:active,
+input[type="submit"].btn.dark.invert:active,
+input[type="reset"].btn.dark.invert:active,
+a.btn.dark.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+button.btn.gray,
+input[type="button"].btn.gray,
+input[type="submit"].btn.gray,
+input[type="reset"].btn.gray,
+a.btn.gray {
+  color: #343434;
+  background-color: #808080;
+  box-shadow: 0px 2.5px 0.7px #4d4d4d;
+}
+button.btn.gray:hover,
+input[type="button"].btn.gray:hover,
+input[type="submit"].btn.gray:hover,
+input[type="reset"].btn.gray:hover,
+a.btn.gray:hover {
+  background-color: #8d8d8d;
+  box-shadow: 0px 2.5px 0.7px #676767;
+}
+button.btn.gray:active,
+input[type="button"].btn.gray:active,
+input[type="submit"].btn.gray:active,
+input[type="reset"].btn.gray:active,
+a.btn.gray:active {
+  box-shadow: 0px 1px 0.5px #5a5a5a;
+  top: 1.5px;
+}
+button.btn.gray.invert,
+input[type="button"].btn.gray.invert,
+input[type="submit"].btn.gray.invert,
+input[type="reset"].btn.gray.invert,
+a.btn.gray.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #808080;
+}
+button.btn.gray.invert:hover,
+input[type="button"].btn.gray.invert:hover,
+input[type="submit"].btn.gray.invert:hover,
+input[type="reset"].btn.gray.invert:hover,
+a.btn.gray.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+button.btn.gray.invert:active,
+input[type="button"].btn.gray.invert:active,
+input[type="submit"].btn.gray.invert:active,
+input[type="reset"].btn.gray.invert:active,
+a.btn.gray.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+button.btn.blue,
+input[type="button"].btn.blue,
+input[type="submit"].btn.blue,
+input[type="reset"].btn.blue,
+a.btn.blue {
+  color: #193c5a;
+  background-color: #428bca;
+  box-shadow: 0px 2.5px 0.7px #245682;
+}
+button.btn.blue:hover,
+input[type="button"].btn.blue:hover,
+input[type="submit"].btn.blue:hover,
+input[type="reset"].btn.blue:hover,
+a.btn.blue:hover {
+  background-color: #5697d0;
+  box-shadow: 0px 2.5px 0.7px #3071a9;
+}
+button.btn.blue:active,
+input[type="button"].btn.blue:active,
+input[type="submit"].btn.blue:active,
+input[type="reset"].btn.blue:active,
+a.btn.blue:active {
+  box-shadow: 0px 1px 0.5px #2a6496;
+  top: 1.5px;
+}
+button.btn.blue.invert,
+input[type="button"].btn.blue.invert,
+input[type="submit"].btn.blue.invert,
+input[type="reset"].btn.blue.invert,
+a.btn.blue.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #428bca;
+}
+button.btn.blue.invert:hover,
+input[type="button"].btn.blue.invert:hover,
+input[type="submit"].btn.blue.invert:hover,
+input[type="reset"].btn.blue.invert:hover,
+a.btn.blue.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+button.btn.blue.invert:active,
+input[type="button"].btn.blue.invert:active,
+input[type="submit"].btn.blue.invert:active,
+input[type="reset"].btn.blue.invert:active,
+a.btn.blue.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+button.btn.aqua,
+input[type="button"].btn.aqua,
+input[type="submit"].btn.aqua,
+input[type="reset"].btn.aqua,
+a.btn.aqua {
+  color: #1b6d85;
+  background-color: #5bc0de;
+  box-shadow: 0px 2.5px 0.7px #2390b0;
+}
+button.btn.aqua:hover,
+input[type="button"].btn.aqua:hover,
+input[type="submit"].btn.aqua:hover,
+input[type="reset"].btn.aqua:hover,
+a.btn.aqua:hover {
+  background-color: #70c8e2;
+  box-shadow: 0px 2.5px 0.7px #31b0d5;
+}
+button.btn.aqua:active,
+input[type="button"].btn.aqua:active,
+input[type="submit"].btn.aqua:active,
+input[type="reset"].btn.aqua:active,
+a.btn.aqua:active {
+  box-shadow: 0px 1px 0.5px #28a1c5;
+  top: 1.5px;
+}
+button.btn.aqua.invert,
+input[type="button"].btn.aqua.invert,
+input[type="submit"].btn.aqua.invert,
+input[type="reset"].btn.aqua.invert,
+a.btn.aqua.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #5bc0de;
+}
+button.btn.aqua.invert:hover,
+input[type="button"].btn.aqua.invert:hover,
+input[type="submit"].btn.aqua.invert:hover,
+input[type="reset"].btn.aqua.invert:hover,
+a.btn.aqua.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+button.btn.aqua.invert:active,
+input[type="button"].btn.aqua.invert:active,
+input[type="submit"].btn.aqua.invert:active,
+input[type="reset"].btn.aqua.invert:active,
+a.btn.aqua.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+button.btn.green,
+input[type="button"].btn.green,
+input[type="submit"].btn.green,
+input[type="reset"].btn.green,
+a.btn.green {
+  color: #255625;
+  background-color: #5cb85c;
+  box-shadow: 0px 2.5px 0.7px #357935;
+}
+button.btn.green:hover,
+input[type="button"].btn.green:hover,
+input[type="submit"].btn.green:hover,
+input[type="reset"].btn.green:hover,
+a.btn.green:hover {
+  background-color: #6ec06e;
+  box-shadow: 0px 2.5px 0.7px #449d44;
+}
+button.btn.green:active,
+input[type="button"].btn.green:active,
+input[type="submit"].btn.green:active,
+input[type="reset"].btn.green:active,
+a.btn.green:active {
+  box-shadow: 0px 1px 0.5px #3d8b3d;
+  top: 1.5px;
+}
+button.btn.green.invert,
+input[type="button"].btn.green.invert,
+input[type="submit"].btn.green.invert,
+input[type="reset"].btn.green.invert,
+a.btn.green.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #5cb85c;
+}
+button.btn.green.invert:hover,
+input[type="button"].btn.green.invert:hover,
+input[type="submit"].btn.green.invert:hover,
+input[type="reset"].btn.green.invert:hover,
+a.btn.green.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+button.btn.green.invert:active,
+input[type="button"].btn.green.invert:active,
+input[type="submit"].btn.green.invert:active,
+input[type="reset"].btn.green.invert:active,
+a.btn.green.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+button.btn.yellow,
+input[type="button"].btn.yellow,
+input[type="submit"].btn.yellow,
+input[type="reset"].btn.yellow,
+a.btn.yellow {
+  color: #b5b5b5;
+  color: #634902;
+  background-color: #f8b806;
+  box-shadow: 0px 2.5px 0.7px #946e04;
+}
+button.btn.yellow:hover,
+input[type="button"].btn.yellow:hover,
+input[type="submit"].btn.yellow:hover,
+input[type="reset"].btn.yellow:hover,
+a.btn.yellow:hover {
+  background-color: #fabf1e;
+  box-shadow: 0px 2.5px 0.7px #c69305;
+}
+button.btn.yellow:active,
+input[type="button"].btn.yellow:active,
+input[type="submit"].btn.yellow:active,
+input[type="reset"].btn.yellow:active,
+a.btn.yellow:active {
+  box-shadow: 0px 1px 0.5px #ad8104;
+  top: 1.5px;
+}
+button.btn.yellow.invert,
+input[type="button"].btn.yellow.invert,
+input[type="submit"].btn.yellow.invert,
+input[type="reset"].btn.yellow.invert,
+a.btn.yellow.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #f8b806;
+}
+button.btn.yellow.invert:hover,
+input[type="button"].btn.yellow.invert:hover,
+input[type="submit"].btn.yellow.invert:hover,
+input[type="reset"].btn.yellow.invert:hover,
+a.btn.yellow.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+button.btn.yellow.invert:active,
+input[type="button"].btn.yellow.invert:active,
+input[type="submit"].btn.yellow.invert:active,
+input[type="reset"].btn.yellow.invert:active,
+a.btn.yellow.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+button.btn.orange,
+input[type="button"].btn.orange,
+input[type="submit"].btn.orange,
+input[type="reset"].btn.orange,
+a.btn.orange {
+  color: #662000;
+  background-color: #ff5100;
+  box-shadow: 0px 2.5px 0.7px #993100;
+}
+button.btn.orange:hover,
+input[type="button"].btn.orange:hover,
+input[type="submit"].btn.orange:hover,
+input[type="reset"].btn.orange:hover,
+a.btn.orange:hover {
+  background-color: #ff621a;
+  box-shadow: 0px 2.5px 0.7px #cc4100;
+}
+button.btn.orange:active,
+input[type="button"].btn.orange:active,
+input[type="submit"].btn.orange:active,
+input[type="reset"].btn.orange:active,
+a.btn.orange:active {
+  box-shadow: 0px 1px 0.5px #b33900;
+  top: 1.5px;
+}
+button.btn.orange.invert,
+input[type="button"].btn.orange.invert,
+input[type="submit"].btn.orange.invert,
+input[type="reset"].btn.orange.invert,
+a.btn.orange.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #ff5100;
+}
+button.btn.orange.invert:hover,
+input[type="button"].btn.orange.invert:hover,
+input[type="submit"].btn.orange.invert:hover,
+input[type="reset"].btn.orange.invert:hover,
+a.btn.orange.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+button.btn.orange.invert:active,
+input[type="button"].btn.orange.invert:active,
+input[type="submit"].btn.orange.invert:active,
+input[type="reset"].btn.orange.invert:active,
+a.btn.orange.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+button.btn.red,
+input[type="button"].btn.red,
+input[type="submit"].btn.red,
+input[type="reset"].btn.red,
+a.btn.red {
+  color: #730d0d;
+  background-color: #e73232;
+  box-shadow: 0px 2.5px 0.7px #a01313;
+}
+button.btn.red:hover,
+input[type="button"].btn.red:hover,
+input[type="submit"].btn.red:hover,
+input[type="reset"].btn.red:hover,
+a.btn.red:hover {
+  background-color: #ea4949;
+  box-shadow: 0px 2.5px 0.7px #ce1818;
+}
+button.btn.red:active,
+input[type="button"].btn.red:active,
+input[type="submit"].btn.red:active,
+input[type="reset"].btn.red:active,
+a.btn.red:active {
+  box-shadow: 0px 1px 0.5px #b71515;
+  top: 1.5px;
+}
+button.btn.red.invert,
+input[type="button"].btn.red.invert,
+input[type="submit"].btn.red.invert,
+input[type="reset"].btn.red.invert,
+a.btn.red.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #e73232;
+}
+button.btn.red.invert:hover,
+input[type="button"].btn.red.invert:hover,
+input[type="submit"].btn.red.invert:hover,
+input[type="reset"].btn.red.invert:hover,
+a.btn.red.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+button.btn.red.invert:active,
+input[type="button"].btn.red.invert:active,
+input[type="submit"].btn.red.invert:active,
+input[type="reset"].btn.red.invert:active,
+a.btn.red.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+button.btn.pink,
+input[type="button"].btn.pink,
+input[type="submit"].btn.pink,
+input[type="reset"].btn.pink,
+a.btn.pink {
+  color: #a70d77;
+  background-color: #f25bc3;
+  box-shadow: 0px 2.5px 0.7px #d61199;
+}
+button.btn.pink:hover,
+input[type="button"].btn.pink:hover,
+input[type="submit"].btn.pink:hover,
+input[type="reset"].btn.pink:hover,
+a.btn.pink:hover {
+  background-color: #f473cc;
+  box-shadow: 0px 2.5px 0.7px #ee2cb2;
+}
+button.btn.pink:active,
+input[type="button"].btn.pink:active,
+input[type="submit"].btn.pink:active,
+input[type="reset"].btn.pink:active,
+a.btn.pink:active {
+  box-shadow: 0px 1px 0.5px #ec14a9;
+  top: 1.5px;
+}
+button.btn.pink.invert,
+input[type="button"].btn.pink.invert,
+input[type="submit"].btn.pink.invert,
+input[type="reset"].btn.pink.invert,
+a.btn.pink.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #f25bc3;
+}
+button.btn.pink.invert:hover,
+input[type="button"].btn.pink.invert:hover,
+input[type="submit"].btn.pink.invert:hover,
+input[type="reset"].btn.pink.invert:hover,
+a.btn.pink.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+button.btn.pink.invert:active,
+input[type="button"].btn.pink.invert:active,
+input[type="submit"].btn.pink.invert:active,
+input[type="reset"].btn.pink.invert:active,
+a.btn.pink.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+button.btn.violet,
+input[type="button"].btn.violet,
+input[type="submit"].btn.violet,
+input[type="reset"].btn.violet,
+a.btn.violet {
+  color: #b5b5b5;
+  color: #28133a;
+  background-color: #773aac;
+  box-shadow: 0px 2.5px 0.7px #422060;
+}
+button.btn.violet:hover,
+input[type="button"].btn.violet:hover,
+input[type="submit"].btn.violet:hover,
+input[type="reset"].btn.violet:hover,
+a.btn.violet:hover {
+  background-color: #8441bf;
+  box-shadow: 0px 2.5px 0.7px #5d2d86;
+}
+button.btn.violet:active,
+input[type="button"].btn.violet:active,
+input[type="submit"].btn.violet:active,
+input[type="reset"].btn.violet:active,
+a.btn.violet:active {
+  box-shadow: 0px 1px 0.5px #4f2773;
+  top: 1.5px;
+}
+button.btn.violet.invert,
+input[type="button"].btn.violet.invert,
+input[type="submit"].btn.violet.invert,
+input[type="reset"].btn.violet.invert,
+a.btn.violet.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #773aac;
+}
+button.btn.violet.invert:hover,
+input[type="button"].btn.violet.invert:hover,
+input[type="submit"].btn.violet.invert:hover,
+input[type="reset"].btn.violet.invert:hover,
+a.btn.violet.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+button.btn.violet.invert:active,
+input[type="button"].btn.violet.invert:active,
+input[type="submit"].btn.violet.invert:active,
+input[type="reset"].btn.violet.invert:active,
+a.btn.violet.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+button.btn.brown,
+input[type="button"].btn.brown,
+input[type="submit"].btn.brown,
+input[type="reset"].btn.brown,
+a.btn.brown {
+  color: #b5b5b5;
+  color: #160c05;
+  background-color: #904d24;
+  box-shadow: 0px 2.5px 0.7px #3e2110;
+}
+button.btn.brown:hover,
+input[type="button"].btn.brown:hover,
+input[type="submit"].btn.brown:hover,
+input[type="reset"].btn.brown:hover,
+a.btn.brown:hover {
+  background-color: #a45829;
+  box-shadow: 0px 2.5px 0.7px #67371a;
+}
+button.btn.brown:active,
+input[type="button"].btn.brown:active,
+input[type="submit"].btn.brown:active,
+input[type="reset"].btn.brown:active,
+a.btn.brown:active {
+  box-shadow: 0px 1px 0.5px #532c15;
+  top: 1.5px;
+}
+button.btn.brown.invert,
+input[type="button"].btn.brown.invert,
+input[type="submit"].btn.brown.invert,
+input[type="reset"].btn.brown.invert,
+a.btn.brown.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #904d24;
+}
+button.btn.brown.invert:hover,
+input[type="button"].btn.brown.invert:hover,
+input[type="submit"].btn.brown.invert:hover,
+input[type="reset"].btn.brown.invert:hover,
+a.btn.brown.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+button.btn.brown.invert:active,
+input[type="button"].btn.brown.invert:active,
+input[type="submit"].btn.brown.invert:active,
+input[type="reset"].btn.brown.invert:active,
+a.btn.brown.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+button.btn:hover,
+input[type="button"].btn:hover,
+input[type="submit"].btn:hover,
+input[type="reset"].btn:hover,
+a.btn:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+button.btn:focus,
+input[type="button"].btn:focus,
+input[type="submit"].btn:focus,
+input[type="reset"].btn:focus,
+a.btn:focus {
+  outline: none;
+}
+button.btn.disabled,
+input[type="button"].btn.disabled,
+input[type="submit"].btn.disabled,
+input[type="reset"].btn.disabled,
+a.btn.disabled {
+  box-shadow: 0px 2.5px 0.7px #808080;
+  background-color: #e6e6e6;
+  color: #b3b3b3;
+  cursor: not-allowed;
+}
+button.btn.disabled:hover,
+input[type="button"].btn.disabled:hover,
+input[type="submit"].btn.disabled:hover,
+input[type="reset"].btn.disabled:hover,
+a.btn.disabled:hover {
+  box-shadow: 0px 2.5px 0.7px #808080;
+  background-color: #e6e6e6;
+}
+button.btn.disabled:active,
+input[type="button"].btn.disabled:active,
+input[type="submit"].btn.disabled:active,
+input[type="reset"].btn.disabled:active,
+a.btn.disabled:active {
+  box-shadow: 0px 2.5px 0.7px #808080;
+  top: 0;
+}
+button.btn.disabled.invert,
+input[type="button"].btn.disabled.invert,
+input[type="submit"].btn.disabled.invert,
+input[type="reset"].btn.disabled.invert,
+a.btn.disabled.invert {
+  box-shadow: 0px 2.5px 0.7px #808080;
+  background-color: #e6e6e6;
+  color: #b3b3b3;
+}
+button.btn.disabled.invert:hover,
+input[type="button"].btn.disabled.invert:hover,
+input[type="submit"].btn.disabled.invert:hover,
+input[type="reset"].btn.disabled.invert:hover,
+a.btn.disabled.invert:hover {
+  box-shadow: 0px 2.5px 0.7px #808080;
+  background-color: #e6e6e6;
+}
+button.btn.disabled.invert:active,
+input[type="button"].btn.disabled.invert:active,
+input[type="submit"].btn.disabled.invert:active,
+input[type="reset"].btn.disabled.invert:active,
+a.btn.disabled.invert:active {
+  box-shadow: 0px 2.5px 0.7px #808080;
+  top: 0;
+}
+button.btn:active,
+input[type="button"].btn:active,
+input[type="submit"].btn:active,
+input[type="reset"].btn:active,
+a.btn:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+button.btn.large,
+input[type="button"].btn.large,
+input[type="submit"].btn.large,
+input[type="reset"].btn.large,
+a.btn.large {
+  font-size: 18px;
+  padding: 10px 13px;
+}
+button.btn.small,
+input[type="button"].btn.small,
+input[type="submit"].btn.small,
+input[type="reset"].btn.small,
+a.btn.small {
+  font-size: 13px;
+  padding: 6px 8px;
+}
 div.color-picker {
   border-radius: 2px;
   cursor: pointer;
@@ -1344,725 +2063,6 @@ blockquote::after {
   left: -3px;
   position: relative;
   top: 6px;
-}
-button.btn,
-input[type="button"].btn,
-input[type="submit"].btn,
-input[type="reset"].btn,
-a.btn {
-  background-color: #dcdcdc;
-  border: none;
-  border-radius: 3px;
-  box-shadow: 0px 2.5px 0.7px #a9a9a9;
-  box-sizing: border-box;
-  color: #1f2931;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  margin: 5px;
-  outline: none;
-  overflow: hidden;
-  text-decoration: none;
-  transition-duration: 0.5s, 0.05s, 0.05s;
-  transition-property: background-color, box-shadow, top;
-  padding: 8px 10px;
-  position: relative;
-  user-select: none;
-  /* #region sizing */
-  /* #endregion */
-}
-button.btn.light,
-input[type="button"].btn.light,
-input[type="submit"].btn.light,
-input[type="reset"].btn.light,
-a.btn.light {
-  color: #a9a9a9;
-  background-color: #f5f5f5;
-  box-shadow: 0px 2.5px 0.7px #c2c2c2;
-}
-button.btn.light:hover,
-input[type="button"].btn.light:hover,
-input[type="submit"].btn.light:hover,
-input[type="reset"].btn.light:hover,
-a.btn.light:hover {
-  background-color: #ffffff;
-  box-shadow: 0px 2.5px 0.7px #d9d9d9;
-}
-button.btn.light:active,
-input[type="button"].btn.light:active,
-input[type="submit"].btn.light:active,
-input[type="reset"].btn.light:active,
-a.btn.light:active {
-  box-shadow: 0px 1px 0.5px #cfcfcf;
-  top: 1.5px;
-}
-button.btn.light.invert,
-input[type="button"].btn.light.invert,
-input[type="submit"].btn.light.invert,
-input[type="reset"].btn.light.invert,
-a.btn.light.invert {
-  background-color: #dcdcdc;
-  box-shadow: 0px 2.5px 0.7px #b5b5b5;
-  color: #f5f5f5;
-}
-button.btn.light.invert:hover,
-input[type="button"].btn.light.invert:hover,
-input[type="submit"].btn.light.invert:hover,
-input[type="reset"].btn.light.invert:hover,
-a.btn.light.invert:hover {
-  background-color: #e8e8e8;
-  box-shadow: 0px 2.5px 0.7px #c2c2c2;
-}
-button.btn.light.invert:active,
-input[type="button"].btn.light.invert:active,
-input[type="submit"].btn.light.invert:active,
-input[type="reset"].btn.light.invert:active,
-a.btn.light.invert:active {
-  box-shadow: 0px 1px 0.5px #b5b5b5;
-  top: 1.5px;
-}
-button.btn.dark,
-input[type="button"].btn.dark,
-input[type="submit"].btn.dark,
-input[type="reset"].btn.dark,
-a.btn.dark {
-  color: #b5b5b5;
-  background-color: #1f2931;
-  box-shadow: 0px 2.5px 0.7px #000000;
-}
-button.btn.dark:hover,
-input[type="button"].btn.dark:hover,
-input[type="submit"].btn.dark:hover,
-input[type="reset"].btn.dark:hover,
-a.btn.dark:hover {
-  background-color: #293641;
-  box-shadow: 0px 2.5px 0.7px #0b0f12;
-}
-button.btn.dark:active,
-input[type="button"].btn.dark:active,
-input[type="submit"].btn.dark:active,
-input[type="reset"].btn.dark:active,
-a.btn.dark:active {
-  box-shadow: 0px 1px 0.5px #010202;
-  top: 1.5px;
-}
-button.btn.dark.invert,
-input[type="button"].btn.dark.invert,
-input[type="submit"].btn.dark.invert,
-input[type="reset"].btn.dark.invert,
-a.btn.dark.invert {
-  background-color: #dcdcdc;
-  box-shadow: 0px 2.5px 0.7px #b5b5b5;
-  color: #1f2931;
-}
-button.btn.dark.invert:hover,
-input[type="button"].btn.dark.invert:hover,
-input[type="submit"].btn.dark.invert:hover,
-input[type="reset"].btn.dark.invert:hover,
-a.btn.dark.invert:hover {
-  background-color: #e8e8e8;
-  box-shadow: 0px 2.5px 0.7px #c2c2c2;
-}
-button.btn.dark.invert:active,
-input[type="button"].btn.dark.invert:active,
-input[type="submit"].btn.dark.invert:active,
-input[type="reset"].btn.dark.invert:active,
-a.btn.dark.invert:active {
-  box-shadow: 0px 1px 0.5px #b5b5b5;
-  top: 1.5px;
-}
-button.btn.gray,
-input[type="button"].btn.gray,
-input[type="submit"].btn.gray,
-input[type="reset"].btn.gray,
-a.btn.gray {
-  color: #343434;
-  background-color: #808080;
-  box-shadow: 0px 2.5px 0.7px #4d4d4d;
-}
-button.btn.gray:hover,
-input[type="button"].btn.gray:hover,
-input[type="submit"].btn.gray:hover,
-input[type="reset"].btn.gray:hover,
-a.btn.gray:hover {
-  background-color: #8d8d8d;
-  box-shadow: 0px 2.5px 0.7px #676767;
-}
-button.btn.gray:active,
-input[type="button"].btn.gray:active,
-input[type="submit"].btn.gray:active,
-input[type="reset"].btn.gray:active,
-a.btn.gray:active {
-  box-shadow: 0px 1px 0.5px #5a5a5a;
-  top: 1.5px;
-}
-button.btn.gray.invert,
-input[type="button"].btn.gray.invert,
-input[type="submit"].btn.gray.invert,
-input[type="reset"].btn.gray.invert,
-a.btn.gray.invert {
-  background-color: #dcdcdc;
-  box-shadow: 0px 2.5px 0.7px #b5b5b5;
-  color: #808080;
-}
-button.btn.gray.invert:hover,
-input[type="button"].btn.gray.invert:hover,
-input[type="submit"].btn.gray.invert:hover,
-input[type="reset"].btn.gray.invert:hover,
-a.btn.gray.invert:hover {
-  background-color: #e8e8e8;
-  box-shadow: 0px 2.5px 0.7px #c2c2c2;
-}
-button.btn.gray.invert:active,
-input[type="button"].btn.gray.invert:active,
-input[type="submit"].btn.gray.invert:active,
-input[type="reset"].btn.gray.invert:active,
-a.btn.gray.invert:active {
-  box-shadow: 0px 1px 0.5px #b5b5b5;
-  top: 1.5px;
-}
-button.btn.blue,
-input[type="button"].btn.blue,
-input[type="submit"].btn.blue,
-input[type="reset"].btn.blue,
-a.btn.blue {
-  color: #193c5a;
-  background-color: #428bca;
-  box-shadow: 0px 2.5px 0.7px #245682;
-}
-button.btn.blue:hover,
-input[type="button"].btn.blue:hover,
-input[type="submit"].btn.blue:hover,
-input[type="reset"].btn.blue:hover,
-a.btn.blue:hover {
-  background-color: #5697d0;
-  box-shadow: 0px 2.5px 0.7px #3071a9;
-}
-button.btn.blue:active,
-input[type="button"].btn.blue:active,
-input[type="submit"].btn.blue:active,
-input[type="reset"].btn.blue:active,
-a.btn.blue:active {
-  box-shadow: 0px 1px 0.5px #2a6496;
-  top: 1.5px;
-}
-button.btn.blue.invert,
-input[type="button"].btn.blue.invert,
-input[type="submit"].btn.blue.invert,
-input[type="reset"].btn.blue.invert,
-a.btn.blue.invert {
-  background-color: #dcdcdc;
-  box-shadow: 0px 2.5px 0.7px #b5b5b5;
-  color: #428bca;
-}
-button.btn.blue.invert:hover,
-input[type="button"].btn.blue.invert:hover,
-input[type="submit"].btn.blue.invert:hover,
-input[type="reset"].btn.blue.invert:hover,
-a.btn.blue.invert:hover {
-  background-color: #e8e8e8;
-  box-shadow: 0px 2.5px 0.7px #c2c2c2;
-}
-button.btn.blue.invert:active,
-input[type="button"].btn.blue.invert:active,
-input[type="submit"].btn.blue.invert:active,
-input[type="reset"].btn.blue.invert:active,
-a.btn.blue.invert:active {
-  box-shadow: 0px 1px 0.5px #b5b5b5;
-  top: 1.5px;
-}
-button.btn.aqua,
-input[type="button"].btn.aqua,
-input[type="submit"].btn.aqua,
-input[type="reset"].btn.aqua,
-a.btn.aqua {
-  color: #1b6d85;
-  background-color: #5bc0de;
-  box-shadow: 0px 2.5px 0.7px #2390b0;
-}
-button.btn.aqua:hover,
-input[type="button"].btn.aqua:hover,
-input[type="submit"].btn.aqua:hover,
-input[type="reset"].btn.aqua:hover,
-a.btn.aqua:hover {
-  background-color: #70c8e2;
-  box-shadow: 0px 2.5px 0.7px #31b0d5;
-}
-button.btn.aqua:active,
-input[type="button"].btn.aqua:active,
-input[type="submit"].btn.aqua:active,
-input[type="reset"].btn.aqua:active,
-a.btn.aqua:active {
-  box-shadow: 0px 1px 0.5px #28a1c5;
-  top: 1.5px;
-}
-button.btn.aqua.invert,
-input[type="button"].btn.aqua.invert,
-input[type="submit"].btn.aqua.invert,
-input[type="reset"].btn.aqua.invert,
-a.btn.aqua.invert {
-  background-color: #dcdcdc;
-  box-shadow: 0px 2.5px 0.7px #b5b5b5;
-  color: #5bc0de;
-}
-button.btn.aqua.invert:hover,
-input[type="button"].btn.aqua.invert:hover,
-input[type="submit"].btn.aqua.invert:hover,
-input[type="reset"].btn.aqua.invert:hover,
-a.btn.aqua.invert:hover {
-  background-color: #e8e8e8;
-  box-shadow: 0px 2.5px 0.7px #c2c2c2;
-}
-button.btn.aqua.invert:active,
-input[type="button"].btn.aqua.invert:active,
-input[type="submit"].btn.aqua.invert:active,
-input[type="reset"].btn.aqua.invert:active,
-a.btn.aqua.invert:active {
-  box-shadow: 0px 1px 0.5px #b5b5b5;
-  top: 1.5px;
-}
-button.btn.green,
-input[type="button"].btn.green,
-input[type="submit"].btn.green,
-input[type="reset"].btn.green,
-a.btn.green {
-  color: #255625;
-  background-color: #5cb85c;
-  box-shadow: 0px 2.5px 0.7px #357935;
-}
-button.btn.green:hover,
-input[type="button"].btn.green:hover,
-input[type="submit"].btn.green:hover,
-input[type="reset"].btn.green:hover,
-a.btn.green:hover {
-  background-color: #6ec06e;
-  box-shadow: 0px 2.5px 0.7px #449d44;
-}
-button.btn.green:active,
-input[type="button"].btn.green:active,
-input[type="submit"].btn.green:active,
-input[type="reset"].btn.green:active,
-a.btn.green:active {
-  box-shadow: 0px 1px 0.5px #3d8b3d;
-  top: 1.5px;
-}
-button.btn.green.invert,
-input[type="button"].btn.green.invert,
-input[type="submit"].btn.green.invert,
-input[type="reset"].btn.green.invert,
-a.btn.green.invert {
-  background-color: #dcdcdc;
-  box-shadow: 0px 2.5px 0.7px #b5b5b5;
-  color: #5cb85c;
-}
-button.btn.green.invert:hover,
-input[type="button"].btn.green.invert:hover,
-input[type="submit"].btn.green.invert:hover,
-input[type="reset"].btn.green.invert:hover,
-a.btn.green.invert:hover {
-  background-color: #e8e8e8;
-  box-shadow: 0px 2.5px 0.7px #c2c2c2;
-}
-button.btn.green.invert:active,
-input[type="button"].btn.green.invert:active,
-input[type="submit"].btn.green.invert:active,
-input[type="reset"].btn.green.invert:active,
-a.btn.green.invert:active {
-  box-shadow: 0px 1px 0.5px #b5b5b5;
-  top: 1.5px;
-}
-button.btn.yellow,
-input[type="button"].btn.yellow,
-input[type="submit"].btn.yellow,
-input[type="reset"].btn.yellow,
-a.btn.yellow {
-  color: #b5b5b5;
-  color: #634902;
-  background-color: #f8b806;
-  box-shadow: 0px 2.5px 0.7px #946e04;
-}
-button.btn.yellow:hover,
-input[type="button"].btn.yellow:hover,
-input[type="submit"].btn.yellow:hover,
-input[type="reset"].btn.yellow:hover,
-a.btn.yellow:hover {
-  background-color: #fabf1e;
-  box-shadow: 0px 2.5px 0.7px #c69305;
-}
-button.btn.yellow:active,
-input[type="button"].btn.yellow:active,
-input[type="submit"].btn.yellow:active,
-input[type="reset"].btn.yellow:active,
-a.btn.yellow:active {
-  box-shadow: 0px 1px 0.5px #ad8104;
-  top: 1.5px;
-}
-button.btn.yellow.invert,
-input[type="button"].btn.yellow.invert,
-input[type="submit"].btn.yellow.invert,
-input[type="reset"].btn.yellow.invert,
-a.btn.yellow.invert {
-  background-color: #dcdcdc;
-  box-shadow: 0px 2.5px 0.7px #b5b5b5;
-  color: #f8b806;
-}
-button.btn.yellow.invert:hover,
-input[type="button"].btn.yellow.invert:hover,
-input[type="submit"].btn.yellow.invert:hover,
-input[type="reset"].btn.yellow.invert:hover,
-a.btn.yellow.invert:hover {
-  background-color: #e8e8e8;
-  box-shadow: 0px 2.5px 0.7px #c2c2c2;
-}
-button.btn.yellow.invert:active,
-input[type="button"].btn.yellow.invert:active,
-input[type="submit"].btn.yellow.invert:active,
-input[type="reset"].btn.yellow.invert:active,
-a.btn.yellow.invert:active {
-  box-shadow: 0px 1px 0.5px #b5b5b5;
-  top: 1.5px;
-}
-button.btn.orange,
-input[type="button"].btn.orange,
-input[type="submit"].btn.orange,
-input[type="reset"].btn.orange,
-a.btn.orange {
-  color: #662000;
-  background-color: #ff5100;
-  box-shadow: 0px 2.5px 0.7px #993100;
-}
-button.btn.orange:hover,
-input[type="button"].btn.orange:hover,
-input[type="submit"].btn.orange:hover,
-input[type="reset"].btn.orange:hover,
-a.btn.orange:hover {
-  background-color: #ff621a;
-  box-shadow: 0px 2.5px 0.7px #cc4100;
-}
-button.btn.orange:active,
-input[type="button"].btn.orange:active,
-input[type="submit"].btn.orange:active,
-input[type="reset"].btn.orange:active,
-a.btn.orange:active {
-  box-shadow: 0px 1px 0.5px #b33900;
-  top: 1.5px;
-}
-button.btn.orange.invert,
-input[type="button"].btn.orange.invert,
-input[type="submit"].btn.orange.invert,
-input[type="reset"].btn.orange.invert,
-a.btn.orange.invert {
-  background-color: #dcdcdc;
-  box-shadow: 0px 2.5px 0.7px #b5b5b5;
-  color: #ff5100;
-}
-button.btn.orange.invert:hover,
-input[type="button"].btn.orange.invert:hover,
-input[type="submit"].btn.orange.invert:hover,
-input[type="reset"].btn.orange.invert:hover,
-a.btn.orange.invert:hover {
-  background-color: #e8e8e8;
-  box-shadow: 0px 2.5px 0.7px #c2c2c2;
-}
-button.btn.orange.invert:active,
-input[type="button"].btn.orange.invert:active,
-input[type="submit"].btn.orange.invert:active,
-input[type="reset"].btn.orange.invert:active,
-a.btn.orange.invert:active {
-  box-shadow: 0px 1px 0.5px #b5b5b5;
-  top: 1.5px;
-}
-button.btn.red,
-input[type="button"].btn.red,
-input[type="submit"].btn.red,
-input[type="reset"].btn.red,
-a.btn.red {
-  color: #730d0d;
-  background-color: #e73232;
-  box-shadow: 0px 2.5px 0.7px #a01313;
-}
-button.btn.red:hover,
-input[type="button"].btn.red:hover,
-input[type="submit"].btn.red:hover,
-input[type="reset"].btn.red:hover,
-a.btn.red:hover {
-  background-color: #ea4949;
-  box-shadow: 0px 2.5px 0.7px #ce1818;
-}
-button.btn.red:active,
-input[type="button"].btn.red:active,
-input[type="submit"].btn.red:active,
-input[type="reset"].btn.red:active,
-a.btn.red:active {
-  box-shadow: 0px 1px 0.5px #b71515;
-  top: 1.5px;
-}
-button.btn.red.invert,
-input[type="button"].btn.red.invert,
-input[type="submit"].btn.red.invert,
-input[type="reset"].btn.red.invert,
-a.btn.red.invert {
-  background-color: #dcdcdc;
-  box-shadow: 0px 2.5px 0.7px #b5b5b5;
-  color: #e73232;
-}
-button.btn.red.invert:hover,
-input[type="button"].btn.red.invert:hover,
-input[type="submit"].btn.red.invert:hover,
-input[type="reset"].btn.red.invert:hover,
-a.btn.red.invert:hover {
-  background-color: #e8e8e8;
-  box-shadow: 0px 2.5px 0.7px #c2c2c2;
-}
-button.btn.red.invert:active,
-input[type="button"].btn.red.invert:active,
-input[type="submit"].btn.red.invert:active,
-input[type="reset"].btn.red.invert:active,
-a.btn.red.invert:active {
-  box-shadow: 0px 1px 0.5px #b5b5b5;
-  top: 1.5px;
-}
-button.btn.pink,
-input[type="button"].btn.pink,
-input[type="submit"].btn.pink,
-input[type="reset"].btn.pink,
-a.btn.pink {
-  color: #a70d77;
-  background-color: #f25bc3;
-  box-shadow: 0px 2.5px 0.7px #d61199;
-}
-button.btn.pink:hover,
-input[type="button"].btn.pink:hover,
-input[type="submit"].btn.pink:hover,
-input[type="reset"].btn.pink:hover,
-a.btn.pink:hover {
-  background-color: #f473cc;
-  box-shadow: 0px 2.5px 0.7px #ee2cb2;
-}
-button.btn.pink:active,
-input[type="button"].btn.pink:active,
-input[type="submit"].btn.pink:active,
-input[type="reset"].btn.pink:active,
-a.btn.pink:active {
-  box-shadow: 0px 1px 0.5px #ec14a9;
-  top: 1.5px;
-}
-button.btn.pink.invert,
-input[type="button"].btn.pink.invert,
-input[type="submit"].btn.pink.invert,
-input[type="reset"].btn.pink.invert,
-a.btn.pink.invert {
-  background-color: #dcdcdc;
-  box-shadow: 0px 2.5px 0.7px #b5b5b5;
-  color: #f25bc3;
-}
-button.btn.pink.invert:hover,
-input[type="button"].btn.pink.invert:hover,
-input[type="submit"].btn.pink.invert:hover,
-input[type="reset"].btn.pink.invert:hover,
-a.btn.pink.invert:hover {
-  background-color: #e8e8e8;
-  box-shadow: 0px 2.5px 0.7px #c2c2c2;
-}
-button.btn.pink.invert:active,
-input[type="button"].btn.pink.invert:active,
-input[type="submit"].btn.pink.invert:active,
-input[type="reset"].btn.pink.invert:active,
-a.btn.pink.invert:active {
-  box-shadow: 0px 1px 0.5px #b5b5b5;
-  top: 1.5px;
-}
-button.btn.violet,
-input[type="button"].btn.violet,
-input[type="submit"].btn.violet,
-input[type="reset"].btn.violet,
-a.btn.violet {
-  color: #b5b5b5;
-  color: #28133a;
-  background-color: #773aac;
-  box-shadow: 0px 2.5px 0.7px #422060;
-}
-button.btn.violet:hover,
-input[type="button"].btn.violet:hover,
-input[type="submit"].btn.violet:hover,
-input[type="reset"].btn.violet:hover,
-a.btn.violet:hover {
-  background-color: #8441bf;
-  box-shadow: 0px 2.5px 0.7px #5d2d86;
-}
-button.btn.violet:active,
-input[type="button"].btn.violet:active,
-input[type="submit"].btn.violet:active,
-input[type="reset"].btn.violet:active,
-a.btn.violet:active {
-  box-shadow: 0px 1px 0.5px #4f2773;
-  top: 1.5px;
-}
-button.btn.violet.invert,
-input[type="button"].btn.violet.invert,
-input[type="submit"].btn.violet.invert,
-input[type="reset"].btn.violet.invert,
-a.btn.violet.invert {
-  background-color: #dcdcdc;
-  box-shadow: 0px 2.5px 0.7px #b5b5b5;
-  color: #773aac;
-}
-button.btn.violet.invert:hover,
-input[type="button"].btn.violet.invert:hover,
-input[type="submit"].btn.violet.invert:hover,
-input[type="reset"].btn.violet.invert:hover,
-a.btn.violet.invert:hover {
-  background-color: #e8e8e8;
-  box-shadow: 0px 2.5px 0.7px #c2c2c2;
-}
-button.btn.violet.invert:active,
-input[type="button"].btn.violet.invert:active,
-input[type="submit"].btn.violet.invert:active,
-input[type="reset"].btn.violet.invert:active,
-a.btn.violet.invert:active {
-  box-shadow: 0px 1px 0.5px #b5b5b5;
-  top: 1.5px;
-}
-button.btn.brown,
-input[type="button"].btn.brown,
-input[type="submit"].btn.brown,
-input[type="reset"].btn.brown,
-a.btn.brown {
-  color: #b5b5b5;
-  color: #160c05;
-  background-color: #904d24;
-  box-shadow: 0px 2.5px 0.7px #3e2110;
-}
-button.btn.brown:hover,
-input[type="button"].btn.brown:hover,
-input[type="submit"].btn.brown:hover,
-input[type="reset"].btn.brown:hover,
-a.btn.brown:hover {
-  background-color: #a45829;
-  box-shadow: 0px 2.5px 0.7px #67371a;
-}
-button.btn.brown:active,
-input[type="button"].btn.brown:active,
-input[type="submit"].btn.brown:active,
-input[type="reset"].btn.brown:active,
-a.btn.brown:active {
-  box-shadow: 0px 1px 0.5px #532c15;
-  top: 1.5px;
-}
-button.btn.brown.invert,
-input[type="button"].btn.brown.invert,
-input[type="submit"].btn.brown.invert,
-input[type="reset"].btn.brown.invert,
-a.btn.brown.invert {
-  background-color: #dcdcdc;
-  box-shadow: 0px 2.5px 0.7px #b5b5b5;
-  color: #904d24;
-}
-button.btn.brown.invert:hover,
-input[type="button"].btn.brown.invert:hover,
-input[type="submit"].btn.brown.invert:hover,
-input[type="reset"].btn.brown.invert:hover,
-a.btn.brown.invert:hover {
-  background-color: #e8e8e8;
-  box-shadow: 0px 2.5px 0.7px #c2c2c2;
-}
-button.btn.brown.invert:active,
-input[type="button"].btn.brown.invert:active,
-input[type="submit"].btn.brown.invert:active,
-input[type="reset"].btn.brown.invert:active,
-a.btn.brown.invert:active {
-  box-shadow: 0px 1px 0.5px #b5b5b5;
-  top: 1.5px;
-}
-button.btn:hover,
-input[type="button"].btn:hover,
-input[type="submit"].btn:hover,
-input[type="reset"].btn:hover,
-a.btn:hover {
-  background-color: #e8e8e8;
-  box-shadow: 0px 2.5px 0.7px #c2c2c2;
-}
-button.btn:focus,
-input[type="button"].btn:focus,
-input[type="submit"].btn:focus,
-input[type="reset"].btn:focus,
-a.btn:focus {
-  outline: none;
-}
-button.btn.disabled,
-input[type="button"].btn.disabled,
-input[type="submit"].btn.disabled,
-input[type="reset"].btn.disabled,
-a.btn.disabled {
-  box-shadow: 0px 2.5px 0.7px #808080;
-  background-color: #e6e6e6;
-  color: #b3b3b3;
-  cursor: not-allowed;
-}
-button.btn.disabled:hover,
-input[type="button"].btn.disabled:hover,
-input[type="submit"].btn.disabled:hover,
-input[type="reset"].btn.disabled:hover,
-a.btn.disabled:hover {
-  box-shadow: 0px 2.5px 0.7px #808080;
-  background-color: #e6e6e6;
-}
-button.btn.disabled:active,
-input[type="button"].btn.disabled:active,
-input[type="submit"].btn.disabled:active,
-input[type="reset"].btn.disabled:active,
-a.btn.disabled:active {
-  box-shadow: 0px 2.5px 0.7px #808080;
-  top: 0;
-}
-button.btn.disabled.invert,
-input[type="button"].btn.disabled.invert,
-input[type="submit"].btn.disabled.invert,
-input[type="reset"].btn.disabled.invert,
-a.btn.disabled.invert {
-  box-shadow: 0px 2.5px 0.7px #808080;
-  background-color: #e6e6e6;
-  color: #b3b3b3;
-}
-button.btn.disabled.invert:hover,
-input[type="button"].btn.disabled.invert:hover,
-input[type="submit"].btn.disabled.invert:hover,
-input[type="reset"].btn.disabled.invert:hover,
-a.btn.disabled.invert:hover {
-  box-shadow: 0px 2.5px 0.7px #808080;
-  background-color: #e6e6e6;
-}
-button.btn.disabled.invert:active,
-input[type="button"].btn.disabled.invert:active,
-input[type="submit"].btn.disabled.invert:active,
-input[type="reset"].btn.disabled.invert:active,
-a.btn.disabled.invert:active {
-  box-shadow: 0px 2.5px 0.7px #808080;
-  top: 0;
-}
-button.btn:active,
-input[type="button"].btn:active,
-input[type="submit"].btn:active,
-input[type="reset"].btn:active,
-a.btn:active {
-  box-shadow: 0px 1px 0.5px #b5b5b5;
-  top: 1.5px;
-}
-button.btn.large,
-input[type="button"].btn.large,
-input[type="submit"].btn.large,
-input[type="reset"].btn.large,
-a.btn.large {
-  font-size: 18px;
-  padding: 10px 13px;
-}
-button.btn.small,
-input[type="button"].btn.small,
-input[type="submit"].btn.small,
-input[type="reset"].btn.small,
-a.btn.small {
-  font-size: 13px;
-  padding: 6px 8px;
 }
 code {
   background-color: #d2dbe3;
