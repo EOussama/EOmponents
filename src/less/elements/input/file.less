@@ -1,0 +1,14 @@
+#file() {
+    // Applies all of the supported colors.
+    .adapt-colors() {
+        each(@colors, {
+            &.@{key} {
+                // #colors.set-comp-color(@value);
+            }
+        });
+    }
+}
+
+input[type="file"].file {
+
+}
