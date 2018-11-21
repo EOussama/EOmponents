@@ -7,7 +7,15 @@ hr {
 
     #colors.adapt-colors(color);
 
+    &.fade-right {
+        background: linear-gradient(to left, currentColor, transparent);
+    }
+
     &.fade {
         background: linear-gradient(to left, transparent, currentColor, transparent);
+    }
+
+    &.fade-left {
+        background: linear-gradient(to right, currentColor, transparent);
     }
 }

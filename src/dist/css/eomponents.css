@@ -2810,8 +2810,14 @@ hr.violet {
 hr.brown {
   color: #904d24;
 }
+hr.fade-right {
+  background: linear-gradient(to left, currentColor, transparent);
+}
 hr.fade {
   background: linear-gradient(to left, transparent, currentColor, transparent);
+}
+hr.fade-left {
+  background: linear-gradient(to right, currentColor, transparent);
 }
 kbd {
   color: #f5f5f5;
