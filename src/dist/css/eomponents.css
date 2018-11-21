@@ -4645,18 +4645,18 @@ div.piano.vertical div.btns {
   flex-direction: column;
 }
 div.piano.vertical div.btns .btn {
-  border-radius: 0px;
+  border-radius: 0;
   margin: 0;
 }
 div.piano.vertical div.btns .btn:first-child {
-  border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 0px;
   border-top-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 0px;
   border-top-right-radius: 3px;
 }
 div.piano.vertical div.btns .btn:last-child {
   border-bottom-left-radius: 3px;
-  border-top-left-radius: 3px;
+  border-top-left-radius: 0px;
   border-bottom-right-radius: 3px;
-  border-top-right-radius: 3px;
+  border-top-right-radius: 0px;
 }
