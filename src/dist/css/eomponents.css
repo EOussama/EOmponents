@@ -1145,6 +1145,443 @@ input[type="week"].week::-webkit-datetime-edit-text {
   opacity: 0.3;
   visibility: visible !important;
 }
+div.file {
+  border-radius: 2px;
+  display: inline-block;
+  height: 40px;
+  padding: 2px;
+  width: 220px;
+  box-shadow: 0px 1px 2px #c2c2c2;
+  /* #region sizing */
+  /* #endregion */
+}
+div.file.light {
+  background-color: #ffffff;
+}
+div.file.light span {
+  color: #a9a9a9;
+}
+div.file.light .btn {
+  color: #a9a9a9;
+  background-color: #f5f5f5;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+div.file.light .btn:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 2.5px 0.7px #d9d9d9;
+}
+div.file.light .btn:active {
+  box-shadow: 0px 1px 0.5px #cfcfcf;
+  top: 1.5px;
+}
+div.file.light .btn.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #f5f5f5;
+}
+div.file.light .btn.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+div.file.light .btn.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+div.file.dark {
+  background-color: #7591a7;
+}
+div.file.dark span {
+  color: #b5b5b5;
+}
+div.file.dark .btn {
+  color: #b5b5b5;
+  background-color: #1f2931;
+  box-shadow: 0px 2.5px 0.7px #000000;
+}
+div.file.dark .btn:hover {
+  background-color: #293641;
+  box-shadow: 0px 2.5px 0.7px #0b0f12;
+}
+div.file.dark .btn:active {
+  box-shadow: 0px 1px 0.5px #010202;
+  top: 1.5px;
+}
+div.file.dark .btn.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #1f2931;
+}
+div.file.dark .btn.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+div.file.dark .btn.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+div.file.gray {
+  background-color: #e6e6e6;
+}
+div.file.gray span {
+  color: #343434;
+}
+div.file.gray .btn {
+  color: #343434;
+  background-color: #808080;
+  box-shadow: 0px 2.5px 0.7px #4d4d4d;
+}
+div.file.gray .btn:hover {
+  background-color: #8d8d8d;
+  box-shadow: 0px 2.5px 0.7px #676767;
+}
+div.file.gray .btn:active {
+  box-shadow: 0px 1px 0.5px #5a5a5a;
+  top: 1.5px;
+}
+div.file.gray .btn.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #808080;
+}
+div.file.gray .btn.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+div.file.gray .btn.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+div.file.blue {
+  background-color: #e1edf7;
+}
+div.file.blue span {
+  color: #193c5a;
+}
+div.file.blue .btn {
+  color: #193c5a;
+  background-color: #428bca;
+  box-shadow: 0px 2.5px 0.7px #245682;
+}
+div.file.blue .btn:hover {
+  background-color: #5697d0;
+  box-shadow: 0px 2.5px 0.7px #3071a9;
+}
+div.file.blue .btn:active {
+  box-shadow: 0px 1px 0.5px #2a6496;
+  top: 1.5px;
+}
+div.file.blue .btn.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #428bca;
+}
+div.file.blue .btn.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+div.file.blue .btn.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+div.file.aqua {
+  background-color: #ffffff;
+}
+div.file.aqua span {
+  color: #1b6d85;
+}
+div.file.aqua .btn {
+  color: #1b6d85;
+  background-color: #5bc0de;
+  box-shadow: 0px 2.5px 0.7px #2390b0;
+}
+div.file.aqua .btn:hover {
+  background-color: #70c8e2;
+  box-shadow: 0px 2.5px 0.7px #31b0d5;
+}
+div.file.aqua .btn:active {
+  box-shadow: 0px 1px 0.5px #28a1c5;
+  top: 1.5px;
+}
+div.file.aqua .btn.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #5bc0de;
+}
+div.file.aqua .btn.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+div.file.aqua .btn.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+div.file.green {
+  background-color: #eaf6ea;
+}
+div.file.green span {
+  color: #255625;
+}
+div.file.green .btn {
+  color: #255625;
+  background-color: #5cb85c;
+  box-shadow: 0px 2.5px 0.7px #357935;
+}
+div.file.green .btn:hover {
+  background-color: #6ec06e;
+  box-shadow: 0px 2.5px 0.7px #449d44;
+}
+div.file.green .btn:active {
+  box-shadow: 0px 1px 0.5px #3d8b3d;
+  top: 1.5px;
+}
+div.file.green .btn.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #5cb85c;
+}
+div.file.green .btn.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+div.file.green .btn.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+div.file.yellow {
+  background-color: #fef1cc;
+}
+div.file.yellow span {
+  color: #b5b5b5;
+  color: #634902;
+}
+div.file.yellow .btn {
+  color: #b5b5b5;
+  color: #634902;
+  background-color: #f8b806;
+  box-shadow: 0px 2.5px 0.7px #946e04;
+}
+div.file.yellow .btn:hover {
+  background-color: #fabf1e;
+  box-shadow: 0px 2.5px 0.7px #c69305;
+}
+div.file.yellow .btn:active {
+  box-shadow: 0px 1px 0.5px #ad8104;
+  top: 1.5px;
+}
+div.file.yellow .btn.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #f8b806;
+}
+div.file.yellow .btn.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+div.file.yellow .btn.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+div.file.orange {
+  background-color: #ffdccc;
+}
+div.file.orange span {
+  color: #662000;
+}
+div.file.orange .btn {
+  color: #662000;
+  background-color: #ff5100;
+  box-shadow: 0px 2.5px 0.7px #993100;
+}
+div.file.orange .btn:hover {
+  background-color: #ff621a;
+  box-shadow: 0px 2.5px 0.7px #cc4100;
+}
+div.file.orange .btn:active {
+  box-shadow: 0px 1px 0.5px #b33900;
+  top: 1.5px;
+}
+div.file.orange .btn.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #ff5100;
+}
+div.file.orange .btn.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+div.file.orange .btn.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+div.file.red {
+  background-color: #fce9e9;
+}
+div.file.red span {
+  color: #730d0d;
+}
+div.file.red .btn {
+  color: #730d0d;
+  background-color: #e73232;
+  box-shadow: 0px 2.5px 0.7px #a01313;
+}
+div.file.red .btn:hover {
+  background-color: #ea4949;
+  box-shadow: 0px 2.5px 0.7px #ce1818;
+}
+div.file.red .btn:active {
+  box-shadow: 0px 1px 0.5px #b71515;
+  top: 1.5px;
+}
+div.file.red .btn.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #e73232;
+}
+div.file.red .btn.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+div.file.red .btn.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+div.file.pink {
+  background-color: #ffffff;
+}
+div.file.pink span {
+  color: #a70d77;
+}
+div.file.pink .btn {
+  color: #a70d77;
+  background-color: #f25bc3;
+  box-shadow: 0px 2.5px 0.7px #d61199;
+}
+div.file.pink .btn:hover {
+  background-color: #f473cc;
+  box-shadow: 0px 2.5px 0.7px #ee2cb2;
+}
+div.file.pink .btn:active {
+  box-shadow: 0px 1px 0.5px #ec14a9;
+  top: 1.5px;
+}
+div.file.pink .btn.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #f25bc3;
+}
+div.file.pink .btn.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+div.file.pink .btn.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+div.file.violet {
+  background-color: #dac6ec;
+}
+div.file.violet span {
+  color: #b5b5b5;
+  color: #28133a;
+}
+div.file.violet .btn {
+  color: #b5b5b5;
+  color: #28133a;
+  background-color: #773aac;
+  box-shadow: 0px 2.5px 0.7px #422060;
+}
+div.file.violet .btn:hover {
+  background-color: #8441bf;
+  box-shadow: 0px 2.5px 0.7px #5d2d86;
+}
+div.file.violet .btn:active {
+  box-shadow: 0px 1px 0.5px #4f2773;
+  top: 1.5px;
+}
+div.file.violet .btn.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #773aac;
+}
+div.file.violet .btn.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+div.file.violet .btn.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+div.file.brown {
+  background-color: #e6b79a;
+}
+div.file.brown span {
+  color: #b5b5b5;
+  color: #160c05;
+}
+div.file.brown .btn {
+  color: #b5b5b5;
+  color: #160c05;
+  background-color: #904d24;
+  box-shadow: 0px 2.5px 0.7px #3e2110;
+}
+div.file.brown .btn:hover {
+  background-color: #a45829;
+  box-shadow: 0px 2.5px 0.7px #67371a;
+}
+div.file.brown .btn:active {
+  box-shadow: 0px 1px 0.5px #532c15;
+  top: 1.5px;
+}
+div.file.brown .btn.invert {
+  background-color: #dcdcdc;
+  box-shadow: 0px 2.5px 0.7px #b5b5b5;
+  color: #904d24;
+}
+div.file.brown .btn.invert:hover {
+  background-color: #e8e8e8;
+  box-shadow: 0px 2.5px 0.7px #c2c2c2;
+}
+div.file.brown .btn.invert:active {
+  box-shadow: 0px 1px 0.5px #b5b5b5;
+  top: 1.5px;
+}
+div.file div.controls {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  padding: 3px 0;
+  overflow: hidden;
+  width: 100%;
+}
+div.file .btn {
+  margin: 0;
+}
+div.file span {
+  align-self: center;
+  color: #cfcfcf;
+  font-size: 14px;
+  margin: 0 5px;
+}
+div.file input[type="file"] {
+  display: none;
+}
+div.file.small {
+  height: 35px;
+  padding: 2px;
+  width: 180px;
+}
+div.file.small .btn {
+  font-size: 14px;
+}
+div.file.large {
+  height: 45px;
+  padding: 2px;
+  width: 250px;
+}
+div.file.large .btn {
+  font-size: 18px;
+}
 input[type="number"].number {
   border: none;
   border-radius: 2px;

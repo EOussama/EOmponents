@@ -3,12 +3,101 @@
     .adapt-colors() {
         each(@colors, {
             &.@{key} {
-                // #colors.set-comp-color(@value);
+                background-color: lighten(@value, 40%);
+
+                span {
+                    #colors.set-comp-color(@value);
+                }
+
+                .btn {
+                    #colors.set-comp-color(@value);
+
+                    background-color: @value;
+                    box-shadow: @shadow[x] @shadow[y] @shadow[b] darken($background-color, 20%);
+
+                    &:hover {
+                        background-color: lighten(@value, 5%);
+                        box-shadow: @shadow[x] @shadow[y] @shadow[b] darken($background-color, 15%);
+                    }
+        
+                    #button.button-click();
+        
+                    &.invert {
+                        background-color: darken(@colors[light], 10%);
+                        box-shadow: @shadow[x] @shadow[y] @shadow[b] darken($background-color, 15%);
+                        color: @value;
+            
+                        &:hover {
+                            background-color: darken(@colors[light], 5%);
+                            box-shadow: @shadow[x] @shadow[y] @shadow[b] darken($background-color, 15%);
+                        }
+                
+                        #button.button-click();
+                    }
+                }
             }
         });
     }
 }
 
-input[type="file"].file {
+div.file {
+    border-radius: 2px;
+    display: inline-block;
+    height: 40px;
+    padding: 2px;
+    width: 220px;
 
+    #depth.add-depth(1px);
+    #file.adapt-colors();
+    
+    div.controls {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        padding: 3px 0;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .btn {
+        //flex: 1;
+        margin: 0;
+    }
+
+    span {
+        align-self: center;
+        color: darken(@colors[light], 15%);
+        //flex: 2;
+        font-size: 14px;
+        margin: 0 5px;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    /* #region sizing */
+
+    &.small {
+        height: 35px;
+        padding: 2px;
+        width: 180px;
+
+        .btn {
+            font-size: 14px;
+        }
+    }
+
+    &.large {
+        height: 45px;
+        padding: 2px;
+        width: 250px;
+
+        .btn {
+            font-size: 18px;
+        }
+    }
+
+    /* #endregion */
 }

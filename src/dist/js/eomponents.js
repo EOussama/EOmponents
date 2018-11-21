@@ -143,4 +143,34 @@ window.addEventListener('load', () => {
 			label.textContent = colorPicker.value;
 		});
 	})();
+
+	// File
+	(function() {
+		const fileControls = document.querySelectorAll('div.file');
+
+		fileControls.forEach(fileControl => {
+			const
+				fileInput = fileControl.querySelector('input[type="file"]'),
+				fileBtn = fileControl.querySelector('div.controls .btn'),
+				fileLabel = fileControl.querySelector('div.controls span');
+			
+			fileBtn.addEventListener('click', () => {
+				fileInput.focus();
+				fileInput.click();
+			});
+
+			fileInput.addEventListener('change', (e) => {
+				if (e.target.files.length > 0) {
+					let fileName = e.target.files[0].name;
+	
+					fileLabel.textContent = fileName.length > 17 ? `${ fileName.substring(0, 17) }...` : fileName;
+					fileControl.setAttribute('title', fileName);
+				}
+			});
+
+			if (fileLabel.textContent.length == 0) {
+				fileLabel.textContent = "No file chosen";
+			}
+		});
+	})();
 });
