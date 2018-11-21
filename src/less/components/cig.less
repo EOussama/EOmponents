@@ -1,0 +1,57 @@
+#cig() {
+    // Sets the compatible color.
+    .set-comp-color(@value) {
+        color: @colors[light];
+    }
+
+    .set-comp-color(@value) when (@value = #f5f5f5) {
+        color: @colors[dark];
+    }
+
+    // Applies all supported colors.
+    .adapt-colors() {
+        each(@colors, {
+            &.@{key} {
+                #cig.set-comp-color(@value);
+
+                background-color: @value;
+
+                &.invert {
+                    background-color: lighten(@value, 40%);
+                    color: darken(@value, 15%);
+                }
+            }
+        });
+    }
+}
+
+div.cig, span.cig {
+    background-color: @colors[light];
+	border-radius: 5px;
+	color: @colors[dark];
+    display: inline-block;
+	font-size: 0.8em;
+    padding: 5px;
+    user-select: none;
+    
+    #cig.adapt-colors();
+
+    &.round {
+        border-radius: 15px;
+    }
+
+    &.invert {
+        background-color: @colors[dark];
+        color: @colors[light];
+    }
+
+    // #region sizing
+    &.small {
+        font-size: 0.5em;
+    }
+
+    &.large {
+        font-size: 1em;
+    }
+    // #endregion
+}

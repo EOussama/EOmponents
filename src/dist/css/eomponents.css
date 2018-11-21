@@ -7,6 +7,154 @@
 	@repository:	https://github.com/Eoussama/Eomponents
 
 */
+div.cig,
+span.cig {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  color: #1f2931;
+  display: inline-block;
+  font-size: 0.8em;
+  padding: 5px;
+  user-select: none;
+}
+div.cig.light,
+span.cig.light {
+  color: #f5f5f5;
+  color: #1f2931;
+  background-color: #f5f5f5;
+}
+div.cig.light.invert,
+span.cig.light.invert {
+  background-color: #ffffff;
+  color: #cfcfcf;
+}
+div.cig.dark,
+span.cig.dark {
+  color: #f5f5f5;
+  background-color: #1f2931;
+}
+div.cig.dark.invert,
+span.cig.dark.invert {
+  background-color: #7591a7;
+  color: #010202;
+}
+div.cig.gray,
+span.cig.gray {
+  color: #f5f5f5;
+  background-color: #808080;
+}
+div.cig.gray.invert,
+span.cig.gray.invert {
+  background-color: #e6e6e6;
+  color: #5a5a5a;
+}
+div.cig.blue,
+span.cig.blue {
+  color: #f5f5f5;
+  background-color: #428bca;
+}
+div.cig.blue.invert,
+span.cig.blue.invert {
+  background-color: #e1edf7;
+  color: #2a6496;
+}
+div.cig.aqua,
+span.cig.aqua {
+  color: #f5f5f5;
+  background-color: #5bc0de;
+}
+div.cig.aqua.invert,
+span.cig.aqua.invert {
+  background-color: #ffffff;
+  color: #28a1c5;
+}
+div.cig.green,
+span.cig.green {
+  color: #f5f5f5;
+  background-color: #5cb85c;
+}
+div.cig.green.invert,
+span.cig.green.invert {
+  background-color: #eaf6ea;
+  color: #3d8b3d;
+}
+div.cig.yellow,
+span.cig.yellow {
+  color: #f5f5f5;
+  background-color: #f8b806;
+}
+div.cig.yellow.invert,
+span.cig.yellow.invert {
+  background-color: #fef1cc;
+  color: #ad8104;
+}
+div.cig.orange,
+span.cig.orange {
+  color: #f5f5f5;
+  background-color: #ff5100;
+}
+div.cig.orange.invert,
+span.cig.orange.invert {
+  background-color: #ffdccc;
+  color: #b33900;
+}
+div.cig.red,
+span.cig.red {
+  color: #f5f5f5;
+  background-color: #e73232;
+}
+div.cig.red.invert,
+span.cig.red.invert {
+  background-color: #fce9e9;
+  color: #b71515;
+}
+div.cig.pink,
+span.cig.pink {
+  color: #f5f5f5;
+  background-color: #f25bc3;
+}
+div.cig.pink.invert,
+span.cig.pink.invert {
+  background-color: #ffffff;
+  color: #ec14a9;
+}
+div.cig.violet,
+span.cig.violet {
+  color: #f5f5f5;
+  background-color: #773aac;
+}
+div.cig.violet.invert,
+span.cig.violet.invert {
+  background-color: #dac6ec;
+  color: #4f2773;
+}
+div.cig.brown,
+span.cig.brown {
+  color: #f5f5f5;
+  background-color: #904d24;
+}
+div.cig.brown.invert,
+span.cig.brown.invert {
+  background-color: #e6b79a;
+  color: #532c15;
+}
+div.cig.round,
+span.cig.round {
+  border-radius: 15px;
+}
+div.cig.invert,
+span.cig.invert {
+  background-color: #1f2931;
+  color: #f5f5f5;
+}
+div.cig.small,
+span.cig.small {
+  font-size: 0.5em;
+}
+div.cig.large,
+span.cig.large {
+  font-size: 1em;
+}
 button.btn,
 input[type="button"].btn,
 input[type="submit"].btn,
