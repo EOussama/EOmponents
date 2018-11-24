@@ -1,0 +1,207 @@
+#landleg() {
+    .adapt-colors() {
+        each(@colors, {
+            &.@{key} {
+                #colors.set-comp-color(@value);
+
+                div.body, div.block, h1, h2, h3, h4, h5, h6, p, small, span {
+                    #colors.set-comp-color(@value);
+                }
+
+                background-color: @value;
+
+                &.linear-gradient {
+                    background: linear-gradient(to bottom right, @value, lighten(@value, 10%));
+                }
+
+                &.radial-gradient {
+                    background: radial-gradient(lighten(@value, 10%), @value 80%);
+                }
+            }
+        });
+    }
+}
+
+div.landleg, header.landleg {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+    overflow: hidden;
+
+    #depth.add-depth(1px);
+    #landleg.adapt-colors();
+
+    div.body, div.block {
+        background-color: inherit;
+        box-sizing: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    div.body > *, div.block > * {
+        align-self: center;
+    }
+
+    div.block {
+        height: 10%;
+        padding: 0px 150px;
+    }
+    
+    div.body {
+        height: 80%;
+        padding: 20px 150px;
+    }
+
+    &.linear-gradient {
+        background: linear-gradient(to bottom right, @colors[light], white);
+    }
+
+    &.radial-gradient {
+        background: radial-gradient(@colors[light], white);
+    }
+
+    // #region sizing
+
+    &.small {
+        height: 200px;
+    }
+
+    &.large {
+        height: 650px;
+    }
+    
+    &.half {
+        height: 50vh;
+    }
+
+    &.full {
+        height: 100vh;
+    }
+
+    // #endregion
+
+    .title {
+        font-size: 45px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+        font-weight: 300;
+    }
+    
+    @media @desktop {
+        .title {
+            font-size: 45px;
+        }
+
+        div.block {
+            height: 10%;
+            padding: 0px 150px;
+        }
+        
+        div.body {
+            height: 80%;
+            padding: 20px 150px;
+        }
+    }
+
+    @media @laptop {
+        .title {
+            font-size: 45px;
+        }
+
+        div.block {
+            height: 10%;
+            padding: 0px 120px;
+        }
+        
+        div.body {
+            height: 80%;
+            padding: 20px 120px;
+        }
+    }
+
+    @media @tablet-port {
+        .title {
+            font-size: 40px;
+        }
+        
+        div.block {
+            height: 10%;
+            padding: 0px 100px;
+        }
+        
+        div.body {
+            height: 80%;
+            padding: 20px 100px;
+        }
+    }
+
+    @media @tablet-land {
+        .title {
+            font-size: 45px;
+        }
+
+        div.block {
+            height: 10%;
+            padding: 0px 115px;
+        }
+        
+        div.body {
+            height: 80%;
+            padding: 20px 115px;
+        }
+    }
+
+    @media @mobile-land {
+        .title {
+            font-size: 40px;
+        }
+
+        div.block {
+            height: 10%;
+            padding: 0px 50px;
+        }
+        
+        div.body {
+            height: 80%;
+            padding: 20px 50px;
+        }
+    }
+
+    @media @mobile-port {
+        .title {
+            font-size: 30px;
+        }
+
+        div.block {
+            height: 10%;
+            padding: 0px 30px;
+        }
+        
+        div.body {
+            height: 80%;
+            padding: 20px 30px;
+        }
+    }
+
+    @media @small-devices {
+        .title {
+            font-size: 20px;
+        }
+
+        div.block {
+            height: 10%;
+            padding: 0px 20px;
+        }
+        
+        div.body {
+            height: 80%;
+            padding: 20px 20px;
+        }
+    }
+}

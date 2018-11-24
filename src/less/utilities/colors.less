@@ -39,7 +39,7 @@
 
     // @color: the targeted color.
     .set-comp-color(@color) when (lightness(@color) < 50%) {
-        color: darken(@colors[light], 25%);
+        color: @colors[light];
     }
     
     // @color: the targeted color.

@@ -236,7 +236,7 @@ input[type="button"].btn.dark,
 input[type="submit"].btn.dark,
 input[type="reset"].btn.dark,
 a.btn.dark {
-  color: #b5b5b5;
+  color: #f5f5f5;
   background-color: #1f2931;
   box-shadow: 0px 2.5px 0.7px #000000;
 }
@@ -486,7 +486,7 @@ input[type="button"].btn.yellow,
 input[type="submit"].btn.yellow,
 input[type="reset"].btn.yellow,
 a.btn.yellow {
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #634902;
   background-color: #f8b806;
   box-shadow: 0px 2.5px 0.7px #946e04;
@@ -687,7 +687,7 @@ input[type="button"].btn.violet,
 input[type="submit"].btn.violet,
 input[type="reset"].btn.violet,
 a.btn.violet {
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #28133a;
   background-color: #773aac;
   box-shadow: 0px 2.5px 0.7px #422060;
@@ -738,7 +738,7 @@ input[type="button"].btn.brown,
 input[type="submit"].btn.brown,
 input[type="reset"].btn.brown,
 a.btn.brown {
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #160c05;
   background-color: #904d24;
   box-shadow: 0px 2.5px 0.7px #3e2110;
@@ -1104,7 +1104,7 @@ input[type="time"].time.dark:not(:disabled),
 input[type="month"].month.dark:not(:disabled),
 input[type="week"].week.dark:not(:disabled) {
   background-color: #5a778f;
-  color: #b5b5b5;
+  color: #f5f5f5;
 }
 input[type="date"].date.gray:not(:disabled),
 input[type="datetime-local"].datetime-local.gray:not(:disabled),
@@ -1144,7 +1144,7 @@ input[type="time"].time.yellow:not(:disabled),
 input[type="month"].month.yellow:not(:disabled),
 input[type="week"].week.yellow:not(:disabled) {
   background-color: #fde39a;
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #634902;
 }
 input[type="date"].date.orange:not(:disabled),
@@ -1177,7 +1177,7 @@ input[type="time"].time.violet:not(:disabled),
 input[type="month"].month.violet:not(:disabled),
 input[type="week"].week.violet:not(:disabled) {
   background-color: #c2a0df;
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #28133a;
 }
 input[type="date"].date.brown:not(:disabled),
@@ -1186,7 +1186,7 @@ input[type="time"].time.brown:not(:disabled),
 input[type="month"].month.brown:not(:disabled),
 input[type="week"].week.brown:not(:disabled) {
   background-color: #dc9a71;
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #160c05;
 }
 input[type="date"].date:focus,
@@ -1339,10 +1339,10 @@ div.file.dark {
   background-color: #7591a7;
 }
 div.file.dark span {
-  color: #b5b5b5;
+  color: #f5f5f5;
 }
 div.file.dark .btn {
-  color: #b5b5b5;
+  color: #f5f5f5;
   background-color: #1f2931;
   box-shadow: 0px 2.5px 0.7px #000000;
 }
@@ -1499,11 +1499,11 @@ div.file.yellow {
   background-color: #fef1cc;
 }
 div.file.yellow span {
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #634902;
 }
 div.file.yellow .btn {
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #634902;
   background-color: #f8b806;
   box-shadow: 0px 2.5px 0.7px #946e04;
@@ -1629,11 +1629,11 @@ div.file.violet {
   background-color: #dac6ec;
 }
 div.file.violet span {
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #28133a;
 }
 div.file.violet .btn {
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #28133a;
   background-color: #773aac;
   box-shadow: 0px 2.5px 0.7px #422060;
@@ -1663,11 +1663,11 @@ div.file.brown {
   background-color: #e6b79a;
 }
 div.file.brown span {
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #160c05;
 }
 div.file.brown .btn {
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #160c05;
   background-color: #904d24;
   box-shadow: 0px 2.5px 0.7px #3e2110;
@@ -1746,7 +1746,7 @@ input[type="number"].number.light:not(:disabled) {
 }
 input[type="number"].number.dark:not(:disabled) {
   background-color: #5a778f;
-  color: #b5b5b5;
+  color: #f5f5f5;
 }
 input[type="number"].number.gray:not(:disabled) {
   background-color: #cdcdcd;
@@ -1766,7 +1766,7 @@ input[type="number"].number.green:not(:disabled) {
 }
 input[type="number"].number.yellow:not(:disabled) {
   background-color: #fde39a;
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #634902;
 }
 input[type="number"].number.orange:not(:disabled) {
@@ -1783,12 +1783,12 @@ input[type="number"].number.pink:not(:disabled) {
 }
 input[type="number"].number.violet:not(:disabled) {
   background-color: #c2a0df;
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #28133a;
 }
 input[type="number"].number.brown:not(:disabled) {
   background-color: #dc9a71;
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #160c05;
 }
 input[type="number"].number:focus {
@@ -2209,7 +2209,7 @@ div.textbox.dark input[type="email"],
 div.textbox.dark input[type="search"],
 div.textbox.dark input[type="url"],
 div.textbox.dark input[type="tel"] {
-  color: #b5b5b5;
+  color: #f5f5f5;
 }
 div.textbox.dark.focused {
   border-color: #1f2931;
@@ -2379,7 +2379,7 @@ div.textbox.yellow input[type="email"],
 div.textbox.yellow input[type="search"],
 div.textbox.yellow input[type="url"],
 div.textbox.yellow input[type="tel"] {
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #634902;
 }
 div.textbox.yellow.focused {
@@ -2516,7 +2516,7 @@ div.textbox.violet input[type="email"],
 div.textbox.violet input[type="search"],
 div.textbox.violet input[type="url"],
 div.textbox.violet input[type="tel"] {
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #28133a;
 }
 div.textbox.violet.focused {
@@ -2551,7 +2551,7 @@ div.textbox.brown input[type="email"],
 div.textbox.brown input[type="search"],
 div.textbox.brown input[type="url"],
 div.textbox.brown input[type="tel"] {
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #160c05;
 }
 div.textbox.brown.focused {
@@ -2988,7 +2988,7 @@ ol.list.dark {
 }
 ul.list.dark li,
 ol.list.dark li {
-  color: #b5b5b5;
+  color: #f5f5f5;
   background-color: #506a7f;
 }
 ul.list.dark li:not(:last-of-type),
@@ -3168,7 +3168,7 @@ ol.list.yellow {
 }
 ul.list.yellow li,
 ol.list.yellow li {
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #634902;
   background-color: #fcdc82;
 }
@@ -3313,7 +3313,7 @@ ol.list.violet {
 }
 ul.list.violet li,
 ol.list.violet li {
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #28133a;
   background-color: #b58dd9;
 }
@@ -3350,7 +3350,7 @@ ol.list.brown {
 }
 ul.list.brown li,
 ol.list.brown li {
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #160c05;
   background-color: #d78b5d;
 }
@@ -3492,7 +3492,7 @@ table.table.dark {
 }
 table.table.dark td,
 table.table.dark th {
-  color: #b5b5b5;
+  color: #f5f5f5;
 }
 table.table.dark tr:not(:last-child) {
   border-bottom: 1px solid #192128;
@@ -3627,7 +3627,7 @@ table.table.yellow {
 }
 table.table.yellow td,
 table.table.yellow th {
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #634902;
 }
 table.table.yellow tr:not(:last-child) {
@@ -3736,7 +3736,7 @@ table.table.violet {
 }
 table.table.violet td,
 table.table.violet th {
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #28133a;
 }
 table.table.violet tr:not(:last-child) {
@@ -3764,7 +3764,7 @@ table.table.brown {
 }
 table.table.brown td,
 table.table.brown th {
-  color: #b5b5b5;
+  color: #f5f5f5;
   color: #160c05;
 }
 table.table.brown tr:not(:last-child) {
@@ -4627,6 +4627,638 @@ body {
   padding: 20px;
 }
 /* #endregion */
+div.landleg,
+header.landleg {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0px 1px 2px #c2c2c2;
+}
+div.landleg.light,
+header.landleg.light {
+  color: #a9a9a9;
+  background-color: #f5f5f5;
+}
+div.landleg.light div.body,
+header.landleg.light div.body,
+div.landleg.light div.block,
+header.landleg.light div.block,
+div.landleg.light h1,
+header.landleg.light h1,
+div.landleg.light h2,
+header.landleg.light h2,
+div.landleg.light h3,
+header.landleg.light h3,
+div.landleg.light h4,
+header.landleg.light h4,
+div.landleg.light h5,
+header.landleg.light h5,
+div.landleg.light h6,
+header.landleg.light h6,
+div.landleg.light p,
+header.landleg.light p,
+div.landleg.light small,
+header.landleg.light small,
+div.landleg.light span,
+header.landleg.light span {
+  color: #a9a9a9;
+}
+div.landleg.light.linear-gradient,
+header.landleg.light.linear-gradient {
+  background: linear-gradient(to bottom right, #f5f5f5, #ffffff);
+}
+div.landleg.light.radial-gradient,
+header.landleg.light.radial-gradient {
+  background: radial-gradient(#ffffff, #f5f5f5 80%);
+}
+div.landleg.dark,
+header.landleg.dark {
+  color: #f5f5f5;
+  background-color: #1f2931;
+}
+div.landleg.dark div.body,
+header.landleg.dark div.body,
+div.landleg.dark div.block,
+header.landleg.dark div.block,
+div.landleg.dark h1,
+header.landleg.dark h1,
+div.landleg.dark h2,
+header.landleg.dark h2,
+div.landleg.dark h3,
+header.landleg.dark h3,
+div.landleg.dark h4,
+header.landleg.dark h4,
+div.landleg.dark h5,
+header.landleg.dark h5,
+div.landleg.dark h6,
+header.landleg.dark h6,
+div.landleg.dark p,
+header.landleg.dark p,
+div.landleg.dark small,
+header.landleg.dark small,
+div.landleg.dark span,
+header.landleg.dark span {
+  color: #f5f5f5;
+}
+div.landleg.dark.linear-gradient,
+header.landleg.dark.linear-gradient {
+  background: linear-gradient(to bottom right, #1f2931, #334350);
+}
+div.landleg.dark.radial-gradient,
+header.landleg.dark.radial-gradient {
+  background: radial-gradient(#334350, #1f2931 80%);
+}
+div.landleg.gray,
+header.landleg.gray {
+  color: #343434;
+  background-color: #808080;
+}
+div.landleg.gray div.body,
+header.landleg.gray div.body,
+div.landleg.gray div.block,
+header.landleg.gray div.block,
+div.landleg.gray h1,
+header.landleg.gray h1,
+div.landleg.gray h2,
+header.landleg.gray h2,
+div.landleg.gray h3,
+header.landleg.gray h3,
+div.landleg.gray h4,
+header.landleg.gray h4,
+div.landleg.gray h5,
+header.landleg.gray h5,
+div.landleg.gray h6,
+header.landleg.gray h6,
+div.landleg.gray p,
+header.landleg.gray p,
+div.landleg.gray small,
+header.landleg.gray small,
+div.landleg.gray span,
+header.landleg.gray span {
+  color: #343434;
+}
+div.landleg.gray.linear-gradient,
+header.landleg.gray.linear-gradient {
+  background: linear-gradient(to bottom right, #808080, #9a9a9a);
+}
+div.landleg.gray.radial-gradient,
+header.landleg.gray.radial-gradient {
+  background: radial-gradient(#9a9a9a, #808080 80%);
+}
+div.landleg.blue,
+header.landleg.blue {
+  color: #193c5a;
+  background-color: #428bca;
+}
+div.landleg.blue div.body,
+header.landleg.blue div.body,
+div.landleg.blue div.block,
+header.landleg.blue div.block,
+div.landleg.blue h1,
+header.landleg.blue h1,
+div.landleg.blue h2,
+header.landleg.blue h2,
+div.landleg.blue h3,
+header.landleg.blue h3,
+div.landleg.blue h4,
+header.landleg.blue h4,
+div.landleg.blue h5,
+header.landleg.blue h5,
+div.landleg.blue h6,
+header.landleg.blue h6,
+div.landleg.blue p,
+header.landleg.blue p,
+div.landleg.blue small,
+header.landleg.blue small,
+div.landleg.blue span,
+header.landleg.blue span {
+  color: #193c5a;
+}
+div.landleg.blue.linear-gradient,
+header.landleg.blue.linear-gradient {
+  background: linear-gradient(to bottom right, #428bca, #6aa3d5);
+}
+div.landleg.blue.radial-gradient,
+header.landleg.blue.radial-gradient {
+  background: radial-gradient(#6aa3d5, #428bca 80%);
+}
+div.landleg.aqua,
+header.landleg.aqua {
+  color: #1b6d85;
+  background-color: #5bc0de;
+}
+div.landleg.aqua div.body,
+header.landleg.aqua div.body,
+div.landleg.aqua div.block,
+header.landleg.aqua div.block,
+div.landleg.aqua h1,
+header.landleg.aqua h1,
+div.landleg.aqua h2,
+header.landleg.aqua h2,
+div.landleg.aqua h3,
+header.landleg.aqua h3,
+div.landleg.aqua h4,
+header.landleg.aqua h4,
+div.landleg.aqua h5,
+header.landleg.aqua h5,
+div.landleg.aqua h6,
+header.landleg.aqua h6,
+div.landleg.aqua p,
+header.landleg.aqua p,
+div.landleg.aqua small,
+header.landleg.aqua small,
+div.landleg.aqua span,
+header.landleg.aqua span {
+  color: #1b6d85;
+}
+div.landleg.aqua.linear-gradient,
+header.landleg.aqua.linear-gradient {
+  background: linear-gradient(to bottom right, #5bc0de, #85d0e7);
+}
+div.landleg.aqua.radial-gradient,
+header.landleg.aqua.radial-gradient {
+  background: radial-gradient(#85d0e7, #5bc0de 80%);
+}
+div.landleg.green,
+header.landleg.green {
+  color: #255625;
+  background-color: #5cb85c;
+}
+div.landleg.green div.body,
+header.landleg.green div.body,
+div.landleg.green div.block,
+header.landleg.green div.block,
+div.landleg.green h1,
+header.landleg.green h1,
+div.landleg.green h2,
+header.landleg.green h2,
+div.landleg.green h3,
+header.landleg.green h3,
+div.landleg.green h4,
+header.landleg.green h4,
+div.landleg.green h5,
+header.landleg.green h5,
+div.landleg.green h6,
+header.landleg.green h6,
+div.landleg.green p,
+header.landleg.green p,
+div.landleg.green small,
+header.landleg.green small,
+div.landleg.green span,
+header.landleg.green span {
+  color: #255625;
+}
+div.landleg.green.linear-gradient,
+header.landleg.green.linear-gradient {
+  background: linear-gradient(to bottom right, #5cb85c, #80c780);
+}
+div.landleg.green.radial-gradient,
+header.landleg.green.radial-gradient {
+  background: radial-gradient(#80c780, #5cb85c 80%);
+}
+div.landleg.yellow,
+header.landleg.yellow {
+  color: #f5f5f5;
+  color: #634902;
+  background-color: #f8b806;
+}
+div.landleg.yellow div.body,
+header.landleg.yellow div.body,
+div.landleg.yellow div.block,
+header.landleg.yellow div.block,
+div.landleg.yellow h1,
+header.landleg.yellow h1,
+div.landleg.yellow h2,
+header.landleg.yellow h2,
+div.landleg.yellow h3,
+header.landleg.yellow h3,
+div.landleg.yellow h4,
+header.landleg.yellow h4,
+div.landleg.yellow h5,
+header.landleg.yellow h5,
+div.landleg.yellow h6,
+header.landleg.yellow h6,
+div.landleg.yellow p,
+header.landleg.yellow p,
+div.landleg.yellow small,
+header.landleg.yellow small,
+div.landleg.yellow span,
+header.landleg.yellow span {
+  color: #f5f5f5;
+  color: #634902;
+}
+div.landleg.yellow.linear-gradient,
+header.landleg.yellow.linear-gradient {
+  background: linear-gradient(to bottom right, #f8b806, #fac737);
+}
+div.landleg.yellow.radial-gradient,
+header.landleg.yellow.radial-gradient {
+  background: radial-gradient(#fac737, #f8b806 80%);
+}
+div.landleg.orange,
+header.landleg.orange {
+  color: #662000;
+  background-color: #ff5100;
+}
+div.landleg.orange div.body,
+header.landleg.orange div.body,
+div.landleg.orange div.block,
+header.landleg.orange div.block,
+div.landleg.orange h1,
+header.landleg.orange h1,
+div.landleg.orange h2,
+header.landleg.orange h2,
+div.landleg.orange h3,
+header.landleg.orange h3,
+div.landleg.orange h4,
+header.landleg.orange h4,
+div.landleg.orange h5,
+header.landleg.orange h5,
+div.landleg.orange h6,
+header.landleg.orange h6,
+div.landleg.orange p,
+header.landleg.orange p,
+div.landleg.orange small,
+header.landleg.orange small,
+div.landleg.orange span,
+header.landleg.orange span {
+  color: #662000;
+}
+div.landleg.orange.linear-gradient,
+header.landleg.orange.linear-gradient {
+  background: linear-gradient(to bottom right, #ff5100, #ff7433);
+}
+div.landleg.orange.radial-gradient,
+header.landleg.orange.radial-gradient {
+  background: radial-gradient(#ff7433, #ff5100 80%);
+}
+div.landleg.red,
+header.landleg.red {
+  color: #730d0d;
+  background-color: #e73232;
+}
+div.landleg.red div.body,
+header.landleg.red div.body,
+div.landleg.red div.block,
+header.landleg.red div.block,
+div.landleg.red h1,
+header.landleg.red h1,
+div.landleg.red h2,
+header.landleg.red h2,
+div.landleg.red h3,
+header.landleg.red h3,
+div.landleg.red h4,
+header.landleg.red h4,
+div.landleg.red h5,
+header.landleg.red h5,
+div.landleg.red h6,
+header.landleg.red h6,
+div.landleg.red p,
+header.landleg.red p,
+div.landleg.red small,
+header.landleg.red small,
+div.landleg.red span,
+header.landleg.red span {
+  color: #730d0d;
+}
+div.landleg.red.linear-gradient,
+header.landleg.red.linear-gradient {
+  background: linear-gradient(to bottom right, #e73232, #ec6060);
+}
+div.landleg.red.radial-gradient,
+header.landleg.red.radial-gradient {
+  background: radial-gradient(#ec6060, #e73232 80%);
+}
+div.landleg.pink,
+header.landleg.pink {
+  color: #a70d77;
+  background-color: #f25bc3;
+}
+div.landleg.pink div.body,
+header.landleg.pink div.body,
+div.landleg.pink div.block,
+header.landleg.pink div.block,
+div.landleg.pink h1,
+header.landleg.pink h1,
+div.landleg.pink h2,
+header.landleg.pink h2,
+div.landleg.pink h3,
+header.landleg.pink h3,
+div.landleg.pink h4,
+header.landleg.pink h4,
+div.landleg.pink h5,
+header.landleg.pink h5,
+div.landleg.pink h6,
+header.landleg.pink h6,
+div.landleg.pink p,
+header.landleg.pink p,
+div.landleg.pink small,
+header.landleg.pink small,
+div.landleg.pink span,
+header.landleg.pink span {
+  color: #a70d77;
+}
+div.landleg.pink.linear-gradient,
+header.landleg.pink.linear-gradient {
+  background: linear-gradient(to bottom right, #f25bc3, #f68ad4);
+}
+div.landleg.pink.radial-gradient,
+header.landleg.pink.radial-gradient {
+  background: radial-gradient(#f68ad4, #f25bc3 80%);
+}
+div.landleg.violet,
+header.landleg.violet {
+  color: #f5f5f5;
+  color: #28133a;
+  background-color: #773aac;
+}
+div.landleg.violet div.body,
+header.landleg.violet div.body,
+div.landleg.violet div.block,
+header.landleg.violet div.block,
+div.landleg.violet h1,
+header.landleg.violet h1,
+div.landleg.violet h2,
+header.landleg.violet h2,
+div.landleg.violet h3,
+header.landleg.violet h3,
+div.landleg.violet h4,
+header.landleg.violet h4,
+div.landleg.violet h5,
+header.landleg.violet h5,
+div.landleg.violet h6,
+header.landleg.violet h6,
+div.landleg.violet p,
+header.landleg.violet p,
+div.landleg.violet small,
+header.landleg.violet small,
+div.landleg.violet span,
+header.landleg.violet span {
+  color: #f5f5f5;
+  color: #28133a;
+}
+div.landleg.violet.linear-gradient,
+header.landleg.violet.linear-gradient {
+  background: linear-gradient(to bottom right, #773aac, #9054c5);
+}
+div.landleg.violet.radial-gradient,
+header.landleg.violet.radial-gradient {
+  background: radial-gradient(#9054c5, #773aac 80%);
+}
+div.landleg.brown,
+header.landleg.brown {
+  color: #f5f5f5;
+  color: #160c05;
+  background-color: #904d24;
+}
+div.landleg.brown div.body,
+header.landleg.brown div.body,
+div.landleg.brown div.block,
+header.landleg.brown div.block,
+div.landleg.brown h1,
+header.landleg.brown h1,
+div.landleg.brown h2,
+header.landleg.brown h2,
+div.landleg.brown h3,
+header.landleg.brown h3,
+div.landleg.brown h4,
+header.landleg.brown h4,
+div.landleg.brown h5,
+header.landleg.brown h5,
+div.landleg.brown h6,
+header.landleg.brown h6,
+div.landleg.brown p,
+header.landleg.brown p,
+div.landleg.brown small,
+header.landleg.brown small,
+div.landleg.brown span,
+header.landleg.brown span {
+  color: #f5f5f5;
+  color: #160c05;
+}
+div.landleg.brown.linear-gradient,
+header.landleg.brown.linear-gradient {
+  background: linear-gradient(to bottom right, #904d24, #b9632e);
+}
+div.landleg.brown.radial-gradient,
+header.landleg.brown.radial-gradient {
+  background: radial-gradient(#b9632e, #904d24 80%);
+}
+div.landleg div.body,
+header.landleg div.body,
+div.landleg div.block,
+header.landleg div.block {
+  background-color: inherit;
+  box-sizing: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+div.landleg div.body > *,
+header.landleg div.body > *,
+div.landleg div.block > *,
+header.landleg div.block > * {
+  align-self: center;
+}
+div.landleg div.block,
+header.landleg div.block {
+  height: 10%;
+  padding: 0px 150px;
+}
+div.landleg div.body,
+header.landleg div.body {
+  height: 80%;
+  padding: 20px 150px;
+}
+div.landleg.linear-gradient,
+header.landleg.linear-gradient {
+  background: linear-gradient(to bottom right, #f5f5f5, white);
+}
+div.landleg.radial-gradient,
+header.landleg.radial-gradient {
+  background: radial-gradient(#f5f5f5, white);
+}
+div.landleg.small,
+header.landleg.small {
+  height: 200px;
+}
+div.landleg.large,
+header.landleg.large {
+  height: 650px;
+}
+div.landleg.half,
+header.landleg.half {
+  height: 50vh;
+}
+div.landleg.full,
+header.landleg.full {
+  height: 100vh;
+}
+div.landleg .title,
+header.landleg .title {
+  font-size: 45px;
+}
+div.landleg .subtitle,
+header.landleg .subtitle {
+  font-size: 12px;
+  font-weight: 300;
+}
+@media screen and (min-width: 1281px) {
+  div.landleg .title,
+  header.landleg .title {
+    font-size: 45px;
+  }
+  div.landleg div.block,
+  header.landleg div.block {
+    height: 10%;
+    padding: 0px 150px;
+  }
+  div.landleg div.body,
+  header.landleg div.body {
+    height: 80%;
+    padding: 20px 150px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  div.landleg .title,
+  header.landleg .title {
+    font-size: 45px;
+  }
+  div.landleg div.block,
+  header.landleg div.block {
+    height: 10%;
+    padding: 0px 120px;
+  }
+  div.landleg div.body,
+  header.landleg div.body {
+    height: 80%;
+    padding: 20px 120px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  div.landleg .title,
+  header.landleg .title {
+    font-size: 40px;
+  }
+  div.landleg div.block,
+  header.landleg div.block {
+    height: 10%;
+    padding: 0px 100px;
+  }
+  div.landleg div.body,
+  header.landleg div.body {
+    height: 80%;
+    padding: 20px 100px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  div.landleg .title,
+  header.landleg .title {
+    font-size: 45px;
+  }
+  div.landleg div.block,
+  header.landleg div.block {
+    height: 10%;
+    padding: 0px 115px;
+  }
+  div.landleg div.body,
+  header.landleg div.body {
+    height: 80%;
+    padding: 20px 115px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  div.landleg .title,
+  header.landleg .title {
+    font-size: 40px;
+  }
+  div.landleg div.block,
+  header.landleg div.block {
+    height: 10%;
+    padding: 0px 50px;
+  }
+  div.landleg div.body,
+  header.landleg div.body {
+    height: 80%;
+    padding: 20px 50px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  div.landleg .title,
+  header.landleg .title {
+    font-size: 30px;
+  }
+  div.landleg div.block,
+  header.landleg div.block {
+    height: 10%;
+    padding: 0px 30px;
+  }
+  div.landleg div.body,
+  header.landleg div.body {
+    height: 80%;
+    padding: 20px 30px;
+  }
+}
+@media screen and (max-width: 319px) {
+  div.landleg .title,
+  header.landleg .title {
+    font-size: 20px;
+  }
+  div.landleg div.block,
+  header.landleg div.block {
+    height: 10%;
+    padding: 0px 20px;
+  }
+  div.landleg div.body,
+  header.landleg div.body {
+    height: 80%;
+    padding: 20px 20px;
+  }
+}
 div.piano {
   display: inline-block;
   margin: 2px 3px;
