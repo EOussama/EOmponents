@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node ./node_modules/less/bin/lessc ./src/less/eomponents.less ./dist/css/eomponents.css",
     "build:w": "node ./node_modules/less-watch-compiler/dist/less-watch-compiler.js ./src/less ./dist/css eomponents.less",
-    "js": "cp ./src/js/ ./dist/js/",
+    "js": "cp -r ./src/js ./dist/js",
     "prod": "npm run build && npm run js"
   },
   "repository": {
